@@ -1,0 +1,78 @@
+Heal:
+	ReloadDelay: 80
+	Range: 2c304
+	Report: healer1.aud
+	ValidTargets: Infantry
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamage
+		DebugOverlayColor: 00FF00
+		Spread: 213
+		Damage: -40
+		ValidTargets: Infantry
+
+Repair:
+	ReloadDelay: 40
+	Range: 1c536
+	Report: repair11.aud
+	ValidTargets: Repair
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamage
+		DebugOverlayColor: 00FF00
+		Spread: 213
+		Damage: -20
+		ValidTargets: Repair
+
+RepairSparks:
+	ReloadDelay: 38
+	Burst: 3
+	BurstDelay: 1
+	Range: 1c536
+	ValidTargets: Repair
+	Projectile: Bullet
+		Speed: 64
+		Image: spark
+		Angle: 150
+		Palette: ra
+		Inaccuracy: 2c512
+	Warhead@1Dam: SpreadDamage
+		Damage: -1
+		ValidTargets: Repair
+
+RepairBlueSparks:
+	ReloadDelay: 40
+	Range: 1c536
+	ValidTargets: Repair
+	Projectile: Bullet
+		Speed: 64
+		Image: bluespark
+		Angle: 150
+		Palette: pips
+		Inaccuracy: 1c536
+	Warhead@1Dam: SpreadDamage
+		Damage: -1
+		ValidTargets: Repair
+
+RepairBlueSparksTrail:
+	ReloadDelay: 40
+	Range: 1c536
+	ValidTargets: Repair
+	Projectile: Bullet
+		Speed: 64
+		Image: bluespark
+		ContrailLength: 8
+		ContrailWidth: 15
+		ContrailColor: 00F0FF80
+		Angle: 150
+		Palette: pips
+		Inaccuracy: 2c0
+	Warhead@1Dam: SpreadDamage
+		Damage: -1
+		ValidTargets: Repair
+
+TiberiumHeal:
+	ReloadDelay: 16
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: -2

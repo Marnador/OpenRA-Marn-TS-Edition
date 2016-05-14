@@ -1,0 +1,2763 @@
+ABAN01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: WS Logging Company
+	Building:
+		Footprint: xx xx xx xx xx xx
+		Dimensions: 2, 6
+	Armor:
+		Type: wood
+	Health:
+		HP: 600
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Panullo Hacienda
+	Building:
+		Footprint: xxxxx xxxxx xxxxx
+		Dimensions: 5, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 600
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Abandoned Factory
+	Building:
+		Footprint: xx xx xx xx xx
+		Dimensions: 2, 5
+	Armor:
+		Type: wood
+	Health:
+		HP: 500
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: City Hall
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Hunting Lodge
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 500
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN06:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Local Inn & Lodging
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 500
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN07:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Church
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 350
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN08:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Abandoned Warehouse
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 500
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN09:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Tall's Residence
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 350
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN10:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Denzil's Last Chance Motel
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 500
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN11:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Miele Manor
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN12:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Kettler's Place
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN13:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Long's Home
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: wood
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN14:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Local Store
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: heavy
+	Health:
+		HP: 300
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN15:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Adam's House
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: heavy
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN16:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Gas Station
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN17:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Gas Pumps
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: wood
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+ABAN18:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Gas Station Sign
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: wood
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		ExcludeTilesets: TEMPERATE
+
+AMMOCRAT:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Ammo Crates
+	Explodes:
+		Weapon: UnitExplode
+	SelectionDecorations:
+		VisualBounds: 50, 30, 0, -5
+	Selectable:
+		Bounds: 40, 20, 0, -5
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: none
+	Health:
+		HP: 1
+	RenderSprites:
+		Palette: player
+
+BBOARD01:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Eat at Rade's Roadhouse
+
+BBOARD02:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Drink YEO-CA Cola!
+
+BBOARD03:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Hamburgers $.99
+
+BBOARD04:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Visit Scenic Las Vegas
+
+BBOARD05:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Rooms $29 a nite
+
+BBOARD06:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Kaspm's Tiberium Warhouse
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+
+BBOARD07:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Alkaline's Battery Superstore
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+
+BBOARD08:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Alex-gators petshop just ahead!
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+
+BBOARD09:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: TacticX games rock!
+
+BBOARD10:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: WW Surf and Turf hits the spot!
+
+BBOARD11:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Only 11 miles to Zydeko's cafe!
+
+BBOARD12:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: No escape from Archer's Asylum!
+
+BBOARD13:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Stop in at Hewitt's hair salon
+
+BBOARD14:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Billy Bob's Harvester school
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+
+BBOARD15:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Pannullo's hacienda es bueno
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+
+BBOARD16:
+	Inherits: ^CivBillboard
+	Tooltip:
+		Name: Join GDI: We save lives.
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+
+CA0001:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Rade's Roadhouse
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 100, 70, 0, -25
+	Selectable:
+		Bounds: 80, 50, 0, -25
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	SpawnActorOnDeath:
+		Actor: CA0001.Husk
+
+CA0001.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0001
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 100,400,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -1000,-600,0
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Rade's Roadhouse (Destroyed)
+
+CA0002:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Sandberg and Son's
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 90, 70, 0, 0
+	Selectable:
+		Bounds: 80, 50, 0, -10
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	SpawnActorOnDeath:
+		Actor: CA0002.Husk
+
+CA0002.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0002
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -800,000,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -400,600,0
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Sandberg and Son's (Destroyed)
+
+CA0003:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Temp Housing
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0003.Husk
+
+CA0003.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0003
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -800,500,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -400,-400,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Temp Housing (Destroyed)
+
+CA0004:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Waystation
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 90, 50, 0, -10
+	Selectable:
+		Bounds: 80, 40, 0, -10
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0004.Husk
+
+CA0004.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0004
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -800,-500,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -400,400,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Waystation (Destroyed)
+
+CA0005:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Ferbie's 4 Sale
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 80, 50, 0, -5
+	Selectable:
+		Bounds: 70, 40, 0, -5
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0005.Husk
+
+CA0005.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0005
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -600,-500,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -400,200,0
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Ferbie's 4 Sale (Destroyed)
+
+CA0006:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Deluxe Accomodations
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 80, 55, 0, -8
+	Selectable:
+		Bounds: 70, 40, 0, -5
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0006.Husk
+
+CA0006.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0006
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -300,100,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -500,-200,0
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Deluxe Accomodations (Destroyed)
+
+CA0007:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Field Generator
+	SelectionDecorations:
+		VisualBounds: 80, 50, 5, -5
+	Selectable:
+		Bounds: 70, 40, 5, -5
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 800
+	SpawnActorOnDeath:
+		Actor: CA0007.Husk
+
+CA0007.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0007
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -100,-200,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -600,100,0
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Field Generator (Destroyed)
+
+CA0008:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Subterranean Dwelling
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 90, 65, -10, 0
+	Selectable:
+		Bounds: 80, 50, -10, 0
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	SpawnActorOnDeath:
+		Actor: CA0008.Husk
+
+CA0008.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0008
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -1000,-600,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -800,300,0
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Subterranean Dwelling (Destroyed)
+
+CA0009:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Subterranean Dwelling
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 90, 65, -10, 0
+	Selectable:
+		Bounds: 80, 50, -10, 0
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	SpawnActorOnDeath:
+		Actor: CA0009.Husk
+
+CA0009.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0009
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -900,-500,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -700,200,0
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Subterranean Dwelling (Destroyed)
+
+CA0010:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Leary Traveller Inn
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 100, 70, 0, -10
+	Selectable:
+		Bounds: 90, 50, 0, -10
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0010.Husk
+
+CA0010.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0010
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -900,0,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -700,-400,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Leary Traveller Inn (Destroyed)
+
+CA0011:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Water Tank
+	SelectionDecorations:
+		VisualBounds: 70, 50, 0, -5
+	Selectable:
+		Bounds: 60, 40, 0, -5
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 400
+	SpawnActorOnDeath:
+		Actor: CA0011.Husk
+
+CA0011.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0011
+	Armor:
+		Type: heavy
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Water Tank (Destroyed)
+
+CA0012:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Greenhouse
+	SelectionDecorations:
+		VisualBounds: 70, 60, 0, -10
+	Selectable:
+		Bounds: 60, 50, 0, -10
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 200
+	SpawnActorOnDeath:
+		Actor: CA0012.Husk
+
+CA0012.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0012
+	Armor:
+		Type: heavy
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Health:
+		HP: 400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Greenhouse (Destroyed)
+
+CA0013:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Water Purifier
+	SelectionDecorations:
+		VisualBounds: 70, 70, 0, -15
+	Selectable:
+		Bounds: 60, 50, 0, -15
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+	Armor:
+		Type: heavy
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0013.Husk
+
+CA0013.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0013
+	Armor:
+		Type: heavy
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Water Purifier (Destroyed)
+
+CA0014:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: Observation Tower
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 60, 60, 0, -15
+	Selectable:
+		Bounds: 50, 40, 0, -15
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	SpawnActorOnDeath:
+		Actor: CA0014.Husk
+
+CA0014.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0014
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -600,0,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 200,200,0
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Observation Tower (Destroyed)
+
+CA0015:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Port-A-Shack
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 60, 45, 0, -10
+	Selectable:
+		Bounds: 50, 30, 0, -10
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: light
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0015.Husk
+
+CA0015.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0015
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 300,0,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 0,-200,0
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Port-A-Shack (Destroyed)
+
+CA0016:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Port-A-Shack Deluxe
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 60, 80, 0, -20
+	Selectable:
+		Bounds: 50, 50, 0, -20
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: light
+	Health:
+		HP: 1200
+	SpawnActorOnDeath:
+		Actor: CA0016.Husk
+
+CA0016.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0016
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 800,-100,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -100,200,0
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Port-A-Shack Deluxe (Destroyed)
+
+CA0017:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Energy Transformer
+	SelectionDecorations:
+		VisualBounds: 50, 60, 0, -15
+	Selectable:
+		Bounds: 40, 40, 0, -15
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: heavy
+	Health:
+		HP: 600
+	SpawnActorOnDeath:
+		Actor: CA0017.Husk
+
+CA0017.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0017
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Energy Transformer (Destroyed)
+
+CA0018:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Solar Panel
+	SelectionDecorations:
+		VisualBounds: 70, 70, 0, -15
+	Selectable:
+		Bounds: 60, 50, 0, -15
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 400
+	SpawnActorOnDeath:
+		Actor: CA0018.Husk
+
+CA0018.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0018
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Solar Panel (Destroyed)
+
+CA0019:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Solar Panel
+	SelectionDecorations:
+		VisualBounds: 70, 70, 0, -15
+	Selectable:
+		Bounds: 60, 50, 0, -15
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 400
+	SpawnActorOnDeath:
+		Actor: CA0019.Husk
+
+CA0019.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0019
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Solar Panel (Destroyed)
+
+CA0020:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Solar Panel
+	SelectionDecorations:
+		VisualBounds: 70, 70, 5, -15
+	Selectable:
+		Bounds: 60, 50, 5, -15
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 400
+	SpawnActorOnDeath:
+		Actor: CA0020.Husk
+
+CA0020.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0020
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Solar Panel (Destroyed)
+
+CA0021:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Solar Panel
+	SelectionDecorations:
+		VisualBounds: 70, 70, 5, -15
+	Selectable:
+		Bounds: 60, 50, 5, -15
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Armor:
+		Type: light
+	Health:
+		HP: 400
+	SpawnActorOnDeath:
+		Actor: CA0021.Husk
+
+CA0021.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CA0021
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Solar Panel (Destroyed)
+
+CAARAY:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Civilian Array
+	SelectionDecorations:
+		VisualBounds: 90, 90, 0, -15
+	Selectable:
+		Bounds: 80, 60, 0, -15
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+CAARMR:
+	Inherits@1: ^CivBuilding
+	Inherits@2: ^TechBuilding
+	Tooltip:
+		Name: Civilian Armory
+	ExternalCapturable:
+		Type: building
+		CaptureCompleteTime: 15
+	ExternalCapturableBar:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1600
+	RenderSprites:
+		Palette: player
+	ProvidesPrerequisite:
+		Prerequisite: barracks.upgraded
+
+CABHUT:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bridge repair hut
+	Building:
+		Adjacent: 0
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 2000
+	RenderSprites:
+		Palette: player
+
+CACRSH01:
+	Inherits: ^Decoration
+	Tooltip:
+		Name: Crash Site
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+
+CACRSH02:
+	Inherits: CACRSH01
+
+CACRSH03:
+	Inherits: CACRSH01
+
+CACRSH04:
+	Inherits: CACRSH01
+
+CACRSH05:
+	Inherits: CACRSH01
+
+CAHOSP:
+	Inherits@1: ^CivBuilding
+	Inherits@2: ^TechBuilding
+	Tooltip:
+		Name: Civilian Hospital
+		Description: Gives friendly units a medkit to heal 
+	ExternalCapturable:
+		Type: building
+		CaptureCompleteTime: 15
+	ExternalCapturableBar:
+	CaptureNotification:
+	SelectionDecorations:
+		VisualBounds: 150, 100, -10, -10
+	Selectable:
+		Bounds: 120, 80, -10, -10
+	Building:
+		Footprint: xxx xxx xxx xxx
+		Dimensions: 3, 4
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1600
+	RenderSprites:
+		Palette: player
+	ProvidesPrerequisite@BuildingName:
+
+CAPYR01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Pyramid
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
+
+CAPYR02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Pyramid
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
+
+CAPYR03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Pyramid
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
+
+CITY01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Connelly Court Apts.
+	SelectionDecorations:
+		VisualBounds: 130, 130, 0, -35
+	Selectable:
+		Bounds: 100, 100, 0, -35
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY01.Husk
+
+CITY01.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY01
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -500,0,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 100,600,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1200,200,0
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Connelly Court Apts. (Destroyed)
+
+
+CITY02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Lightner's Luxury Suites
+	SelectionDecorations:
+		VisualBounds: 110, 130, -8, -35
+	Selectable:
+		Bounds: 80, 100, -8, -35
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY02.Husk
+
+CITY02.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY02
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 1200,0,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 100,400,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -1000,-600,0
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Health:
+		HP: 2800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Lightner's Luxury Suites (Destroyed)
+
+CITY03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Office Building
+	SelectionDecorations:
+		VisualBounds: 120, 140, 0, -35
+	Selectable:
+		Bounds: 90, 110, 0, -35
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY03.Husk
+
+CITY03.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY03
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 0,-600,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 100,0,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -1000,1200,0
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Office Building (Destroyed)
+
+CITY04:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: Westwood Stock Exchange
+	Cargo:
+		MaxWeight: 10
+		PipCount: 10
+	SelectionDecorations:
+		VisualBounds: 110, 150, 0, -40
+	Selectable:
+		Bounds: 80, 120, 0, -40
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY04.Husk
+
+CITY04.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY04
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -1200,300,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 400,600,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1000,200,0
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Westwood Stock Exchange (Destroyed)
+
+CITY05:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: Daily Sun Times
+	Cargo:
+		MaxWeight: 10
+		PipCount: 10
+	SelectionDecorations:
+		VisualBounds: 110, 160, 0, -50
+	Selectable:
+		Bounds: 80, 130, 0, -50
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY05.Husk
+
+CITY05.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY05
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -1300,600,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 600,200,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1600,400,0
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Daily Sun Times (Destroyed)
+
+CITY06:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: YEO-CA Cola Corp.
+	SelectionDecorations:
+		VisualBounds: 130, 130, 10, -35
+	Selectable:
+		Bounds: 100, 100, 10, -30
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY06.Husk
+
+CITY06.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY06
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 0,0,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 500,800,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -1500,1600,0
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: YEO-CA Cola Corp. (Destroyed)
+
+CITY07:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Urban Housing
+	SelectionDecorations:
+		VisualBounds: 120, 140, 0, -35
+	Selectable:
+		Bounds: 90, 100, 0, -30
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY07.Husk
+
+CITY07.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY07
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 300,100,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -1500,800,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1500,-600,0
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Urban Housing (Destroyed)
+
+CITY08:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Yee's Discount Liquor
+	SelectionDecorations:
+		VisualBounds: 80, 70, 5, -15
+	Selectable:
+		Bounds: 50, 40, 5, -10
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY08.Husk
+
+CITY08.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY08
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -400,400,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -200,0,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -600,-500,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Yee's Discount Liquor (Destroyed)
+
+CITY09:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: Abandoned Warehouse
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 80, 90, 0, -20
+	Selectable:
+		Bounds: 50, 70, 0, -20
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY09.Husk
+
+CITY09.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY09
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -600,-400,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -200,100,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -400,300,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1600
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Abandoned Warehouse (Destroyed)
+
+CITY10:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: Urban Storefront
+	Cargo:
+		MaxWeight: 10
+		PipCount: 10
+	SelectionDecorations:
+		VisualBounds: 100, 110, 0, -25
+	Selectable:
+		Bounds: 70, 80, 0, -25
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY10.Husk
+
+CITY10.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY10
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -600,600,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -800,100,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 0,-200,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Urban Storefront (Destroyed)
+
+CITY11:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Ambrose Lounge
+	SelectionDecorations:
+		VisualBounds: 100, 120, 0, -30
+	Selectable:
+		Bounds: 70, 90, 5, -30
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY11.Husk
+
+CITY11.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY11
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -800,400,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -400,800,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1200,-400,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Ambrose Lounge (Destroyed)
+
+CITY12:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bostic Tower
+	SelectionDecorations:
+		VisualBounds: 80, 130, -5, -40
+	Selectable:
+		Bounds: 50, 100, -5, -40
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY12.Husk
+
+CITY12.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY12
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -800,200,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 0,-400,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1500,400,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Bostic Tower (Destroyed)
+
+CITY13:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Hewitt Hair Salon
+	SelectionDecorations:
+		VisualBounds: 80, 130, 0, -40
+	Selectable:
+		Bounds: 50, 100, -5, -40
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY13.Husk
+
+CITY13.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY13
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -800,400,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -200,-200,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 1000,0,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Hewitt Hair Salon (Destroyed)
+
+CITY14:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Business Offices
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 50, 100, 0, -35
+	Selectable:
+		Bounds: 40, 80, 0, -35
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY14.Husk
+
+CITY14.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY14
+	Armor:
+		Type: heavy
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 1500,100,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -600,-300,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 0,0,0
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Business Offices (Destroyed)
+
+CITY15:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: 2nd National Bank
+	Cargo:
+		MaxWeight: 10
+		PipCount: 10
+	SelectionDecorations:
+		VisualBounds: 130, 110, 0, -25
+	Selectable:
+		Bounds: 100, 80, 0, -20
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY15.Husk
+
+CITY15.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY15
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 600,-700,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -900,800,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -400,200,0
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: 2nd National Bank (Destroyed)
+
+
+CITY16:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Highrise Hotel
+	SelectionDecorations:
+		VisualBounds: 130, 140, 0, -40
+	Selectable:
+		Bounds: 100, 100, 0, -35
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY16.Husk
+
+CITY16.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY16
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 200,1300,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -1000,-200,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 200,100,0
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Highrise Hotel (Destroyed)
+
+CITY17:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: The Projects
+	ExternalCapturable:
+		CaptureCompleteTime: 15
+	Cargo:
+		MaxWeight: 15
+		PipCount: 15
+	SelectionDecorations:
+		VisualBounds: 160, 160, 0, -50
+	Selectable:
+		Bounds: 130, 140, -10, -50
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4, 3
+	Armor:
+		Type: concrete
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY17.Husk
+
+CITY17.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY17
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 200,0,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -300,-900,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: 800,1000,0
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4, 3
+	Armor:
+		Type: concrete
+	Health:
+		HP: 4000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: The Projects (Destroyed)
+
+
+CITY18:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Archer Asylum
+	ExternalCapturable:
+		CaptureCompleteTime: 15
+	SelectionDecorations:
+		VisualBounds: 170, 160, 5, -40
+	Selectable:
+		Bounds: 140, 140, 5, -40
+	Building:
+		Footprint: xxx xxx xxx xxx xxx
+		Dimensions: 3, 5
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY18.Husk
+
+CITY18.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY18
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: 200,800,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: 1000,-900,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -500,0,0
+	Building:
+		Footprint: xxx xxx xxx xxx xxx
+		Dimensions: 3, 5
+	Armor:
+		Type: concrete
+	Health:
+		HP: 2400
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Archer Asylum (Destroyed)
+
+CITY19:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Fill'er Up-Pump'N'Go
+	ExternalCapturable:
+		CaptureCompleteTime: 5
+	SelectionDecorations:
+		VisualBounds: 90, 60, 5, -15
+	Selectable:
+		Bounds: 70, 40, 5, -10
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: wood
+	Health:
+		HP: 1000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SpawnActorOnDeath:
+		Actor: CITY19.Husk
+
+CITY19.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	TransformOnCapture:
+		IntoActor: CITY19
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -100,300,0
+	WithIdleOverlay@FIRE2:
+		Sequence: idle-fire2
+		Palette: effect
+		Offset: -200,-300,0
+	WithIdleOverlay@FIRE3:
+		Sequence: idle-fire3
+		Palette: effect
+		Offset: -800,0,0
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: concrete
+	Health:
+		HP: 2000
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Fill'er Up-Pump'N'Go (Destroyed)
+
+CITY20:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Gas Pump
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: wood
+	Health:
+		HP: 500
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+
+CITY21:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Gas Station Sign
+	SelectionDecorations:
+		VisualBounds: 30, 50, 0, -15
+	Selectable:
+		Bounds: 20, 40, 0, -15
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Armor:
+		Type: none
+	Health:
+		HP: 200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+
+CITY22:
+	Inherits: ^CivBuildingGar
+	Tooltip:
+		Name: Church
+	Cargo:
+		MaxWeight: 10
+		PipCount: 10
+	SelectionDecorations:
+		VisualBounds: 90, 100, 0, -20
+	Selectable:
+		Bounds: 70, 60, 0, -10
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 1600
+	SpawnActorOnDeath:
+		Actor: CITY22.Husk
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+
+CITY22.Husk:
+	Inherits: ^CivBuildingHusk
+	Targetable:
+		TargetTypes: Ground, Building, C4
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	TransformOnCapture:
+		IntoActor: CITY22
+	CaptureNotification:
+	Capturable:
+		AllowAllies: True
+		CaptureThreshold: 100
+	WithIdleOverlay@FIRE:
+		Sequence: idle-fire
+		Palette: effect
+		Offset: -200,0,0
+	Armor:
+		Type: heavy
+	Health:
+		HP: 3200
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	Tooltip:
+		Name: Church (Destroyed)
+
+CTDAM:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Hydroelectric Dam
+		Description: Provides power for other structures
+	Building:
+		Footprint: xx xx xx xx xx
+		Dimensions: 2, 5
+	Power:
+		Amount: 200
+	PowerTooltip:
+	Armor:
+		Type: heavy
+	Health:
+		HP: 2000
+	ProvidesPrerequisite:
+		Prerequisite: anypower
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+	WithIdleOverlay@WATER:
+		Sequence: idle-water
+
+CTVEGA:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Vega's Pyramid
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Armor:
+		Type: none
+	Health:
+		HP: 200
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
+
+GAKODK:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: GDI Kodiak
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 3000
+	RenderSprites:
+		Palette: player
+	WithIdleOverlay@LARGELIGHTS:
+		Sequence: large-lights
+	WithIdleOverlay@SMALLLIGHT:
+		Sequence: small-light
+	WithIdleOverlay@SMALLLIGHTS:
+		Sequence: small-lights
+
+GAOLDCC1:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Old Construction Yard
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+GAOLDCC2:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Old Temple
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+GAOLDCC3:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Old Weapons Factory
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+GAOLDCC4:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Old Refinery
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+GAOLDCC5:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Old Advanced Power Plant
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+GAOLDCC6:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Old Silos
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Armor:
+		Type: heavy
+	Health:
+		HP: 800
+	RenderSprites:
+		Palette: player
+
+GASAND:
+	Inherits: ^Wall
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+	SoundOnDamageTransition:
+		DamagedSounds: sandbag1.aud
+		DestroyedSounds: sandbag1.aud
+	Valued:
+		Cost: 25
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Sandbags
+		Description: Stops infantry and light vehicles.\nCan be crushed by tanks.
+	Health:
+		HP: 500
+	Armor:
+		Type: Light
+	LineBuild:
+		NodeTypes: sandbags
+	LineBuildNode:
+		Types: sandbags
+	WithWallSpriteBody:
+		Type: sandbags
+
+GASPOT:
+	Inherits: ^Building
+	Buildable:
+		Queue: Defense
+		Prerequisites: ~disabled
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Light Tower
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Selectable:
+		Bounds: 48, 30, 0, -4
+	Power:
+		Amount: -10
+	Armor:
+		Type: wood
+	Health:
+		HP: 800
+	RevealsShroud:
+		Range: 6c0
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+	SelectionDecorations:
+		VisualBounds: 48, 82, 0, -25
+
+GALITE:
+	Inherits: ^Building
+	-Selectable:
+	-Targetable:
+	-UpgradeOverlay@EMPDISABLE:
+	Valued:
+		Cost: 200
+	FrozenUnderFog:
+		StartsRevealed: true
+	Tooltip:
+		Name: Light Post
+	RenderSprites:
+		Palette: terraindecoration
+	-WithMakeAnimation:
+	-WithDeathAnimation:
+	Health:
+		HP: 1200
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 2c0
+	Power:
+		Amount: 0
+# TODO: should use terrain lighting instead, depends on https://github.com/OpenRA/OpenRA/issues/3605
+	WithIdleOverlay@LIGHTING:
+		Sequence: lighting
+		Palette: alpha
+	Buildable:
+		Queue: Defense
+		Prerequisites: ~disabled
+	SelectionDecorations:
+		VisualBounds: 25, 35, 0, -12
+	-Cloak@CLOAKGENERATOR:
+
+TSTLAMP:
+	Inherits: GALITE
+	RenderSprites:
+		Image: galite
+	Tooltip:
+		Description: light post with alpha blending
+
+GAICBM:
+	Inherits: ^Building
+	Valued:
+		Cost: 800
+	-AcceptsSupplies:
+	Tooltip:
+		Name: Deployed ICBM
+	-GivesBuildableArea:
+	Health:
+		HP: 400
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Transforms:
+		IntoActor: icbm
+		Offset: 1,1
+		Facing: 96
+		TransformSounds: place2.aud
+		NoTransformSounds:
+	-WithDeathAnimation:
+
+NAMNTK:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: NOD Montauk
+	Building:
+		Footprint: x x x
+		Dimensions: 1, 3
+	Armor:
+		Type: heavy
+	Health:
+		HP: 3000
+	RenderSprites:
+		Palette: player
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+
+NTPYRA:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Nod Pyramid
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Power:
+		Amount: -40
+	Armor:
+		Type: heavy
+	Health:
+		HP: 3000
+	RenderSprites:
+		Palette: player
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+
+UFO:
+	Inherits: ^CivBuilding
+	Building:
+		Dimensions: 6, 4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	RenderSprites:
+		Palette: terraindecoration
+	Selectable:
+		Bounds: 144, 72, 0, 0
+	Tooltip:
+		Name: Scrin Ship
+	Health:
+		HP: 2000
+	Armor:
+		Type: Heavy
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERATE
+	SelectionDecorations:
+		VisualBounds: 144, 72, 0, 0

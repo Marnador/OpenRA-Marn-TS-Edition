@@ -1,0 +1,40 @@
+orca:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+	icon: gdiorca
+
+orcab:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+	icon: gdiorcab
+
+trnsport:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+	icon: gdicaryal
+
+scrin:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+	icon: nodbanshee
+
+apache:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+	icon: nodharpy
+	rotor: lrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+
+orcatran:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+	icon: gdiorcatrans

@@ -1,0 +1,158 @@
+PROC:
+	Inherits: ^Building
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Tiberium Refinery
+		Description: Processes raw Tiberium\ninto useable resources.
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 30
+		Prerequisites: anypower
+	Building:
+		Footprint: xxx= xx== xxx=
+		Dimensions: 4,3
+	Selectable:
+		Bounds: 134, 96, 0, -12
+	Health:
+		HP: 900
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	TiberianSunRefinery:
+		DockAngle: 160
+		DockOffset: 2,1
+		DiscardExcessResources: false
+	StoresResources:
+		PipColor: Green
+		PipCount: 20
+		Capacity: 3000
+	CustomSellValue:
+		Value: 500
+	FreeActor:
+		Actor: HARV
+		SpawnOffset: 2,1
+		Facing: 160
+	WithIdleOverlay@REDLIGHTS:
+		Sequence: idle-redlights
+	WithIdleOverlay@BIB:
+		Sequence: bib
+	WithDockedOverlay@FLAME:
+		Sequence: flame
+		Palette: effect
+	WithDockingOverlay@UNLOAD:
+	Power:
+		Amount: -30
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 134, 122, 0, -18
+	RenderSprites:
+		Image: proc.gdi
+		FactionImages:
+			gdi: proc.gdi
+			nod: proc.nod
+
+GASILO:
+	Inherits: ^Building
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 40
+		Prerequisites: proc
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Silo
+		Description: As tough as refinery, and\n stores excess Tiberium.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Selectable:
+		Bounds: 80, 48, -5, 0
+	-GivesBuildableArea:
+	Health:
+		HP: 900
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	RenderSprites:
+		Image: gasilo.gdi
+		FactionImages:
+			gdi: gasilo.gdi
+			nod: gasilo.nod
+	WithSpriteBody:
+	WithSiloAnimation:
+	WithIdleOverlay@UNDERLAY:
+		Sequence: idle-underlay
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+	StoresResources:
+		PipCount: 15
+		Capacity: 1500
+	Power:
+		Amount: -10
+	SelectionDecorations:
+		VisualBounds: 80, 48, -5, 0
+
+DLPST:
+	Inherits@1: ^DeployedVehicle
+	-GainsExperience:
+	Valued:
+		Cost: 950
+	Tooltip:
+		Name: Deployed Sensor Array
+	Health:
+		HP: 600
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 20c0
+	Turreted:
+	RenderSprites:
+		Image: dlpst.gdi
+		FactionImages:
+			gdi: dlpst.gdi
+			nod: dlpst.nod
+	BodyOrientation:
+		QuantizedFacings: 32
+	Transforms:
+		IntoActor: lpst
+		Facing: 160
+		TransformSounds: place2.aud
+		NoTransformSounds:
+		Voice: Move
+	DetectCloaked:
+		Range: 15c0
+	RenderDetectionCircle:
+		TrailCount: 3
+
+ANYPOWER:
+	AlwaysVisible:
+	Tooltip:
+		Name: Power Plant
+		Description: Power Plant
+
+BARRACKS:
+	AlwaysVisible:
+	Tooltip:
+		Name: Infantry Production
+		Description: Infantry Production
+
+FACTORY:
+	AlwaysVisible:
+	Tooltip:
+		Name: Vehicle Production
+		Description: Vehicle Production
+
+RADAR:
+	AlwaysVisible:
+	Tooltip:
+		Name: Radar
+		Description: Radar
+
+TECH:
+	AlwaysVisible:
+	Tooltip:
+		Name: Tech Center
+		Description: Tech Center

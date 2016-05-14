@@ -1,0 +1,152 @@
+DSHP.Husk:
+	Inherits: ^AircraftHusk
+	Tooltip:
+		Name: Dropship
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 168
+	RenderSprites:
+		Image: dshp
+	RenderVoxels:
+		Image: dshp
+
+ORCA.Husk:
+	Inherits: ^AircraftHusk
+	Tooltip:
+		Name: Orca Fighter
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 186
+	SmokeTrailWhenDamaged:
+		Offset: 0,0,171
+		Interval: 4
+		MinDamage: Undamaged
+		Sprite: largesmoke
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: orca
+	RenderVoxels:
+		Image: orca
+
+ORCAB.Husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Orca Bomber
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 96
+	SmokeTrailWhenDamaged:
+		Offset: -150,0,171
+		Interval: 2
+		MinDamage: Undamaged
+		Sprite: largesmoke
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: orcab
+	RenderVoxels:
+		Image: orcab
+
+ORCATRAN.Husk:
+	Inherits: ^AircraftHusk
+	Tooltip:
+		Name: Orca Transport
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 84
+	SmokeTrailWhenDamaged:
+		Offset: 0,0,171
+		Interval: 4
+		MinDamage: Undamaged
+		Sprite: largesmoke
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: orcatran
+	RenderVoxels:
+		Image: orcatran
+
+TRNSPORT.Husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Carryall
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 149
+	SmokeTrailWhenDamaged:
+		Offset: 0,0,171
+		Interval: 4
+		MinDamage: Undamaged
+		Sprite: largesmoke
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: trnsport
+	RenderVoxels:
+		Image: trnsport
+
+SCRIN.Husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Banshee Fighter
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 168
+	SmokeTrailWhenDamaged:
+		Offset: -150,0,171
+		Interval: 2
+		MinDamage: Undamaged
+		Sprite: largesmoke
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: scrin
+	RenderVoxels:
+		Image: scrin
+
+APACHE.Husk:
+	Inherits: ^AircraftHusk
+	Tooltip:
+		Name: Harpy
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 130
+	SmokeTrailWhenDamaged:
+		Offset: 0,0,171
+		Interval: 4
+		MinDamage: Undamaged
+		Sprite: largesmoke
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	WithSpriteRotorOverlay:
+		Offset: 85,0,384
+	RenderSprites:
+		Image: apache
+	RenderVoxels:
+		Image: apache
+		Scale: 11
+
+JUMPJET.Husk:
+	Inherits: ^JumpHusk
+	Tooltip:
+		Name: JumpJet
+	Aircraft:
+		TurnSpeed: 2
+		Speed: 56
+	SmokeTrailWhenDamaged:
+		Offset: 0,0,171
+		Interval: 5
+		MinDamage: Undamaged
+		Sprite: smallsmoke
+	RevealsShroud:
+		Range: 5c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: jumpjet

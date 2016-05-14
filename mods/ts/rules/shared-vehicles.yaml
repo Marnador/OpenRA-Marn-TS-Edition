@@ -1,0 +1,99 @@
+HARV:
+	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Harvester
+		Description: Collects Tiberium for processing.\n  Unarmed
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 10
+		Prerequisites: ~factory, proc
+		InitialActivity: FindResources
+	Selectable:
+		Priority: 7
+		Bounds: 36,36
+	Harvester:
+		DeliveryBuildings: proc
+		PipCount: 8
+		Capacity: 20
+		BaleLoadDelay: 12
+		Resources: Tiberium, BlueTiberium
+		BaleUnloadDelay: 6
+		SearchFromProcRadius: 38
+		SearchFromOrderRadius: 18
+		HarvestVoice: Attack
+		DeliverVoice: Move
+	Mobile:
+		Speed: 85
+		TerrainSpeeds:
+			Clear: 90
+			Rough: 70
+			Road: 100
+			Beach: 70
+			Tiberium: 80
+			BlueTiberium: 80
+			Veins: 80
+	Health:
+		HP: 600
+	SelfHealing:
+		Ticks: 10
+		HealIfBelow: 50
+		DamageCooldown: 200
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 4c0
+	-GainsExperience:
+	-WithVoxelBody:
+	WithVoxelUnloadBody:
+	Explodes:
+		Weapon: TiberiumExplosion
+	WithHarvestOverlay:
+		Offset: 384,0,0
+		Palette: effect
+	SelectionDecorations:
+		VisualBounds: 36,36
+	RenderSprites:
+		Image: harv.gdi
+		FactionImages:
+			gdi: harv.gdi
+			nod: harv.nod
+
+LPST:
+	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
+	-AppearsOnRadar:
+	-GainsExperience:
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 150
+		Prerequisites: ~factory, radar
+	Valued:
+		Cost: 950
+	Tooltip:
+		Name: Mobile Sensor Array
+		Description: Scouts a large area around itself, and\n can detect cloaked units when deployed.\n  Unarmed
+	Health:
+		HP: 600
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+		TurnSpeed: 5
+	RevealsShroud:
+		Range: 9c0
+	Transforms:
+		IntoActor: dlpst
+		Facing: 160
+		TransformSounds: place2.aud
+		NoTransformSounds:
+		Voice: Move
+	RenderVoxels:
+		Scale: 11
+	RenderSprites:
+		Image: lpst.gdi
+		FactionImages:
+			gdi: lpst.gdi
+			nod: lpst.nod

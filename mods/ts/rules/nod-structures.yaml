@@ -1,0 +1,548 @@
+NACNST:
+	Inherits: ^Building
+	Building:
+		Footprint: xxx xxx xxx
+		BuildSounds: facbld1.aud
+		Dimensions: 3,3
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+	Health:
+		HP: 1500
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 10c0
+	BaseProvider:
+		Range: 16c0
+	Production:
+		Produces: Building,Defense
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Nod Construction Yard
+		Description: Builds base structures.
+	CustomSellValue:
+		Value: 2500
+	BaseBuilding:
+	Transforms:
+		IntoActor: nodmcv
+		Offset: 1,1
+		Facing: 96
+		DeployCursor: undeploy
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+	WithIdleOverlay@TOP:
+		Sequence: idle-top
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithIdleOverlay@SIDE:
+		Sequence: idle-side
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithIdleOverlay@FRONT:
+		Sequence: idle-front
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithBuildingPlacedOverlay:
+	Power:
+		Amount: 0
+	Selectable:
+		Bounds: 144, 60, 0, -6
+	ProvidesPrerequisite@nod:
+		Factions: nod, gdi
+		Prerequisite: structures.nod
+	SelectionDecorations:
+		VisualBounds: 144, 80, 0, -12
+
+NAPOWR:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~structures.nod
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Nod Power Plant
+		Description: Provides power for other structures.
+	ProvidesPrerequisite:
+		Prerequisite: anypower
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Selectable:
+		Bounds: 88, 48, 2, -6
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	Power:
+		Amount: 100
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+	ScalePowerWithHealth:
+	PowerTooltip:
+	DisabledOverlay:
+	SelectionDecorations:
+		VisualBounds: 88, 80, 2, -12
+
+NAAPWR:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 40
+		Prerequisites: factory, ~structures.nod
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Advanced Power Plant
+		Description: Provides four times as much power as\nthe normal Power Plant.
+	ProvidesPrerequisite:
+		Prerequisite: anypower
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 2,3
+	Selectable:
+		Bounds: 100, 54, 0, -4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	Power:
+		Amount: 400
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+	ScalePowerWithHealth:
+	DisabledOverlay:
+	PowerTooltip:
+	SelectionDecorations:
+		VisualBounds: 100, 74, 0, -12
+
+NAHAND:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~structures.nod
+	Valued:
+		Cost: 300
+	CanPowerDown:
+		IndicatorPalette: mouse
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+	DisabledOverlay:
+	Tooltip:
+		Name: Hand of Nod
+		Description: Produces infantry.
+	ProvidesPrerequisite:
+		Prerequisite: barracks
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Selectable:
+		Bounds: 116, 60, 3, -6
+	Health:
+		HP: 800
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 5c0
+	Exit@1:
+		SpawnOffset: 384,768,0
+		ExitCell: 3,2
+	Exit@2:
+		SpawnOffset: 384,768,0
+		ExitCell: 2,1
+	RallyPoint:
+		Offset: 3,3
+		Palette: mouse
+		IsPlayerPalette: false
+	Production:
+		Produces: Infantry
+	PrimaryBuilding:
+	ProductionBar:
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithProductionOverlay@LIGHT:
+		Sequence: production-light
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	Power:
+		Amount: -20
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 116, 78, 3, -8
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		Palette: ra
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
+
+NAWEAP:
+	Inherits: ^Building
+	Valued:
+		Cost: 2000
+	CanPowerDown:
+		IndicatorPalette: mouse
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+	DisabledOverlay:
+	Tooltip:
+		Name: Nod War Factory
+		Description: Produces vehicles.
+	ProvidesPrerequisite:
+		Prerequisite: factory
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 50
+		Prerequisites: proc, ~structures.nod
+	Building:
+		Footprint: xxx= xxx= xxx=
+		Dimensions: 4,3
+	Selectable:
+		Bounds: 100, 70, -20, -15
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	RallyPoint:
+		Offset: 4,1
+		Palette: mouse
+		IsPlayerPalette: false
+	Exit@1:
+		SpawnOffset: -384,-384,0
+		ExitCell: 3,1
+		ExitDelay: 5
+	Production:
+		Produces: Vehicle
+	PrimaryBuilding:
+	ProductionBar:
+	WithIdleOverlay@ROOF:
+		Sequence: idle-roof
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithProductionDoorOverlay@DOOR:
+	WithProductionOverlay@LIGHTS:
+		Sequence: production-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithIdleOverlay@BIB:
+		Sequence: bib
+	Power:
+		Amount: -30
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 149, 116, -3, -20
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		Palette: ra
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
+
+NAHPAD:
+	Inherits: ^Building
+	Valued:
+		Cost: 500
+	CanPowerDown:
+		IndicatorPalette: mouse
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+	DisabledOverlay:
+	Tooltip:
+		Name: Helipad
+		Description: Produces and rearms aircraft.
+	Buildable:
+		BuildPaletteOrder: 70
+		Queue: Building
+		Prerequisites: naradr, ~structures.nod
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 5c0
+	Exit@1:
+		SpawnOffset: 0,-256,0
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	Production:
+		Produces: Air
+	PrimaryBuilding:
+	Reservable:
+	RepairsUnits:
+	ProductionBar:
+	WithIdleOverlay@PLATFORM:
+		Sequence: idle-platform
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	WithDeathAnimation@BIB:
+		DeathSequence: dead-platform
+		UseDeathTypeSuffix: false
+	Power:
+		Amount: -10
+	Selectable:
+		Bounds: 78, 48, 0, -6
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 78, 54, 0, -8
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		Palette: ra
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
+
+NARADR:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: proc, ~structures.nod
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Nod Radar
+		Description: Provides an overview of the battlefield.\nRequires power to operate.
+	ProvidesPrerequisite:
+		Prerequisite: radar
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Selectable:
+		Bounds: 96, 48, 0, -6
+	Health:
+		HP: 800
+	Armor:
+		Type: Concrete
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: mouse
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+	DisabledOverlay:
+	ProvidesRadar:
+	InfiltrateForExploration:
+	RevealsShroud:
+		Range: 10c0
+	WithIdleOverlay@DISH:
+		Sequence: idle-dish
+		PauseOnLowPower: yes
+	Targetable:
+		TargetTypes: Ground, C4, SpyInfiltrate
+	Power:
+		Amount: -50
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 96, 72, 0, -12
+
+NATECH:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 100
+		Prerequisites: naweap, naradr, ~structures.nod
+		BuildLimit: 1
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Nod Tech Center
+		Description: Provides access to advanced Nod technologies.
+	ProvidesPrerequisite:
+		Prerequisite: tech
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Selectable:
+		Bounds: 86, 48, 0, -4
+	Health:
+		HP: 500
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	Power:
+		Amount: -150
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 86, 58, 0, -4
+
+NATMPL:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 200
+		Prerequisites: natech, ~structures.nod
+		BuildLimit: 1
+	ProvidesPrerequisite@buildingname:
+	Valued:
+		Cost: 2000
+	CanPowerDown:
+		IndicatorPalette: mouse
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+	DisabledOverlay:
+	Tooltip:
+		Name: Temple of Nod
+		Description: Provides access to advanced Nod technologies.
+	Building:
+		Adjacent: 3
+		Footprint: _xxxx _xxxx _xxxx
+		Dimensions: 5,3
+	Selectable:
+		Bounds: 134, 120, 12, -12
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Power:
+		Amount: -200
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+		UpgradeTypes: empdisable
+		UpgradeMaxEnabledLevel: 0
+	ProduceActorPower:
+		Description: Hunter Seeker
+		LongDesc: Releases a drone that will acquire and destroy an enemy target.
+		Icon: hunterseeker
+		Actors: hunter
+		Type: HunterSeeker
+		ChargeTime: 180
+	Production:
+		Produces: HunterSeeker
+	Exit@1:
+
+NASTLH:
+	Inherits: ^Building
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Stealth Generator
+		Description: Generates a cloaking field\nto hide your forces from the enemy.
+	#Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: proc, natech, ~structures.nod
+		Queue: Building
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	WithIdleOverlay@pulse:
+		Sequence: pulse
+		PauseOnLowPower: true
+	WithRangeCircle:
+		Range: 12c0
+		Type: cloakgenerator
+	Power:
+		Amount: -350
+	RequiresPower:
+	CanPowerDown:
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+		IndicatorPalette: mouse
+	UpgradeActorsNear:
+		Upgrades: cloakgenerator
+		Range: 12c0
+		EnableSound: cloak5.aud
+		DisableSound: cloak5.aud
+		AffectsParent: true
+	Selectable:
+		Bounds: 106, 48, 8, -6
+	SelectionDecorations:
+		VisualBounds: 106, 60, 8, -15
+
+NAWAST:
+	Inherits: ^Building
+	Valued:
+		Cost: 1600
+	Tooltip:
+		Name: Waste Refinery
+		Description: Processes Veins\ninto useable resources.
+	#Buildable:
+		BuildPaletteOrder: 110
+		Prerequisites: namisl, ~structures.nod
+		Queue: Building
+		BuildLimit: 1
+	Building:
+		Footprint: =x= xx= =x=
+		Dimensions: 3,3
+	Selectable:
+		Bounds: 100, 60, 5, -5
+	Health:
+		HP: 400
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	TiberianSunRefinery:
+		DockAngle: 160
+		DockOffset: 2,1
+	StoresResources:
+		PipColor: Red
+		PipCount: 15
+		Capacity: 56
+	FreeActor:
+		Actor: WEED
+		SpawnOffset: 3,1
+		Facing: 160
+	WithIdleOverlay@GLOW:
+		Sequence: idle-glow
+	WithIdleOverlay@LIGHTS:
+		Sequence: idle-lights
+	WithIdleOverlay@BIB:
+		Sequence: bib
+	ProvidesPrerequisite@buildingname:
+	SelectionDecorations:
+		VisualBounds: 100, 60, 5, -5
+	RenderSprites:

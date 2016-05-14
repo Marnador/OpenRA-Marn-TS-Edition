@@ -1,0 +1,10 @@
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Server\obj\x86\Debug\OpenRA.Server.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Server\obj\x86\Debug\OpenRA.Server.exe
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Server\obj\x86\Debug\OpenRA.Server.pdb
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Server.exe
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Server.pdb
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Server\obj\x86\Debug\OpenRA.Server.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Server\obj\x86\Debug\OpenRA.Server.exe
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Server\obj\x86\Debug\OpenRA.Server.pdb
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Server.exe
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Server.pdb

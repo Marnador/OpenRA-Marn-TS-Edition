@@ -1,0 +1,411 @@
+MCV:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 200
+		Prerequisites: ~gaweap, tech
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: GDI Mobile Construction Vehicle
+		Description: Deploys into GDI Construction Yard.\n  Unarmed
+	Selectable:
+		Priority: 3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 85
+	RevealsShroud:
+		Range: 8c0
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	Transforms:
+		IntoActor: gacnst
+		Offset: -1,-1
+		Facing: 96
+		TransformSounds: place2.aud
+		NoTransformSounds:
+		Voice: Move
+	SelectionDecorations:
+		VisualBounds: 42,42
+	RenderVoxels:
+		Scale: 11
+	RenderSprites:
+		Image: mcv.gdi
+
+APC:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Amphibious APC
+		Description: Armored infantry transport.\nCan move on water.\n  Unarmed
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~gaweap, gapile
+	Mobile:
+		TurnSpeed: 5
+		Speed: 128
+		TerrainSpeeds:
+			Water: 90
+	Health:
+		HP: 200
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 5c0
+	Turreted:
+		TurnSpeed: 10
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+		UnloadVoice: Unload
+		LoadingUpgrades: notmobile
+		EjectOnDeath: true
+	-WithVoxelBody:
+	WithVoxelWaterBody:
+	LeavesTrails:
+		Image: wake
+		Palette: effect
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
+
+HVR:
+	Inherits@1: ^VoxelVehicle
+	Valued:
+		Cost: 900
+	Tooltip:
+		Name: Hover MLRS
+		Description: Hovering vehicle armed with\nlong range missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~gaweap, garadr
+	RenderVoxels:
+		Scale: 11
+	Mobile:
+		Speed: 99
+		TerrainSpeeds:
+			Clear: 100
+			Road: 100
+			Rail: 100
+			DirtRoad: 100
+			Rough: 100
+			Water: 100
+			Tiberium: 100
+			BlueTiberium: 100
+			Veins: 100
+	Health:
+		HP: 230
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Armament@PRIMARY:
+		Weapon: HoverMissile
+		LocalOffset: 200,171,400, 200,-171,400
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: HoverMissileElite
+		LocalOffset: 200,171,400, 200,-171,400
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Turreted:
+		TurnSpeed: 7
+		Offset: -128,0,85
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	WithVoxelTurret:
+	Hovers:
+		OffsetModifier: 45
+		UpgradeMaxEnabledLevel: 0
+		UpgradeTypes: empdisable
+	LeavesTrails:
+		Image: wake
+		Palette: effect
+		TerrainTypes: Water
+		TrailWhileStationary: True
+		StationaryInterval: 18
+		MovingInterval: 6
+	-PoisonedByTiberium:
+
+SMECH:
+	Inherits@1: ^Vehicle
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Wolverine
+		Description: Anti-personnel walker.\n  Strong vs Infantry, Light armor\n  Weak vs Heavy armor\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+	Mobile:
+		TurnSpeed: 8
+		Speed: 78
+		TerrainSpeeds:
+			Clear: 100
+			Road: 100
+			Rail: 100
+			DirtRoad: 100
+			Rough: 100
+			Tiberium: 100
+			BlueTiberium: 100
+			Veins: 100
+	Health:
+		HP: 220
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 6c0
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	Armament@PRIMARY:
+		Weapon: AssaultCannon
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Name: secondary
+		Weapon: AssaultCannonElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Voiced:
+		VoiceSet: Mech
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	WithFacingSpriteBody:
+		Sequence: stand
+	WithAttackAnimation@PRIMARY:
+		AttackSequence: shoot
+	WithAttackAnimation@ELITE:
+		AttackSequence: shoot
+		Armament: secondary
+	WithMoveAnimation:
+		MoveSequence: run
+	Selectable:
+		Bounds: 20, 32, 0, -8
+	-PoisonedByTiberium:
+
+MMCH:
+	Inherits@1: ^Tank
+	-GainsExperience:
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Titan
+		Description: General purpose mechanized walker.\n  Strong vs Vehicles\n  Weak vs Infantry\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		Prerequisites: ~gaweap
+	Mobile:
+		TurnSpeed: 5
+		Speed: 68
+		Crushes: wall, crate, infantry
+		TerrainSpeeds:
+			Clear: 100
+			Road: 100
+			Rail: 100
+			DirtRoad: 100
+			Rough: 100
+			Tiberium: 100
+			BlueTiberium: 100
+			Veins: 100
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	BodyOrientation:
+		QuantizedFacings: 32
+	WithInfantryBody:
+	Turreted:
+		TurnSpeed: 5
+	AttackTurreted:
+		Voice: Attack
+	WithSpriteTurret:
+		Recoils: no
+	Armament:
+		Weapon: 120mm
+		Recoil: 127
+		RecoilRecovery: 26
+		LocalOffset: 600, 200, 600
+	RenderVoxels:
+	WithVoxelBarrel:
+	AutoTarget:
+	Selectable:
+		Bounds: 30, 42, 0, -8
+	Carryable:
+		CarryableHeight: 400
+
+DJUGG:
+	Inherits@1: ^Tank
+	-GainsExperience:
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Juggernaut
+		Description: Juggernaut Artillery.\nNeeds to deploy in order to shoot.\n  Strong vs Ground units\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: ~gaweap, garadr
+	Mobile:
+		TurnSpeed: 5
+		Speed: 68
+		Crushes: wall, crate, infantry
+		TerrainSpeeds:
+			Clear: 100
+			Road: 100
+			Rail: 100
+			DirtRoad: 100
+			Rough: 100
+			Tiberium: 100
+			BlueTiberium: 100
+			Veins: 100
+	Health:
+		HP: 250
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 9c0
+	BodyOrientation:
+		QuantizedFacings: 32
+	WithInfantryBody:
+	Selectable:
+		Bounds: 30, 42, 0, -8
+	Transforms:
+		IntoActor: gadjugg
+		Facing: 96
+		TransformSounds:
+		NoTransformSounds:
+		Voice: Move
+	Carryable:
+		CarryableHeight: 400
+
+HMEC:
+	Inherits@1: ^VoxelTank
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Mammoth Mk. II
+		Description: Slow heavy walker.\nArmed with dual railguns and rocket launchers.\n  Strong vs Infantry, Vehicles, Aircraft and Buildings\n  Weak vs Nothing\nMaximum 1 can be built.
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 250
+		Prerequisites: ~gaweap, gaplug
+		BuildLimit: 1
+	Mobile:
+		TurnSpeed: 3
+		Speed: 50
+		Crushes: wall, crate, infantry
+		TerrainSpeeds:
+			Clear: 100
+			Road: 100
+			Rail: 100
+			DirtRoad: 100
+			Rough: 100
+			Tiberium: 100
+			BlueTiberium: 100
+			Veins: 100
+	Health:
+		HP: 800
+	SelfHealing:
+		Ticks: 40
+		DamageCooldown: 500
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 10c0
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	Armament@RAIL:
+		Weapon: MechRailgun
+		LocalOffset: 260,-250,760, 260,250,760
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@TUSK:
+		Weapon: MammothTusk
+		LocalOffset: -172,-260,880, -172,260,880
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@RAILELITE:
+		Weapon: MechRailgunElite
+		LocalOffset: 260,-250,760, 260,250,760
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@TUSKELITE:
+		Weapon: MammothTuskElite
+		LocalOffset: -172,-260,880, -172,260,880
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	-WithVoxelBody:
+	RenderVoxels:
+		Scale: 11
+	WithVoxelWalkerBody:
+		TickRate: 1
+	Selectable:
+		Bounds: 40, 40, 0, -8
+	Carryable:
+		CarryableHeight: 500
+
+SONIC:
+	Inherits@1: ^VoxelTank
+	Valued:
+		Cost: 1300
+	Tooltip:
+		Name: Disruptor
+		Description: Armored high-tech vehicle, armed with\nlong range sonic beam emitter\nthat damages everything it passes through.\n  Strong vs Buildings, Infantry, Vehicles\n  Weak vs Moving targets\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 70
+		Prerequisites: ~gaweap, gatech
+	Targetable:
+		TargetTypes: Ground, Vehicle, Repair, Disruptor
+	Mobile:
+		TurnSpeed: 5
+		Speed: 65
+		Crushes: wall, crate, infantry
+	Health:
+		HP: 500
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	Armament@PRIMARY:
+		Weapon: SonicZap
+		LocalOffset: 0,0,700
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: SonicZapElite
+		LocalOffset: 0,0,700
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	RenderVoxels:
+		Scale: 12
+	AttackTurreted:
+		Voice: Attack
+	Turreted:
+		TurnSpeed: 5
+		Offset: -170,0,0
+	AutoTarget:
+	WithVoxelTurret:

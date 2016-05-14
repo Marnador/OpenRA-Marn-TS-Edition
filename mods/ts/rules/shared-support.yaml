@@ -1,0 +1,60 @@
+NAPULS:
+	Inherits: ^Defense
+	Valued:
+		Cost: 850
+	Tooltip:
+		Name: E.M. Pulse Cannon
+		Description: Temporarily disables vehicles in the struck area.\nRequires power to operate.
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 190
+		Prerequisites: radar
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Selectable:
+		Bounds: 78, 54, 0, -12
+	RequiresPower:
+	DisabledOverlay:
+	Health:
+		HP: 500
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 9c216
+	Turreted:
+		TurnSpeed: 3
+		InitialFacing: 300
+	AttackTurreted:
+	-AutoTarget:
+	Armament:
+		Weapon: EMPulseCannon
+		LocalOffset: 200,0,1300
+		MuzzleSequence: emp-overlay
+	WithRangeCircle:
+		Type: emp
+		Range: 30c720
+		UsePlayerColor: True
+	BodyOrientation:
+		QuantizedFacings: 32
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+		Sequence: turret
+	Power:
+		Amount: -150
+	CanPowerDown:
+		IndicatorPalette: mouse
+		PowerupSpeech: EnablePower
+		PowerdownSpeech: DisablePower
+	SelectionDecorations:
+		VisualBounds: 78, 54, 0, -12
+	RenderSprites:
+		Image: napuls.gdi
+		FactionImages:
+			gdi: napuls.gdi
+			nod: napuls.nod
+	SupportPowerChargeBar:
+	AttackOrderPower:
+		Cursor: emp
+		Icon: emp
+		ChargeTime: 150

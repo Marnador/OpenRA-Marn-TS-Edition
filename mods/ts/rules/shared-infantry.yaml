@@ -1,0 +1,86 @@
+E1:
+	Inherits: ^Soldier
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 10
+		Prerequisites: ~barracks
+	Valued:
+		Cost: 120
+	Tooltip:
+		Name: Light Infantry
+		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles\n  Useless vs Aircraft
+	ExternalCaptures:
+		CaptureTypes: civbuilding
+		Sabotage: False
+		Voice: Move
+	Health:
+		HP: 55
+	Mobile:
+		Speed: 60
+	Armament@PRIMARY:
+		Weapon: Minigun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: MinigunElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@PRIMARYgarrisoned:
+		Name: garrisoned
+		Weapon: MinigunGarrisoned
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITEgarrisoned:
+		Name: garrisoned
+		Weapon: MinigunEliteGarrisoned
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Voice: Attack
+	WithInfantryBody:
+		AttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	RenderSprites:
+		Image: e1.gdi
+		FactionImages:
+			gdi: e1.gdi
+			nod: e1.nod
+
+ENGINEER:
+	Inherits: ^Soldier
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Engineer
+		Description: Infiltrates and captures enemy structures.\n  Unarmed
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 30
+		Prerequisites: ~barracks
+	Voiced:
+		VoiceSet: Engineer
+	Mobile:
+		Speed: 56
+	Health:
+		HP: 85
+	Passenger:
+		PipType: Yellow
+	EngineerRepair:
+	RepairsBridges:
+		RepairNotification: BridgeRepaired
+	Captures:
+		CaptureTypes: building
+	ExternalCaptures:
+		Type: building, CivilianVoxelVehicle
+	-AutoTarget:
+	-GainsExperience:
+	RenderSprites:
+		Image: engineer.gdi
+		FactionImages:
+			gdi: engineer.gdi
+			nod: engineer.nod
+	Selectable:
+		Priority: 5

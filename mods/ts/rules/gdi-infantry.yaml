@@ -1,0 +1,254 @@
+E2:
+	Inherits: ^Soldier
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 20
+		Prerequisites: ~gapile
+	Valued:
+		Cost: 240
+	Tooltip:
+		Name: Disc Thrower
+		Description: Infantry armed with special explosive discs.\n  Strong vs Buildings, Infantry\n  Weak vs Moving targets\n  Useless vs Aircraft
+	ExternalCaptures:
+		CaptureTypes: civbuilding
+		Sabotage: False
+		Voice: Move
+	Health:
+		HP: 55
+	Mobile:
+		Speed: 56
+	RevealsShroud:
+		Range: 5c0
+	Armament@PRIMARY:
+		Weapon: Grenade
+		LocalOffset: 0,0,555
+		FireDelay: 5
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: GrenadeElite
+		LocalOffset: 0,0,555
+		FireDelay: 5
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@PRIMARYgarrisoned:
+		Name: garrisoned
+		Weapon: GrenadeGarrisoned
+		LocalOffset: 0,0,555
+		FireDelay: 5
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITEgarrisoned:
+		Name: garrisoned
+		Weapon: GrenadeEliteGarrisoned
+		LocalOffset: 0,0,555
+		FireDelay: 5
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Voice: Attack
+	WithInfantryBody:
+		AttackSequence: throw
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+
+MEDIC:
+	Inherits: ^Soldier
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Medic
+		Description: Heals nearby infantry.\n  Unarmed
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 40
+		Prerequisites: ~gapile
+	Voiced:
+		VoiceSet: Medic
+	RevealsShroud:
+		Range: 6c0		
+	Mobile:
+		Speed: 56
+	Health:
+		HP: 120
+	Crushable:
+		CrushSound: squishy2.aud
+	Armament:
+		Weapon: Heal
+		TargetStances: Ally
+		ForceTargetStances: None
+		Cursor: heal
+		OutsideRangeCursor: heal
+	AttackFrontal:
+	WithInfantryBody:
+		AttackSequence: heal
+	SelfHealing:
+		Delay: 60
+	Passenger:
+		PipType: Red
+
+JUMPJET:
+	Inherits: ^Soldier
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Jumpjet Infantry
+		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 50
+		Prerequisites: ~gapile, garadr
+	Voiced:
+		VoiceSet: JumpJet
+	-Mobile:
+	-Passenger:
+	HiddenUnderFog:
+		Type: CenterPosition
+	Armor:
+		Type: Light
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+		Type: CenterPosition
+	Armament@PRIMARY:
+		Weapon: JumpCannon
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: JumpCannonElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	-Crushable:
+	AttackFrontal:
+		Voice: Attack
+	Aircraft:
+		CruiseAltitude: 3250
+		LandWhenIdle: False
+		InitialFacing: 20
+		TurnSpeed: 4
+		Speed: 100
+		AltitudeVelocity: 200
+		Voice: Move
+		AirborneUpgrades: airborne
+		RepairBuildings:
+		RearmBuildings:
+		CanHover: True
+		IdealSeparation: 512
+	-WithInfantryBody:
+	WithInfantryBody@Fly:
+		StandSequence: idle
+		MoveSequence: idle
+		AttackSequence: shoot
+		IdleSequences: idle
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody@Land:
+		StandSequence: idle
+		MoveSequence: idle
+		AttackSequence: shoot
+		IdleSequences: idle
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
+	Hovers@Fly:
+		OffsetModifier: 45
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
+	-TakeCover:
+	WithShadow:
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	AutoTarget:
+	-Targetable:
+	Targetable@airborne:
+		TargetTypes: Air
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
+	Targetable@ground:
+		TargetTypes: Ground, Infantry
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
+	LeavesTrails:
+		Image: wake
+		Palette: effect
+		TerrainTypes: Water
+		TrailWhileStationary: True
+		StationaryInterval: 18
+		MovingInterval: 6
+	-Passenger:
+	-SpawnActorOnDeath:
+	SpawnActorOnDeath@FallingHusk:
+		Actor: JUMPJET.Husk
+
+GHOST:
+	Inherits: ^Soldier
+	Valued:
+		Cost: 1750
+	Tooltip:
+		Name: Ghost Stalker
+		Description: Elite commando infantry, armed with\na railgun and C4.\n  Strong vs Buildings, Vehicles, Infantry\n  Useless vs Aircraft\n  Special Ability: Destroy Building with C4\nHeals from Tiberium\nMaximum 1 can be trained.
+	ExternalCaptures:
+		CaptureTypes: civbuilding
+		Sabotage: False
+		Voice: Move
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 60
+		Prerequisites: ~gapile, gatech
+		BuildLimit: 1
+	Voiced:
+		VoiceSet: Ghost
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 56
+		TerrainSpeeds:
+			Tiberium: 110
+				PathingCost: -200
+			BlueTiberium: 110
+				PathingCost: -200
+	Health:
+		HP: 200
+	PoisonedByTiberium:
+		Weapon: TiberiumHeal
+	Passenger:
+	RevealsShroud:
+		Range: 7c0
+	Armament@PRIMARY:
+		Weapon: LtRail
+		LocalOffset: 85,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: LtRailElite
+		LocalOffset: 85,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@PRIMARYgarrisoned:
+		Name: garrisoned
+		Weapon: LtRailGarrisoned
+		LocalOffset: 85,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITEgarrisoned:
+		Name: garrisoned
+		Weapon: LtRailEliteGarrisoned
+		LocalOffset: 85,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Crushable:
+		CrushSound: squishy2.aud
+	AttackFrontal:
+		Voice: Attack
+	C4Demolition:
+		C4Delay: 45
+		Voice: Attack
+	WithInfantryBody:
+		AttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded

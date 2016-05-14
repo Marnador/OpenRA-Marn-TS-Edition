@@ -1,0 +1,563 @@
+NODMCV:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 200
+		Prerequisites: ~naweap, tech
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Nod Mobile Construction Vehicle
+		Description: Deploys into Nod Construction Yard.\n  Unarmed
+	Selectable:
+		Priority: 3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 85
+	RevealsShroud:
+		Range: 8c0
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	Transforms:
+		IntoActor: nacnst
+		Offset: -1,-1
+		Facing: 96
+		TransformSounds: place2.aud
+		NoTransformSounds:
+		Voice: Move
+	SelectionDecorations:
+		VisualBounds: 42,42
+	RenderVoxels:
+		Scale: 11
+	RenderSprites:
+		Image: mcv.nod
+
+BGGY:
+	Inherits@1: ^VoxelVehicle
+	Valued:
+		Cost: 550
+	Tooltip:
+		Name: Attack Buggy
+		Description: Fast scout and anti-infantry vehicle.\n  Strong vs Infantry, Light armor\n  Weak vs Heavy armor\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~naweap
+	Mobile:
+		TuenSpeed: 8
+		Speed: 170
+	Health:
+		HP: 220
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 6c0
+	Armament@PRIMARY:
+		Weapon: RaiderCannon
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+		Recoil: 60
+		RecoilRecovery: 8
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+		LocalOffset: 220,60,30, 220,-60,30
+	Armament@ELITE:
+		Name: secondary
+		Weapon: RaiderCannonElite
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+		Recoil: 120
+		RecoilRecovery: 8
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+		LocalOffset: 220,60,30, 220,-60,30
+	Turreted:
+		TurnSpeed: 15
+		Offset: -128, 0, 350
+	RenderVoxels:
+		Image: newbggy
+	WithVoxelTurret:
+	WithVoxelBarrel@PRIMARY:
+		LocalOffset: 140,0,0
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	WithVoxelBarrel@SECONDARY:
+		Armament: secondary
+		LocalOffset: 140,0,0
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	WithMuzzleOverlay:
+	Cargo:
+		Types: Infantry
+		MaxWeight: 1
+		PipCount: 1
+		UnloadVoice: Unload
+		LoadingUpgrades: notmobile
+		EjectOnDeath: true
+	-PoisonedByTiberium:
+
+BIKE:
+	Inherits@1: ^VoxelVehicle
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Attack Bike
+		Description: Fast scout vehicle, armed with rockets.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~naweap
+	Mobile:
+		TurnSpeed: 10
+		Speed: 213
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 80
+			Road: 90
+			Tiberium: 35
+			BlueTiberium: 35
+	Health:
+		HP: 150
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 9c0
+	Armament@PRIMARY:
+		Weapon: BikeMissile
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+		LocalOffset: -128,-110,270, -128,110,270
+	Armament@ELITE:
+		Weapon: BikeMissileElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+		LocalOffset: -128,-110,270, -128,110,270
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	-PoisonedByTiberium:
+
+TTNK:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Tick Tank
+		Description: Nod's main battle tank.\nCan deploy to gain extra protection and fire range.\n  Strong vs Vehicles\n  Weak vs Infantry\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		Prerequisites: ~naweap
+	Mobile:
+		TurnSpeed: 7
+		Speed: 113
+		Crushes: wall, crate, infantry
+	Health:
+		HP: 350
+	Armor:
+		Type: Heavy
+	Armament:
+		Weapon: 90mm
+		LocalOffset: 256,0,456
+		MuzzleSequence: muzzle
+	RevealsShroud:
+		Range: 7c0
+	RenderVoxels:
+		Scale: 12
+	AttackFrontal:
+		Voice: Attack
+	Transforms:
+		IntoActor: gttnk
+		Facing: 160
+		TransformSounds:
+		NoTransformSounds:
+		Voice: Move
+	AutoTarget:
+
+ART2:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Artillery
+		Description: Mobile Artillery.\nNeeds to deploy in order to shoot.\n  Strong vs Ground units\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: ~naweap, naradr
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+		TurnSpeed: 3
+	RevealsShroud:
+		Range: 9c0
+	RenderVoxels:
+		Scale: 12
+		LightAmbientColor: -0.2, -0.2, -0.2
+	Transforms:
+		IntoActor: gaarty
+		Facing: 96
+		TransformSounds:
+		NoTransformSounds:
+		Voice: Move
+
+REPAIR:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~naweap
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Mobile Repair Vehicle
+		Description: Repairs nearby vehicles.\n  Unarmed
+	Health:
+		HP: 350
+	Mobile:
+		Speed: 120
+		TurnSpeed: 8
+	RevealsShroud:
+		Range: 5c0
+	AutoTarget:
+		ScanRadius: 5
+	Armament:
+		FireDelay: 20
+		Weapon: Repair
+		Cursor: repair
+		OutsideRangeCursor: repair
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+		MuzzleSequence: emp-overlay
+	Armament@sparks1:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks2:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks3:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks4:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks5:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks6:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks7:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks8:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks9:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparks10:
+		FireDelay: 20
+		Weapon: RepairSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue1:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue2:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue3:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue4:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue5:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue6:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue7:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue8:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue9:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlue10:
+		FireDelay: 20
+		Weapon: RepairBlueSparks
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlueTrail1:
+		FireDelay: 20
+		Weapon: RepairBlueSparksTrail
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlueTrail2:
+		FireDelay: 20
+		Weapon: RepairBlueSparksTrail
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlueTrail3:
+		FireDelay: 20
+		Weapon: RepairBlueSparksTrail
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlueTrail4:
+		FireDelay: 20
+		Weapon: RepairBlueSparksTrail
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	Armament@sparksBlueTrail5:
+		FireDelay: 20
+		Weapon: RepairBlueSparksTrail
+		TargetStances: Ally
+		ForceTargetStances: None
+		LocalOffset: 220,0,600
+	AttackFrontal:
+		Voice: Attack
+	WithMuzzleOverlay:
+
+WEED:
+	Inherits@1: ^VoxelTank
+	-GainsExperience:
+	Valued:
+		Cost: 1400
+	Tooltip:
+		Name: Weed Eater
+		Description: Collects veins for processing.\n  Unarmed
+	#Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 100
+		Prerequisites: ~naweap, nawast
+	Harvester:
+		DeliveryBuildings: nawast
+		Capacity: 7
+		Resources: Veins
+		UnloadTicksPerBale: 20
+		LoadTicksPerBale: 40
+		SearchFromProcRadius: 72
+		SearchFromOrderRadius: 36
+		HarvestVoice: Attack
+		DeliverVoice: Move
+	Mobile:
+		Speed: 71
+		TuenSpeed: 5
+	Health:
+		HP: 600
+	SelfHealing:
+		Ticks: 10
+		HealIfBelow: 50
+		DamageCooldown: 200
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 4c0
+	-WithVoxelBody:
+	WithVoxelUnloadBody:
+
+SAPC:
+	Inherits: ^VoxelTank
+	-GainsExperience:
+	RenderVoxels:
+		Image: nodapc
+		Scale: 12
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Stealth APC
+		Description: Troop transport that can move\nin stealth to avoid detection.\n  Unarmed
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 70
+		Prerequisites: ~naweap, natech
+	Mobile:
+		TurnSpeed: 5
+		Speed: 100
+		UpgradeTypes: notmobile
+		UpgradeMaxEnabledLevel: 0
+	Health:
+		HP: 200
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 5c0
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+		UnloadVoice: Unload
+		LoadingUpgrades: notmobile
+		EjectOnDeath: true
+	Cloak:
+		InitialDelay: 90
+		CloakDelay: 120
+		CloakSound: cloak5.aud
+		UncloakSound: cloak5.aud
+		IsPlayerPalette: true
+	-MustBeDestroyed:
+
+SUBTANK:
+	Inherits@1: ^VoxelTank
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Devil's Tongue
+		Description: Heavily armored flame-throwing vehicle.\n  Strong vs Buildings, Infantry, Light armor\n  Weak vs Heavy armor\n  Useless vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 80
+		Prerequisites: ~naweap, natech
+	Mobile:
+		TurnSpeed: 8
+		Speed: 113
+		Crushes: wall, crate, infantry
+	Health:
+		HP: 350
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	Armament@PRIMARY:
+		Weapon: FireballLauncher
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+		LocalOffset: 300,250,100, 300,-250,100
+	Armament@ELITE:
+		Weapon: FireballLauncherElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+		LocalOffset: 300,250,100, 300,-250,100
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+
+STNK:
+	Inherits: ^VoxelTank
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Stealth Tank
+		Description: Lightly armoured fast tank, equipped with a \npersonal stealth generator. Armed with missiles.\nCan be spotted by infantry at close range.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
+	Buildable:
+		BuildPaletteOrder: 90
+		Prerequisites: ~naweap, natech
+		Queue: Vehicle
+	Mobile:
+		TurnSpeed: 10
+		Speed: 142
+		Crushes: wall, crate, infantry
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 7c0
+	Cloak:
+		InitialDelay: 90
+		CloakDelay: 90
+		CloakSound: cloak5.aud
+		UncloakSound: cloak5.aud
+		IsPlayerPalette: true
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Damage
+	Armament@PRIMARY:
+		Weapon: Dragon
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+		LocalOffset: 213,43,128, 213,-43,128
+	Armament@ELITE:
+		Weapon: DragonElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+		LocalOffset: 213,43,128, 213,-43,128
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: ReturnFire
+	-MustBeDestroyed:

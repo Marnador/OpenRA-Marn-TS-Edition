@@ -1,0 +1,268 @@
+LtRail:
+	ReloadDelay: 60
+	Range: 4c608
+	Report: bigggun1.aud
+	Projectile: AreaBeam
+		Speed: 20c0
+		Duration: 3
+		DamageInterval: 2
+		Width: 80
+		BeyondTargetRange: 0c64
+		Blockable: true
+		Color: 0080FF80
+	Warhead@1Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 100, 100
+		Damage: 150
+		InfDeath: 6
+		AffectsParent: false
+		ValidStances: Neutral, Enemy
+		Versus:
+			None: 100
+			Wood: 130
+			Light: 150
+			Heavy: 110
+			Concrete: 100
+		DamageTypes: Prone100Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 50, 50 # Only does 50% damage to friendly units
+		Damage: 150
+		InfDeath: 6
+		AffectsParent: false
+		ValidStances: Ally
+		Versus:
+			None: 100
+			Wood: 130
+			Light: 150
+			Heavy: 110
+			Concrete: 5
+		DamageTypes: Prone100Percent, TriggerProne, SmallExplosionDeath
+
+LtRailElite:
+	Inherits: LtRail
+	Range: 5c376
+	Burst: 2
+	BurstDelay: 6
+	Projectile: AreaBeam
+		Color: FF800080
+
+LtRailGarrisoned:
+	Inherits: LtRail
+	ReloadDelay: 50
+	Range: 6c144
+
+LtRailEliteGarrisoned:
+	Inherits: LtRailElite
+	ReloadDelay: 40
+	Range: 6c912
+
+MechRailgun:
+	ReloadDelay: 60
+	Range: 5c376
+	Burst: 2 # for alternating muzzle offsets, dmg/s identical to original
+	BurstDelay: 60
+	Report: railuse5.aud
+	Projectile: AreaBeam
+		Speed: 20c0
+		Duration: 3
+		DamageInterval: 2
+		Width: 80
+		BeyondTargetRange: 0c64
+		Blockable: true
+		Color: 0090FF80
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 150
+		Versus:
+			None: 200
+			Wood: 175
+			Light: 160
+			Heavy: 150
+			Concrete: 145
+		DamageTypes: Prone100Percent, TriggerProne, FireDeath
+
+MechRailgunElite:
+	Inherits: MechRailgun
+	Range: 6c144
+	BurstDelay: 30
+	Projectile: AreaBeam
+		Color: FF900080
+
+SonicZap:
+	ReloadDelay: 180
+	Range: 5c376
+	Report: sonic4.aud
+	Projectile: AreaBeam
+		Speed: 0c128
+		Duration: 90
+		DamageInterval: 5 # Roughly 18 impacts.
+		Width: 0c384
+		Shape: Flat
+		ZOffset: 2047
+		BeyondTargetRange: 0c256
+		Blockable: true
+		Color: 50F5FF45
+	Warhead@1Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 100, 100
+		Damage: 25
+		AffectsParent: false
+		ValidStances: Neutral, Enemy
+		Versus:
+			None: 20
+			Wood: 40
+			Light: 60
+			Heavy: 80
+			Concrete: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 50, 50
+		Damage: 25
+		InvalidTargets: Disruptor # Does not affect friendly disruptors at all
+		AffectsParent: false
+		ValidStances: Ally
+		Versus:
+			None: 4
+			Wood: 8
+			Light: 12
+			Heavy: 16
+			Concrete: 20
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+
+SonicZapElite:
+	Inherits: SonicZap
+	Range: 6c144
+	Projectile: AreaBeam
+		Color: FFF55045
+	Warhead@1Dam: SpreadDamage
+		Damage: 50
+	Warhead@2Dam: SpreadDamage
+		Damage: 50
+
+CyCannon:
+	ReloadDelay: 50
+	Range: 5c376
+	Report: scrin5b.aud
+	ValidTargets: Ground
+	Projectile: Missile
+		MaximumLaunchSpeed: 192
+		Blockable: false
+		HorizontalRateOfTurn: 2
+		Shadow: true
+		Image: TORPEDO
+		MinimumLaunchSpeed: 75
+		Speed: 384
+	Warhead@1Dam: SpreadDamage
+		Spread: 126
+		Damage: 120
+		ValidTargets: Ground
+		Versus:
+			None: 300
+			Wood: 260
+			Light: 220
+			Heavy: 180
+			Concrete: 140
+		DamageTypes: Prone350Percent, TriggerProne, EnergyDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_bang
+		ImpactSounds: expnew12.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallScorch
+
+CyCannonElite:
+	Inherits: CyCannon
+	Range: 6c144
+	Burst: 2
+	BurstDelay: 6
+	Projectile: Missile
+		Image: pulsball
+
+CyCannonGarrisoned:
+	Inherits: CyCannon
+	ReloadDelay: 40
+	Range: 6c912
+
+CyCannonEliteGarrisoned:
+	Inherits: CyCannonElite
+	ReloadDelay: 30
+	Range: 7c680
+
+Proton:
+	ReloadDelay: 50
+	Range: 5c376
+	Report: scrin5b.aud
+	Burst: 6
+	BurstDelay: 3
+	ValidTargets: Ground, Air
+	Projectile: Missile
+		Speed: 341
+		Blockable: false
+		Shadow: true
+		Image: TORPEDO
+		HorizontalRateOfTurn: 10
+		RangeLimit: 350
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 39
+		ValidTargets: Ground, Air
+		Versus:
+			Concrete: 60
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+		ImpactSounds: expnew12.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+
+ProtonElite:
+	Inherits: Proton
+	Range: 6c144
+	Projectile: Missile
+		Speed: 512
+		Image: pulsball
+	Warhead@1Dam: SpreadDamage
+		Spread: 512
+		Damage: 50
+
+ObeliskLaserFire:
+	ReloadDelay: 1
+	Range: 7c680
+	Report: obelray1.aud
+	Projectile: LaserZap
+		Width: 85
+		ZOffset: 2047
+		BeamDuration: 6
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 135
+		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
+
+TurretLaserFire:
+	ReloadDelay: 44
+	Range: 5c376
+	Report: lastur1.aud
+	Projectile: LaserZap
+		Width: 50
+		BeamDuration: 5
+		ZOffset: 2047
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Falloff: 100, 100
+		Versus:
+			None: 30
+			Heavy: 60
+			Concrete: 30
+		Damage: 54
+		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath

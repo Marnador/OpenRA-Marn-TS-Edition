@@ -1,0 +1,96 @@
+Player:
+	HackyAI@TestAI:
+		Name: Test AI
+		MinimumExcessPower: 60
+		MaxResourceCellsToCheck: 30
+		MinBaseRadius: 4
+		NewProductionCashThreshold: 2000
+		BuildingCommonNames:
+			ConstructionYard: gacnst, nacnst
+			Refinery: proc
+			Power: gapowr, napowr, naapwr
+			Barracks: gapile, nahand
+			VehiclesFactory: gaweap, naweap
+			Production: gapile, nahand, gaweap, naweap
+			Silo: gasilo
+		UnitsCommonNames:
+			Mcv: mcv, nodmcv
+		BuildingLimits:
+			gapile: 1
+			nahand: 1
+			gaweap: 1
+			naweap: 1
+			garadr: 1
+			naradr: 1
+			gatech: 1
+			natech: 1
+			nastlh: 1
+			gactvulc: 8
+			gactrpg: 4
+			gactsam: 6
+			naobel: 3
+			nalasr: 8
+			nasam: 6
+			gaplug: 1
+			natmpl: 1
+			namisl: 1
+		BuildingFractions:
+			proc: 15%
+			gapowr: 20%
+			napowr: 1%
+			naapwr: 20%
+			gapile: 1%
+			nahand: 1%
+			gaweap: 1%
+			naweap: 1%
+			garadr: 1%
+			naradr: 1%
+			gatech: 1%
+			natech: 1%
+			nalasr: 10%
+			gactvulc: 10%
+			gactrpg: 3%
+			gactsam: 6%
+			nasam: 6%
+			naobel: 3%
+			gaplug: 5%
+			natmpl: 5%
+			namisl: 5%
+		UnitsToBuild:
+			e1: 50%
+			e2: 10%
+			e3: 10%
+			cyborg: 15%
+			repair: 2%
+			medic: 2%
+			harv: 10%
+			mmch: 15%
+			ttnk: 15%
+			smech: 25%
+			bggy: 25%
+			mcv: 1%
+			nodmcv: 1%
+			hvr: 20%
+			bike: 20%
+			subtank: 10%
+			sonic: 10%
+			stnk: 8%
+			hmec: 1%
+			ghost: 1%
+			cyc2: 1%
+		SquadSize: 40
+		SupportPowerDecision@nukepower:
+			OrderName: NukePowerInfoOrder
+			MinimumAttractiveness: 2000
+			Consideration@1:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 10
+				TargetMetric: Value
+				CheckRadius: 5c0
+			Consideration@2:
+				Against: Ally
+				Types: Air, Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 7c0

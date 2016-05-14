@@ -1,0 +1,119 @@
+Grenade:
+	ReloadDelay: 60
+	Range: 3c840
+	Projectile: Bullet # TODO: Add bounce effect
+		Speed: 250
+		Blockable: false
+		Shadow: true
+		Angle: 75
+		Inaccuracy: 384
+		Image: DISCUS
+	Warhead@1Dam: SpreadDamage
+		Spread: 171
+		Damage: 45
+		Versus:
+			None: 100
+			Wood: 75
+			Light: 65
+			Heavy: 60
+			Concrete: 50
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_grey_explosion
+		ImpactSounds: expnew13.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+
+GrenadeElite:
+	Inherits: Grenade
+	Range: 4c608
+	Burst: 2
+	BurstDelay: 6
+
+GrenadeGarrisoned:
+	Inherits: Grenade
+	ReloadDelay: 50
+	Range: 5c376
+
+GrenadeEliteGarrisoned:
+	Inherits: GrenadeElite
+	ReloadDelay: 40
+	Range: 6c144
+
+Bomb:
+	ReloadDelay: 60
+	Burst: 5
+	BurstDelay: 4
+	Range: 2c512
+	Projectile: Bullet
+		Speed: 170
+		Image: 120mm
+		Shadow: true
+		Palette: ra
+		Inaccuracy: 850
+	Warhead@1Dam: SpreadDamage
+		Spread: 298
+		Damage: 160
+		Versus:
+			None: 200
+			Wood: 100
+			Light: 90
+			Heavy: 80
+			Concrete: 70
+		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_explosion
+		ImpactSounds: expnew09.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+
+BombElite:
+	Inherits: Bomb
+	Warhead@1Dam: SpreadDamage
+		Spread: 512
+		Damage: 300
+
+RPGTower:
+	ReloadDelay: 72
+	Range: 7c680
+	Report: glnch4.aud
+	Projectile: Bullet
+		Speed: 384
+		Blockable: false
+		Shadow: true
+		Angle: 62
+		Image: canister
+		Palette: player
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 140
+		Versus:
+			None: 55
+			Wood: 70
+			Light: 85
+			Heavy: 100
+			Concrete: 70
+		DamageTypes: Prone70Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_clsn
+		ImpactSounds: expnew14.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash2.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater

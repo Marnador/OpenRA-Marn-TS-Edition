@@ -1,0 +1,10 @@
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Game\obj\x86\Debug\OpenRA.Game.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Game\obj\x86\Debug\OpenRA.Game.exe
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Game\obj\x86\Debug\OpenRA.Game.pdb
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Game.exe
+C:\Users\Marn\Desktop\OpenRA\OpenRA.Game.pdb
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game\obj\x86\Debug\OpenRA.Game.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game\obj\x86\Debug\OpenRA.Game.exe
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game\obj\x86\Debug\OpenRA.Game.pdb
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game.exe
+C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game.pdb

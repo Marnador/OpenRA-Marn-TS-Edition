@@ -1,0 +1,160 @@
+90mm:
+	ReloadDelay: 50
+	Range: 4c608
+	Report: 120mmf.aud
+	Projectile: Bullet
+		Speed: 682
+		Image: 120mm
+		Shadow: true
+		Angle: 75
+		Palette: ra
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 40
+		Versus:
+			None: 45
+			Wood: 60
+			Light: 75
+			Heavy: 90
+			Concrete: 80
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: expnew14.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+
+90mmD:
+	Inherits: 90mm
+	Range: 6c144
+
+120mm:
+	ReloadDelay: 80
+	Range: 4c608
+	Report: 120mmf.aud
+	Projectile: Bullet
+		Speed: 1c512
+		Palette: ra
+		Angle: 75
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 70
+		Versus:
+			None: 45
+			Wood: 60
+			Light: 75
+			Heavy: 90
+			Concrete: 80
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_clsn
+		ImpactSounds: expnew14.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+
+120mmx:
+	ReloadDelay: 80
+	Range: 4c608
+	Report: 120mmf.aud
+	Burst: 2
+	BurstDelay: 5
+	Projectile: Bullet
+		Speed: 682
+		Image: 120mm
+		Shadow: true
+		Angle: 62
+		Palette: ra
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 50
+		Versus:
+			None: 45
+			Wood: 60
+			Light: 75
+			Heavy: 90
+			Concrete: 80
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: expnew14.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+
+120mmxElite:
+	Inherits: 120mmx
+	Range: 5c376
+	Burst: 4
+	BurstDelay: 3
+
+155mm:
+	ReloadDelay: 110
+	Range: 13c824
+	Report: 120mmf.aud
+	Projectile: Bullet
+		Speed: 256
+		Image: 120mm
+		Angle: 75
+		Shadow: true
+		Blockable: false
+		Inaccuracy: 1c682
+		Palette: ra
+		ContrailLength: 20
+		ContrailWidth: 20
+	MinRange: 3c480
+	Warhead@1Dam: SpreadDamage
+		Spread: 400
+		Damage: 130
+		Versus:
+			Wood: 85
+			Light: 70
+			Heavy: 55
+		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: mini_nuke
+		ImpactSounds: expnew06.aud
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: player
+		ImpactSounds: ssplash2.aud
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+
+155mmJ:
+	Inherits: 155mm
+	ReloadDelay: 130
+	Report: JuggFire.aud
+	Projectile: Bullet
+		Speed: 256
+		Angle: 80
+		Shadow: true
+		Inaccuracy: 2c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 600
+		Damage: 50
+		Versus:
+			None: 80
+			Wood: 70
+			Light: 60
+			Heavy: 50
+	Warhead@2Eff: CreateEffect
+		Explosions: large_explosion
