@@ -216,6 +216,9 @@ ART2:
 		TransformSounds:
 		NoTransformSounds:
 		Voice: Move
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
 
 REPAIR:
 	Inherits@1: ^VoxelTank

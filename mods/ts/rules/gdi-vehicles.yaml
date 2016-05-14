@@ -296,6 +296,9 @@ DJUGG:
 		Voice: Move
 	Carryable:
 		CarryableHeight: 400
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
 
 HMEC:
 	Inherits@1: ^VoxelTank

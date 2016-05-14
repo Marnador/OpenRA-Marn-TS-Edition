@@ -16,7 +16,7 @@ E2:
 	Health:
 		HP: 55
 	Mobile:
-		Speed: 56
+		Speed: 71
 	RevealsShroud:
 		Range: 5c0
 	Armament@PRIMARY:
@@ -53,6 +53,9 @@ E2:
 		AttackSequence: throw
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
+	Explodes:
+		Weapon: UnitExplodeTiny
+		EmptyWeapon: UnitExplodeTiny
 
 MEDIC:
 	Inherits: ^Soldier

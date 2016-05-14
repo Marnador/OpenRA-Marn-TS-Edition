@@ -28,6 +28,21 @@ UnitExplodeSmall:
 		Explosions: medium_brnl
 		ImpactSounds: expnew13.aud
 
+UnitExplodeTiny:
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 30
+		Falloff: 100, 50, 25, 12
+		Versus:
+			None: 90
+			Wood: 75
+			Light: 60
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_grey_explosion
+		ImpactSounds: expnew13.aud
+
 TiberiumExplosion:
 	Warhead@1Dam: SpreadDamage
 		Spread: 9

@@ -229,6 +229,9 @@ GAARTY:
 		Voice: Move
 	WithMuzzleOverlay:
 	AutoTarget:
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
 
 GTTNK:
 	Inherits@1: ^DeployedVehicle

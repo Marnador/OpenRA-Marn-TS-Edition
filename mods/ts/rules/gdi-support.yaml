@@ -87,6 +87,9 @@ GADJUGG:
 		Voice: Move
 	WithMuzzleOverlay:
 	AutoTarget:
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
 
 GAGATE_A:
 	Inherits: ^Gate_A
