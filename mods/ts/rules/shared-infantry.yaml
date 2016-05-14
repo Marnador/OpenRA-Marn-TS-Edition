@@ -74,7 +74,7 @@ ENGINEER:
 	Captures:
 		CaptureTypes: building
 	ExternalCaptures:
-		Type: building, CivilianVoxelVehicle
+		Type: civbuilding, CivilianVoxelVehicle
 	-AutoTarget:
 	-GainsExperience:
 	RenderSprites:

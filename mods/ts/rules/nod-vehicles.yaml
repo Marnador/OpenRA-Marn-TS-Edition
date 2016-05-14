@@ -4,7 +4,7 @@ NODMCV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 200
-		Prerequisites: ~naweap, tech
+		Prerequisites: ~naweap, naradr
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -50,7 +50,7 @@ BGGY:
 		Prerequisites: ~naweap
 	Mobile:
 		TuenSpeed: 8
-		Speed: 170
+		Speed: 150
 	Health:
 		HP: 220
 	Armor:
@@ -119,7 +119,7 @@ BIKE:
 		Prerequisites: ~naweap
 	Mobile:
 		TurnSpeed: 10
-		Speed: 213
+		Speed: 190
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 80

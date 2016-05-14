@@ -58,7 +58,7 @@ Bomb:
 		Palette: ra
 		Inaccuracy: 850
 	Warhead@1Dam: SpreadDamage
-		Spread: 298
+		Spread: 512
 		Damage: 160
 		Versus:
 			None: 200

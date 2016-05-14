@@ -114,7 +114,7 @@ JUMPJET:
 	Passenger:
 		PipType: Green
 	RevealsShroud:
-		Range: 5c0
+		Range: 7c0
 		Type: CenterPosition
 	Armament@PRIMARY:
 		Weapon: JumpCannon
@@ -133,7 +133,7 @@ JUMPJET:
 		LandWhenIdle: False
 		InitialFacing: 20
 		TurnSpeed: 4
-		Speed: 100
+		Speed: 120
 		AltitudeVelocity: 200
 		Voice: Move
 		AirborneUpgrades: airborne

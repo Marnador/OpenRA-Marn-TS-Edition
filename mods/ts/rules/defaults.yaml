@@ -148,6 +148,7 @@
 	WithBuildingExplosion:
 		Sequences: building, large_bang, large_brnl, verylarge_clsn, large_tumu
 	ShakeOnDeath:
+	AutoTargetIgnore:
 
 ^Building:
 	Inherits@1: ^BasicBuilding
