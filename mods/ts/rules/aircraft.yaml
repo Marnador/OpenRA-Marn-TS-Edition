@@ -88,7 +88,7 @@ ORCA:
 	Health:
 		HP: 200
 	Armor:
-		Type: Light
+		Type: Aircraft
 	RevealsShroud:
 		Range: 10c0
 		Type: CenterPosition
@@ -138,7 +138,7 @@ ORCAB:
 	Health:
 		HP: 260
 	Armor:
-		Type: Light
+		Type: Aircraft
 	RevealsShroud:
 		Range: 6c0
 		Type: CenterPosition
@@ -196,7 +196,7 @@ ORCATRAN:
 	Health:
 		HP: 200
 	Armor:
-		Type: Light
+		Type: Aircraft
 	RevealsShroud:
 		Range: 6c0
 		Type: CenterPosition
@@ -234,7 +234,7 @@ TRNSPORT:
 	Health:
 		HP: 175
 	Armor:
-		Type: Light
+		Type: Aircraft
 	RevealsShroud:
 		Range: 6c0
 		Type: CenterPosition
@@ -272,7 +272,7 @@ SCRIN:
 	Health:
 		HP: 280
 	Armor:
-		Type: Light
+		Type: Aircraft
 	RevealsShroud:
 		Range: 6c0
 		Type: CenterPosition
@@ -335,7 +335,7 @@ APACHE:
 	Health:
 		HP: 225
 	Armor:
-		Type: Light
+		Type: Aircraft
 	RevealsShroud:
 		Range: 10c0
 		Type: CenterPosition

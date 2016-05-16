@@ -1255,6 +1255,7 @@ CAARMR:
 		Type: building
 		CaptureCompleteTime: 15
 	ExternalCapturableBar:
+	CaptureNotification:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4

@@ -26,6 +26,7 @@ Bazooka:
 			None: 25
 			Wood: 85
 			Light: 100
+			Aircraft: 120
 			Heavy: 100
 			Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -62,7 +63,7 @@ BazookaEliteGarrisoned:
 	Range: 6c912
 
 HoverMissile:
-	ReloadDelay: 136
+	ReloadDelay: 100
 	Burst: 4
 	Range: 6c144
 	BurstDelay: 6
@@ -86,12 +87,13 @@ HoverMissile:
 		Speed: 426
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 40
+		Damage: 30
 		ValidTargets: Ground, Air
 		Versus:
 			None: 25
 			Wood: 55
 			Light: 100
+			Aircraft: 150
 			Heavy: 75
 			Concrete: 70
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -195,6 +197,7 @@ BikeMissile:
 			None: 25
 			Wood: 55
 			Light: 100
+			Aircraft: 150
 			Heavy: 75
 			Concrete: 70
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -244,6 +247,7 @@ Dragon:
 			None: 25
 			Wood: 65
 			Light: 100
+			Aircraft: 150
 			Heavy: 85
 			Concrete: 70
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -299,6 +303,7 @@ Hellfire:
 			None: 25
 			Wood: 55
 			Light: 70
+			Aircraft: 70
 			Heavy: 85
 			Concrete: 70
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -357,6 +362,7 @@ RedEye2:
 			None: 100
 			Wood: 85
 			Light: 70
+			Aircraft: 70
 			Heavy: 55
 			Concrete: 40
 		DamageTypes: SmallExplosionDeath

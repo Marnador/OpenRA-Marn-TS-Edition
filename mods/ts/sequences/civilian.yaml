@@ -750,6 +750,10 @@ caarmr:
 	critical-idle: ctarmr
 		Start: 2
 		ShadowStart: 5
+	idle-flag: flag
+		Start: 3
+		Length: 61
+		Tick: 70
 
 caaray:
 	Defaults:
@@ -805,6 +809,12 @@ cahosp:
 	critical-idle:
 		Start: 2
 		ShadowStart: 5
+	idle-flag: flag
+		UseTilesetCode: false
+		Start: 3
+		Length: 61
+		Tick: 70
+		ZOffset: -512
 
 capyr01:
 	idle: ctpyr01
@@ -1343,6 +1353,11 @@ gaoldcc6:
 		ShadowStart: 2
 		UseTilesetCode: true
 		Offset: 0, -24
+	idle-flag: flag
+		Start: 3
+		Length: 61
+		Tick: 70
+		
 
 gakodk:
 	Defaults:

@@ -201,6 +201,7 @@ JumpCannon:
 		Versus:
 			Wood: 80
 			Light: 60
+			Aircraft: 110
 			Heavy: 20
 			Concrete: 30
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
@@ -225,7 +226,7 @@ AssaultCannon:
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 60
+		Damage: 70
 		Versus:
 			Wood: 80
 			Light: 40
@@ -243,8 +244,7 @@ AssaultCannon:
 AssaultCannonElite:
 	Inherits: AssaultCannon
 	Range: 4c608
-	Burst: 2
-	BurstDelay: 6
+	ReloadDelay: 25
 
 RaiderCannon:
 	ReloadDelay: 28
@@ -256,7 +256,7 @@ RaiderCannon:
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 33
+		Damage: 40
 		Versus:
 			Wood: 80
 			Light: 40
