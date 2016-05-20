@@ -17,7 +17,7 @@ MCV:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 85
+		Speed: 64
 	RevealsShroud:
 		Range: 8c0
 	MustBeDestroyed:
@@ -41,7 +41,7 @@ APC:
 	Inherits@1: ^VoxelTank
 	-GainsExperience:
 	Valued:
-		Cost: 800
+		Cost: 600
 	Tooltip:
 		Name: Amphibious APC
 		Description: Armored infantry transport.\nCan move on water.\n  Unarmed
@@ -51,11 +51,11 @@ APC:
 		Prerequisites: ~gaweap, gapile
 	Mobile:
 		TurnSpeed: 5
-		Speed: 128
+		Speed: 96
 		TerrainSpeeds:
 			Water: 90
 	Health:
-		HP: 200
+		HP: 350
 	Armor:
 		Type: Heavy
 	RevealsShroud:
@@ -92,7 +92,7 @@ HVR:
 	RenderVoxels:
 		Scale: 11
 	Mobile:
-		Speed: 99
+		Speed: 75
 		TerrainSpeeds:
 			Clear: 100
 			Road: 100
@@ -153,7 +153,7 @@ SMECH:
 		Prerequisites: ~gaweap
 	Mobile:
 		TurnSpeed: 8
-		Speed: 78
+		Speed: 64
 		TerrainSpeeds:
 			Clear: 100
 			Road: 100
@@ -213,7 +213,7 @@ MMCH:
 		Prerequisites: ~gaweap
 	Mobile:
 		TurnSpeed: 5
-		Speed: 68
+		Speed: 58
 		Crushes: wall, crate, infantry
 		TerrainSpeeds:
 			Clear: 100
@@ -266,7 +266,7 @@ DJUGG:
 		Prerequisites: ~gaweap, garadr
 	Mobile:
 		TurnSpeed: 5
-		Speed: 68
+		Speed: 58
 		Crushes: wall, crate, infantry
 		TerrainSpeeds:
 			Clear: 100
@@ -384,7 +384,7 @@ SONIC:
 		TargetTypes: Ground, Vehicle, Repair, Disruptor
 	Mobile:
 		TurnSpeed: 5
-		Speed: 65
+		Speed: 64
 		Crushes: wall, crate, infantry
 	Health:
 		HP: 500

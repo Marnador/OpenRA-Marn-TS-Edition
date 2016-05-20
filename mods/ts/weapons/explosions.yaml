@@ -31,8 +31,8 @@ UnitExplodeSmall:
 UnitExplodeTiny:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
-		Damage: 30
-		Falloff: 100, 50, 25, 12
+		Damage: 15
+		Falloff: 100, 50
 		Versus:
 			None: 90
 			Wood: 75
@@ -69,13 +69,10 @@ BlueTiberiumExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Res: CreateResource
 		AddsResourceType: BlueTiberium
-		Size: 3
+		Size: 1
 	Warhead@3Res: CreateResource
 		AddsResourceType: BlueTiberium
 		Size: 2
-	Warhead@4Res: CreateResource
-		AddsResourceType: BlueTiberium
-		Size: 1
 	Warhead@5Eff: CreateEffect
 		Explosions: large_explosion
 		ImpactSounds: expnew09.aud

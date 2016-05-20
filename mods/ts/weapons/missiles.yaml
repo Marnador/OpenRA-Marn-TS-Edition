@@ -20,15 +20,15 @@ Bazooka:
 		Speed: 298
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 40
+		Damage: 30
 		ValidTargets: Ground, Air
 		Versus:
 			None: 25
-			Wood: 85
-			Light: 100
-			Aircraft: 120
-			Heavy: 100
-			Concrete: 50
+			Wood: 80
+			Light: 90
+			Aircraft: 140
+			Heavy: 120
+			Concrete: 70
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: small_clsn
@@ -171,7 +171,7 @@ BikeMissile:
 	ReloadDelay: 50
 	Burst: 2 # to make bike alternate between left and right launcher, change in dmg/s compared to original TS
 	BurstDelay: 10
-	Range: 6c608
+	Range: 5c376
 	Report: misl1.aud
 	ValidTargets: Ground, Air
 	Projectile: Missile

@@ -57,7 +57,7 @@ GASILO:
 	Inherits: ^Building
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 70
 		Prerequisites: proc
 	Valued:
 		Cost: 300

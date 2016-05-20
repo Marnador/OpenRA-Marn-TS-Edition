@@ -98,6 +98,9 @@ namespace OpenRA.Mods.Common.AI
 		[Desc("Delay (in ticks) until rechecking for new BaseProviders.")]
 		public readonly int CheckForNewBasesDelay = 1500;
 
+        [Desc("Delay (in ticks) between updating the decision on which player to attack.")]
+		public readonly int UpdateAggressionInterval = 750;
+
 		[Desc("Minimum range at which to build defensive structures near a combat hotspot.")]
 		public readonly int MinimumDefenseRadius = 5;
 
@@ -547,7 +550,10 @@ namespace OpenRA.Mods.Common.AI
 			if (ticks % FeedbackTime == 0)
 				ProductionUnits(self);
 
-			AssignRolesToIdleUnits(self);
+            if (ticks % Info.UpdateAggressionInterval == 0)
+                ChooseEnemy();
+
+            AssignRolesToIdleUnits(self);
 			SetRallyPointsForNewProductionBuildings(self);
 			TryToUseSupportPower(self);
 
@@ -557,6 +563,36 @@ namespace OpenRA.Mods.Common.AI
 			var ordersToIssueThisTick = Math.Min((orders.Count + Info.MinOrderQuotientPerTick - 1) / Info.MinOrderQuotientPerTick, orders.Count);
 			for (var i = 0; i < ordersToIssueThisTick; i++)
 				World.IssueOrder(orders.Dequeue());
+		}
+
+        void ChooseEnemy()
+		{
+			if (Player.WinState != WinState.Undefined)
+				return;
+
+			var deadEnemies = World.Players
+               .Where(p => Player != p && Player.Stances[p] == Stance.Enemy && p.WinState == WinState.Lost);
+
+			var liveEnemies = World.Players
+               .Where(p => Player != p && !p.NonCombatant && Player.Stances[p] == Stance.Enemy && p.WinState == WinState.Undefined);
+
+			if (!liveEnemies.Any())
+				return;
+
+			// We don't want the AI to "attack" a player/AI that is already beaten
+			foreach (var d in deadEnemies)
+				aggro[d].Aggro = 0;
+
+			var leastLikedEnemies = liveEnemies
+               .GroupBy(e => aggro[e].Aggro)
+               .MaxByOrDefault(g => g.Key);
+
+			var enemy = (leastLikedEnemies != null) ?
+                leastLikedEnemies.Random(Random) : liveEnemies.FirstOrDefault();
+
+			// Bump the aggro slightly to avoid changing our mind
+			if (leastLikedEnemies.Count() > 1)
+				aggro[enemy].Aggro++;
 		}
 
 		internal Actor ChooseEnemyTarget()

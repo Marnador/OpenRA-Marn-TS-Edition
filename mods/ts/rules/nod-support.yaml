@@ -57,7 +57,7 @@ NALASR:
 	Buildable:
 		Queue: Defense
 		Prerequisites: nahand, ~structures.nod
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 40
 	Building:
 	Selectable:
 		Bounds: 40, 30, -8, -6
@@ -101,7 +101,7 @@ NAOBEL:
 		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Ground units\n  Useless vs Aircraft
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 80
+		BuildPaletteOrder: 60
 		Prerequisites: natech, ~structures.nod
 	Building:
 		Footprint: xx xx
@@ -119,12 +119,25 @@ NAOBEL:
 	Armament:
 		Weapon: ObeliskLaserFire
 		LocalOffset: 1400,210,750
+	Armament@2:
+		Name: secondary
+		Weapon: ObeliskLaserFire2
+		LocalOffset: 1400,210,750
+	Armament@3:
+		Name: tertiary
+		Weapon: ObeliskLaserFire3
+		LocalOffset: 1400,210,750
+	Armament@4:
+		Name: quaternary
+		Weapon: ObeliskLaserFire4
+		LocalOffset: 1400,210,750
 	WithRangeCircle:
 		Range: 7c680
 		UsePlayerColor: True	
 	AttackCharge:
+		Armaments: primary, secondary, tertiary, quaternary
 		ChargeAudio: obelpowr.aud
-		MaxCharges: 2
+		MaxCharges: 8
 		InitialChargeDelay: 20
 		ReloadTime: 76
 	WithChargeOverlay:
@@ -152,7 +165,7 @@ NASAM:
 	Buildable:
 		Queue: Defense
 		Prerequisites: naradr, ~structures.nod
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 50
 	Building:
 	Selectable:
 		Bounds: 40, 30, -3, -8

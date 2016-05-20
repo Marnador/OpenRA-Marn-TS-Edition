@@ -15,7 +15,7 @@ NACNST:
 	RevealsShroud:
 		Range: 10c0
 	BaseProvider:
-		Range: 16c0
+		Range: 12c288
 	Production:
 		Produces: Building,Defense
 	Valued:
@@ -247,8 +247,6 @@ NAWEAP:
 	ProductionBar:
 	WithIdleOverlay@ROOF:
 		Sequence: idle-roof
-		UpgradeTypes: empdisable
-		UpgradeMaxEnabledLevel: 0
 	WithProductionDoorOverlay@DOOR:
 	WithProductionOverlay@LIGHTS:
 		Sequence: production-lights

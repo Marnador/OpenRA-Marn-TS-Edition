@@ -18,7 +18,7 @@ E3:
 	Health:
 		HP: 60
 	Mobile:
-		Speed: 56
+		Speed: 42
 	RevealsShroud:
 		Range: 6c0
 	Armament@PRIMARY:
@@ -71,7 +71,7 @@ CYBORG:
 	Voiced:
 		VoiceSet: Cyborg
 	Mobile:
-		Speed: 56
+		Speed: 42
 		TerrainSpeeds:
 			Tiberium: 110
 				PathingCost: -200
@@ -132,7 +132,7 @@ CYC2:
 	Voiced:
 		VoiceSet: CyborgCommando
 	Mobile:
-		Speed: 56
+		Speed: 42
 		TerrainSpeeds:
 			Tiberium: 110
 				PathingCost: -200
@@ -196,7 +196,7 @@ MHIJACK:
 	PoisonedByTiberium:
 		Weapon: TiberiumHeal
 	Mobile:
-		Speed: 99
+		Speed: 75
 		TerrainSpeeds:
 			Tiberium: 110
 				PathingCost: -200

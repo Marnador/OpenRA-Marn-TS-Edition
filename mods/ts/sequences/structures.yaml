@@ -230,35 +230,35 @@ gaweap:
 	production-lights-white: gtweap_a
 		Length: 8
 		Tick: 100
-		ZOffset: 2048
+		ZOffset: 1024
 	damaged-production-lights-white: gtweap_a
 		Start: 8
 		Length: 8
 		Tick: 100
-		ZOffset: 2048
+		ZOffset: 1024
 	production-lights-red: gtweap_b
 		Length: 4
 		Tick: 120
-		ZOffset: 2048
+		ZOffset: 1024
 	damaged-production-lights-red: gtweap_b
 		Start: 4
 		Length: 4
 		Tick: 120
-		ZOffset: 2048
+		ZOffset: 1024
 	idle-turbines: gtweap_c
 		Length: 4
 		Tick: 80
-		ZOffset: 2048
+		ZOffset: 1024
 	damaged-idle-turbines: gtweap_c
 		Length: 4
 		Tick: 80
-		ZOffset: 2048
+		ZOffset: 1024
 	build-door: gtweap_d
 		Length: 9
-		ShadowStart: 9
+		ZOffset: -512
 	damaged-build-door: gtweap_d
 		Length: 9
-		ShadowStart: 9
+		ZOffset: -512
 	make: gtweapmk
 		Length: 20
 		Tick: 80
@@ -278,7 +278,7 @@ gaweap:
 		Length: *
 		Offset: 0, 0
 		UseTilesetCode: false
-		ZOffset: 512
+		ZOffset: 1536
 		BlendMode: Additive
 	icon: gdiwf
 		Offset: 0, 0
@@ -405,11 +405,9 @@ naweap:
 		ZOffset: -1024
 	idle-roof: ntweap_2
 		ShadowStart: 2
-		ZOffset: 512
 	damaged-idle-roof: ntweap_2
 		Start: 1
 		ShadowStart: 3
-		ZOffset: 512
 	dead: ntweap
 		Start: 2
 		ShadowStart: 5
@@ -417,19 +415,19 @@ naweap:
 	production-lights: ntweap_a
 		Length: 16
 		Tick: 100
-		ZOffset: 2048
+		ZOffset: 1024
 	damaged-production-lights: ntweap_a
 		Start: 16
 		Length: 16
 		Tick: 100
-		ZOffset: 2048
+		ZOffset: 1024
 	build-door: ntweap_b
 		Length: 10
-		ShadowStart: 10
+		ZOffset: -512
 	damaged-build-door: ntweap_b
 		Start: 10
 		Length: 10
-		ShadowStart: 20
+		ZOffset: -512
 	make: ntweapmk
 		Length: 22
 		Tick: 80
@@ -446,7 +444,7 @@ naweap:
 		Length: *
 		Offset: 0, 0
 		UseTilesetCode: false
-		ZOffset: 512
+		ZOffset: 1536
 		BlendMode: Additive
 	icon: nodwf
 		Offset: 0, 0

@@ -95,7 +95,7 @@ GAGATE_A:
 	Inherits: ^Gate_A
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 20
 		Prerequisites: gapile, ~structures.gdi
 	Tooltip:
 		Name: GDI Gate
@@ -104,7 +104,7 @@ GAGATE_B:
 	Inherits: ^Gate_B
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 30
 		Prerequisites: gapile, ~structures.gdi
 	Tooltip:
 		Name: GDI Gate
@@ -225,7 +225,7 @@ GACTVULC:
 		Description: Vulcan tower for base defense.\n  Strong vs Infantry\n  Useless vs Aircarft
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 40
 		Prerequisites: gapile, ~structures.gdi
 	Building:
 	Selectable:
@@ -286,7 +286,7 @@ GACTRPG:
 		Description: RPG tower for base defense.\nRequires power to operate.\n  Strong vs Vehicles\n  Useless vs Aircraft
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 60
 		Prerequisites: gaweap, ~structures.gdi
 	Building:
 	Selectable:

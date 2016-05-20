@@ -82,7 +82,7 @@ ORCA:
 	Aircraft:
 		CruiseAltitude: 3500
 		TurnSpeed: 4
-		Speed: 186
+		Speed: 170
 		InitialFacing: 224
 		AltitudeVelocity: 320
 	Health:
@@ -187,7 +187,7 @@ ORCATRAN:
 		CruiseAltitude: 3500
 		LandWhenIdle: yes
 		TurnSpeed: 5
-		Speed: 150
+		Speed: 140
 		InitialFacing: 224
 		AirborneUpgrades: airborne
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Tiberium, BlueTiberium
@@ -226,7 +226,7 @@ TRNSPORT:
 		CruiseAltitude: 3500
 		LandWhenIdle: yes
 		TurnSpeed: 5
-		Speed: 150
+		Speed: 140
 		InitialFacing: 224
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Tiberium, BlueTiberium
 		AltitudeVelocity: 300
@@ -266,7 +266,7 @@ SCRIN:
 		TurnSpeed: 3
 		InitialFacing: 224
 		MaximumPitch: 120
-		Speed: 205
+		Speed: 190
 		AirborneUpgrades: airborne
 		AltitudeVelocity: 340
 	Health:

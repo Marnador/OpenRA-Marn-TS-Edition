@@ -15,7 +15,7 @@ GACNST:
 	RevealsShroud:
 		Range: 10c0
 	BaseProvider:
-		Range: 16c0
+		Range: 12c288
 	Production:
 		Produces: Building,Defense
 	Valued:
@@ -104,7 +104,7 @@ GAPOWR:
 	Power@pluga:
 		UpgradeTypes: powrup.a
 		UpgradeMinEnabledLevel: 1
-		Amount: 50
+		Amount: 100
 	WithIdleOverlay@pluga:
 		UpgradeTypes: powrup.a
 		UpgradeMinEnabledLevel: 1
@@ -120,7 +120,7 @@ GAPOWR:
 	Power@plugb:
 		UpgradeTypes: powrup.b
 		UpgradeMinEnabledLevel: 1
-		Amount: 50
+		Amount: 100
 	ProvidesPrerequisite@buildingname:
 	SelectionDecorations:
 		VisualBounds: 90, 84, 0, -12

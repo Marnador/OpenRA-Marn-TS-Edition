@@ -16,7 +16,7 @@ E2:
 	Health:
 		HP: 55
 	Mobile:
-		Speed: 71
+		Speed: 54
 	RevealsShroud:
 		Range: 5c0
 	Armament@PRIMARY:
@@ -73,7 +73,7 @@ MEDIC:
 	RevealsShroud:
 		Range: 6c0		
 	Mobile:
-		Speed: 56
+		Speed: 42
 	Health:
 		HP: 120
 	Crushable:
@@ -133,7 +133,7 @@ JUMPJET:
 		LandWhenIdle: False
 		InitialFacing: 20
 		TurnSpeed: 4
-		Speed: 120
+		Speed: 90
 		AltitudeVelocity: 200
 		Voice: Move
 		AirborneUpgrades: airborne
@@ -207,7 +207,7 @@ GHOST:
 	Armor:
 		Type: Light
 	Mobile:
-		Speed: 56
+		Speed: 42
 		TerrainSpeeds:
 			Tiberium: 110
 				PathingCost: -200

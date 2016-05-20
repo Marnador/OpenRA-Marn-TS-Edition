@@ -243,10 +243,53 @@ ObeliskLaserFire:
 	Projectile: LaserZap
 		Width: 85
 		ZOffset: 2047
-		BeamDuration: 6
+		BeamDuration: 10
+		Color: 880000
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
-		Damage: 135
+		Damage: 34
+		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
+
+ObeliskLaserFire2:
+	ReloadDelay: 1
+	Range: 7c680
+	Report: obelray1.aud
+	Projectile: LaserZap
+		Width: 55
+		ZOffset: 2303
+		BeamDuration: 10
+		Color: F00000
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 34
+		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
+
+ObeliskLaserFire3:
+	ReloadDelay: 1
+	Range: 7c680
+	Report: obelray1.aud
+	Projectile: LaserZap
+		Width: 35
+		ZOffset: 2559
+		BeamDuration: 10
+		Color: FF0000
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 34
+		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
+
+ObeliskLaserFire4:
+	ReloadDelay: 1
+	Range: 7c680
+	Report: obelray1.aud
+	Projectile: LaserZap
+		Width: 15
+		ZOffset: 2815
+		BeamDuration: 10
+		Color: FFFF00
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 34
 		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
 
 TurretLaserFire:

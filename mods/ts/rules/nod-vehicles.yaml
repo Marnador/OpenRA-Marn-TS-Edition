@@ -17,7 +17,7 @@ NODMCV:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 85
+		Speed: 64
 	RevealsShroud:
 		Range: 8c0
 	MustBeDestroyed:
@@ -50,7 +50,7 @@ BGGY:
 		Prerequisites: ~naweap
 	Mobile:
 		TuenSpeed: 8
-		Speed: 150
+		Speed: 118
 	Health:
 		HP: 220
 	Armor:
@@ -119,7 +119,7 @@ BIKE:
 		Prerequisites: ~naweap
 	Mobile:
 		TurnSpeed: 10
-		Speed: 190
+		Speed: 160
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 80
@@ -162,7 +162,7 @@ TTNK:
 		Prerequisites: ~naweap
 	Mobile:
 		TurnSpeed: 7
-		Speed: 113
+		Speed: 83
 		Crushes: wall, crate, infantry
 	Health:
 		HP: 350
@@ -203,7 +203,7 @@ ART2:
 	Armor:
 		Type: Light
 	Mobile:
-		Speed: 85
+		Speed: 64
 		TurnSpeed: 3
 	RevealsShroud:
 		Range: 9c0
@@ -234,8 +234,10 @@ REPAIR:
 		Description: Repairs nearby vehicles.\n  Unarmed
 	Health:
 		HP: 350
+	Armor:
+		Type: Heavy
 	Mobile:
-		Speed: 120
+		Speed: 95
 		TurnSpeed: 8
 	RevealsShroud:
 		Range: 5c0
@@ -449,7 +451,7 @@ SAPC:
 		Image: nodapc
 		Scale: 12
 	Valued:
-		Cost: 800
+		Cost: 600
 	Tooltip:
 		Name: Stealth APC
 		Description: Troop transport that can move\nin stealth to avoid detection.\n  Unarmed
@@ -459,11 +461,11 @@ SAPC:
 		Prerequisites: ~naweap, natech
 	Mobile:
 		TurnSpeed: 5
-		Speed: 100
+		Speed: 96
 		UpgradeTypes: notmobile
 		UpgradeMaxEnabledLevel: 0
 	Health:
-		HP: 200
+		HP: 300
 	Armor:
 		Type: Heavy
 	RevealsShroud:
@@ -495,8 +497,8 @@ SUBTANK:
 		BuildPaletteOrder: 80
 		Prerequisites: ~naweap, natech
 	Mobile:
-		TurnSpeed: 8
-		Speed: 113
+		TurnSpeed: 7
+		Speed: 75
 		Crushes: wall, crate, infantry
 	Health:
 		HP: 350
@@ -532,7 +534,7 @@ STNK:
 		Queue: Vehicle
 	Mobile:
 		TurnSpeed: 10
-		Speed: 142
+		Speed: 107
 		Crushes: wall, crate, infantry
 	Health:
 		HP: 200
