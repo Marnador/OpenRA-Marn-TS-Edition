@@ -13,8 +13,8 @@ C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Cnc\bin\Debug\OpenRA.Mods.Cnc.pdb
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.csprojResolveAssemblyReference.cache
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.dll
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.pdb
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Cnc\bin\Debug\OpenRA.Mods.Cnc.dll
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Cnc\bin\Debug\OpenRA.Mods.Cnc.pdb
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.csprojResolveAssemblyReference.cache
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.dll
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Cnc\bin\Debug\OpenRA.Mods.Cnc.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Cnc\bin\Debug\OpenRA.Mods.Cnc.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Cnc\obj\x86\Debug\OpenRA.Mods.Cnc.pdb

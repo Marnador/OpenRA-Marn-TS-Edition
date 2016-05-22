@@ -9,10 +9,6 @@ E1:
 	Tooltip:
 		Name: Light Infantry
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles\n  Useless vs Aircraft
-	ExternalCaptures:
-		CaptureTypes: civbuilding
-		Sabotage: False
-		Voice: Move
 	Health:
 		HP: 55
 	Mobile:

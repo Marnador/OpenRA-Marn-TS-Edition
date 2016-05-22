@@ -60,9 +60,12 @@ crate-effects:
 	levelup: veteran
 
 rank:
-	rank: pips
-		Start: 7
-		Length: 2
+	rank: smallchevrons
+		Length: 4
+
+chevrons:
+	veteran:
+		Offset: 2, 2
 
 mpspawn:
 	idle:
@@ -85,8 +88,7 @@ darken:
 		Length: 1
 
 pips:
-	medic:
-		Start: 6
+	medic: cross
 	groups: pipsra #TODO: backfall to RA asset
 		Start: 8
 		Length: 10

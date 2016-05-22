@@ -74,6 +74,9 @@ aban08:
 	critical-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflagnoshade
+		Length: 38
+		Tick: 42
 
 aban09:
 	Defaults:
@@ -592,6 +595,10 @@ ca0014:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflag
+		UseTilesetCode: false
+		Length: 38
+		Tick: 36
 
 ca0014.husk:
 	Defaults:
@@ -753,7 +760,7 @@ caarmr:
 	idle-flag: flag
 		Start: 3
 		Length: 61
-		Tick: 70
+		Tick: 68
 
 caaray:
 	Defaults:
@@ -813,7 +820,7 @@ cahosp:
 		UseTilesetCode: false
 		Start: 3
 		Length: 61
-		Tick: 70
+		Tick: 72
 		ZOffset: -512
 
 capyr01:
@@ -906,6 +913,8 @@ city04:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflagnoshade
+		Length: 38
 
 city04.husk:
 	Defaults:
@@ -928,6 +937,9 @@ city05:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflag
+		Length: 38
+		Tick: 40
 
 city05.husk:
 	Defaults:
@@ -1016,6 +1028,9 @@ city09:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflagnopole
+		Length: 38
+		Tick: 44
 
 city09.husk:
 	Defaults:
@@ -1038,6 +1053,9 @@ city10:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflag
+		Length: 38
+		Tick: 34
 
 city10.husk:
 	Defaults:
@@ -1148,6 +1166,9 @@ city15:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflagnoshade
+		Length: 38
+		Tick: 46
 
 city15.husk:
 	Defaults:
@@ -1192,6 +1213,9 @@ city17:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflagnopole
+		Length: 38
+		Tick: 32
 
 city17.husk:
 	Defaults:
@@ -1276,6 +1300,9 @@ city22:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
+	idle-flag: smallflag
+		Length: 38
+		Tick: 48
 
 city22.husk:
 	Defaults:
@@ -1353,10 +1380,8 @@ gaoldcc6:
 		ShadowStart: 2
 		UseTilesetCode: true
 		Offset: 0, -24
-	idle-flag: flag
-		Start: 3
-		Length: 61
-		Tick: 70
+	idle-flag: smallflag
+		Length: 38
 		
 
 gakodk:

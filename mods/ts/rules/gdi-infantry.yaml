@@ -9,10 +9,6 @@ E2:
 	Tooltip:
 		Name: Disc Thrower
 		Description: Infantry armed with special explosive discs.\n  Strong vs Buildings, Infantry\n  Weak vs Moving targets\n  Useless vs Aircraft
-	ExternalCaptures:
-		CaptureTypes: civbuilding
-		Sabotage: False
-		Voice: Move
 	Health:
 		HP: 55
 	Mobile:
@@ -193,10 +189,6 @@ GHOST:
 	Tooltip:
 		Name: Ghost Stalker
 		Description: Elite commando infantry, armed with\na railgun and C4.\n  Strong vs Buildings, Vehicles, Infantry\n  Useless vs Aircraft\n  Special Ability: Destroy Building with C4\nHeals from Tiberium\nMaximum 1 can be trained.
-	ExternalCaptures:
-		CaptureTypes: civbuilding
-		Sabotage: False
-		Voice: Move
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 60

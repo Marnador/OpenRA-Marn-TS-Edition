@@ -109,6 +109,11 @@ ABAN08:
 		HP: 500
 	EditorTilesetFilter:
 		ExcludeTilesets: TEMPERATE
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: 900,40,0
 
 ABAN09:
 	Inherits: ^CivBuilding
@@ -372,8 +377,6 @@ CA0001:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Rade's Roadhouse
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 100, 70, 0, -25
 	Selectable:
@@ -418,8 +421,6 @@ CA0002:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Sandberg and Son's
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 90, 70, 0, 0
 	Selectable:
@@ -464,8 +465,6 @@ CA0003:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Temp Housing
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -506,8 +505,6 @@ CA0004:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Waystation
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 90, 50, 0, -10
 	Selectable:
@@ -552,8 +549,6 @@ CA0005:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Ferbie's 4 Sale
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 80, 50, 0, -5
 	Selectable:
@@ -598,8 +593,6 @@ CA0006:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Deluxe Accomodations
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 80, 55, 0, -8
 	Selectable:
@@ -688,8 +681,6 @@ CA0008:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Subterranean Dwelling
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 90, 65, -10, 0
 	Selectable:
@@ -734,8 +725,6 @@ CA0009:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Subterranean Dwelling
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 90, 65, -10, 0
 	Selectable:
@@ -780,8 +769,6 @@ CA0010:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Leary Traveller Inn
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 100, 70, 0, -10
 	Selectable:
@@ -934,8 +921,6 @@ CA0014:
 	Inherits: ^CivBuildingGar
 	Tooltip:
 		Name: Observation Tower
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 60, 60, 0, -15
 	Selectable:
@@ -949,17 +934,16 @@ CA0014:
 		HP: 1000
 	SpawnActorOnDeath:
 		Actor: CA0014.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -1050,0,0
 
 CA0014.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CA0014
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE2:
 		Sequence: idle-fire2
 		Palette: effect
@@ -981,8 +965,6 @@ CA0015:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Port-A-Shack
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 60, 45, 0, -10
 	Selectable:
@@ -1024,8 +1006,6 @@ CA0016:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Port-A-Shack Deluxe
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 60, 80, 0, -20
 	Selectable:
@@ -1267,6 +1247,11 @@ CAARMR:
 		Palette: player
 	ProvidesPrerequisite:
 		Prerequisite: barracks.upgraded
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -2500,250,0
 
 CABHUT:
 	Inherits: ^CivBuilding
@@ -1327,6 +1312,11 @@ CAHOSP:
 	RenderSprites:
 		Palette: player
 	ProvidesPrerequisite@BuildingName:
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: 100,240,0
 
 CAPYR01:
 	Inherits: ^CivBuilding
@@ -1543,17 +1533,16 @@ CITY04:
 		RequireTilesets: TEMPERATE
 	SpawnActorOnDeath:
 		Actor: CITY04.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -2000,350,0
 
 CITY04.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CITY04
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -1600,17 +1589,16 @@ CITY05:
 		RequireTilesets: TEMPERATE
 	SpawnActorOnDeath:
 		Actor: CITY05.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -2350,520,0
 
 CITY05.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CITY05
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -1789,8 +1777,6 @@ CITY09:
 	Inherits: ^CivBuildingGar
 	Tooltip:
 		Name: Abandoned Warehouse
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 80, 90, 0, -20
 	Selectable:
@@ -1806,17 +1792,16 @@ CITY09:
 		RequireTilesets: TEMPERATE
 	SpawnActorOnDeath:
 		Actor: CITY09.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -1400,-410,0
 
 CITY09.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CITY09
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -1863,17 +1848,17 @@ CITY10:
 		RequireTilesets: TEMPERATE
 	SpawnActorOnDeath:
 		Actor: CITY10.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -2000,40,0
+
 
 CITY10.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CITY10
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -2052,8 +2037,6 @@ CITY14:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Business Offices
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 50, 100, 0, -35
 	Selectable:
@@ -2119,17 +2102,16 @@ CITY15:
 		RequireTilesets: TEMPERATE
 	SpawnActorOnDeath:
 		Actor: CITY15.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: 500,0,0
 
 CITY15.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CITY15
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -2209,8 +2191,6 @@ CITY17:
 	Inherits: ^CivBuildingGar
 	Tooltip:
 		Name: The Projects
-	ExternalCapturable:
-		CaptureCompleteTime: 15
 	Cargo:
 		MaxWeight: 15
 		PipCount: 15
@@ -2229,17 +2209,16 @@ CITY17:
 		RequireTilesets: TEMPERATE
 	SpawnActorOnDeath:
 		Actor: CITY17.Husk
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -2100,1690,0
 
 CITY17.Husk:
 	Inherits: ^CivBuildingHusk
 	Targetable:
 		TargetTypes: Ground, Building, C4
-	TransformOnCapture:
-		IntoActor: CITY17
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -2269,8 +2248,6 @@ CITY18:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Archer Asylum
-	ExternalCapturable:
-		CaptureCompleteTime: 15
 	SelectionDecorations:
 		VisualBounds: 170, 160, 5, -40
 	Selectable:
@@ -2321,8 +2298,6 @@ CITY19:
 	Inherits: ^CivBuilding
 	Tooltip:
 		Name: Fill'er Up-Pump'N'Go
-	ExternalCapturable:
-		CaptureCompleteTime: 5
 	SelectionDecorations:
 		VisualBounds: 90, 60, 5, -15
 	Selectable:
@@ -2423,6 +2398,11 @@ CITY22:
 		Actor: CITY22.Husk
 	EditorTilesetFilter:
 		RequireTilesets: TEMPERATE
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: -2000,0,0
 
 CITY22.Husk:
 	Inherits: ^CivBuildingHusk
@@ -2431,12 +2411,6 @@ CITY22.Husk:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	TransformOnCapture:
-		IntoActor: CITY22
-	CaptureNotification:
-	Capturable:
-		AllowAllies: True
-		CaptureThreshold: 100
 	WithIdleOverlay@FIRE:
 		Sequence: idle-fire
 		Palette: effect
@@ -2591,6 +2565,11 @@ GAOLDCC6:
 		HP: 800
 	RenderSprites:
 		Palette: player
+	WithIdleOverlay@flag:
+		Palette: player
+		IsPlayerPalette: true
+		Sequence: idle-flag
+		Offset: 100,200,0
 
 GASAND:
 	Inherits: ^Wall

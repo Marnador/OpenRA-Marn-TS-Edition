@@ -13,3 +13,8 @@ C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.RA\bin\Debug\OpenRA.Mods.RA.pdb
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.RA\obj\x86\Debug\OpenRA.Mods.RA.csprojResolveAssemblyReference.cache
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.RA\obj\x86\Debug\OpenRA.Mods.RA.dll
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.RA\obj\x86\Debug\OpenRA.Mods.RA.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.RA\bin\Debug\OpenRA.Mods.RA.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.RA\bin\Debug\OpenRA.Mods.RA.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.RA\obj\x86\Debug\OpenRA.Mods.RA.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.RA\obj\x86\Debug\OpenRA.Mods.RA.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.RA\obj\x86\Debug\OpenRA.Mods.RA.pdb

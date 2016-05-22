@@ -18,8 +18,10 @@
 ^GainsExperience:
 	GainsExperience:
 		Upgrades:
-			500: rank, firepower, damage, speed, reload
-			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
+			200: rank, firepower, damage, speed, reload
+			400: rank, firepower, damage, speed, reload
+			800: rank, firepower, damage, speed, reload
+			1600: rank, firepower, damage, speed, reload, selfheal, eliteweapon
 	FirepowerMultiplier@EXPERIENCE:
 		UpgradeTypes: firepower
 		Modifier: 110, 130
@@ -33,21 +35,21 @@
 		UpgradeTypes: reload
 		Modifier: 90, 75
 	SelfHealing@ELITE:
-		Step: 2
+		Step: 5
 		Delay: 100
-		HealIfBelow: 1
+		HealIfBelow: 100
 		DamageCooldown: 125
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
 	WithRankDecoration:
 		Image: rank
 		Sequence: rank
-		Palette: ra
+		Palette: pips
 		ReferencePoint: Bottom, Right
 		UpgradeTypes: rank
 		ZOffset: 256
 		UpgradeMinEnabledLevel: 1
-		UpgradeMaxAcceptedLevel: 2
+		UpgradeMaxAcceptedLevel: 4
 
 ^EmpDisable:
 	UpgradeOverlay@EMPDISABLE:
@@ -195,16 +197,13 @@
 
 ^CivBuildingGar:
 	Inherits: ^CivBuilding
-	ExternalCapturable:
-		Type: civbuilding
-		CaptureCompleteTime: 10
-		AllowEnemies: False
-	ExternalCapturableBar:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
 		PipCount: 5
 		EjectOnDeath: true
+	RepairableBuilding:
+		IndicatorPalette: mouse
 	Turreted:
 		TurnSpeed: 255
 	AttackGarrisoned:
@@ -382,7 +381,7 @@
 	SelfHealing@HOSPITAL:
 		Step: 5
 		Delay: 100
-		HealIfBelow: 1
+		HealIfBelow: 100
 		DamageCooldown: 125
 		UpgradeTypes: hospitalheal
 		UpgradeMinEnabledLevel: 1
@@ -390,10 +389,11 @@
 		Upgrades: hospitalheal
 		Prerequisites: cahosp
 	WithDecoration@REDCROSS:
+		ZOffset: 512
 		Image: pips
 		Sequence: medic
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		ReferencePoint: Top, Left
 		UpgradeTypes: hospitalheal
 		UpgradeMinEnabledLevel: 1
 

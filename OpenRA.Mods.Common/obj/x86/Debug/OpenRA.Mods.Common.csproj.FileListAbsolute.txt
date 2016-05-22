@@ -22,11 +22,11 @@ C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Common\bin\Debug\Microsoft.Build.Util
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.csprojResolveAssemblyReference.cache
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.dll
 C:\Users\Marn\Desktop\MarnTS22\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.pdb
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\bin\Debug\OpenRA.Mods.Common.dll
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\bin\Debug\OpenRA.Mods.Common.pdb
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\bin\Debug\StyleCop.dll
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.csprojResolveAssemblyReference.cache
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.dll
-C:\Users\Marn\Desktop\MarnTS27\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\bin\Debug\OpenRA.Mods.Common.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\bin\Debug\OpenRA.Mods.Common.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\bin\Debug\StyleCop.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.dll
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Mods.Common\obj\x86\Debug\OpenRA.Mods.Common.pdb

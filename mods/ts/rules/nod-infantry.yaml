@@ -9,10 +9,6 @@ E3:
 	Tooltip:
 		Name: Rocket Infantry
 		Description: Anti-tank infantry.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
-	ExternalCaptures:
-		CaptureTypes: civbuilding
-		Sabotage: False
-		Voice: Move
 	Voiced:
 		VoiceSet: Rocket
 	Health:
@@ -118,10 +114,6 @@ CYC2:
 	Tooltip:
 		Name: Cyborg Commando
 		Description: Elite cybernetic infantry unit.\n  Strong vs Buildings, Vehicles, Infantry\n  Useless vs Aircraft\nHeals from Tiberium\nMaximum 1 can be trained.
-	ExternalCaptures:
-		CaptureTypes: civbuilding
-		Sabotage: False
-		Voice: Move
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 60
@@ -185,10 +177,6 @@ MHIJACK:
 	Tooltip:
 		Name: Mutant Hijacker
 		Description: Hijacks enemy vehicles.\n  Unarmed\nHeals from Tiberium
-	ExternalCaptures:
-		CaptureTypes: civbuilding
-		Sabotage: False
-		Voice: Move
 	Voiced:
 		VoiceSet: Hijacker
 	Health:

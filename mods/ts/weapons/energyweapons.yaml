@@ -241,10 +241,10 @@ ObeliskLaserFire:
 	Range: 7c680
 	Report: obelray1.aud
 	Projectile: LaserZap
-		Width: 85
+		Width: 90
 		ZOffset: 2047
 		BeamDuration: 10
-		Color: 880000
+		Color: 770000
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 34
@@ -255,10 +255,10 @@ ObeliskLaserFire2:
 	Range: 7c680
 	Report: obelray1.aud
 	Projectile: LaserZap
-		Width: 55
+		Width: 60
 		ZOffset: 2303
 		BeamDuration: 10
-		Color: F00000
+		Color: AA0000
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 34
@@ -269,10 +269,10 @@ ObeliskLaserFire3:
 	Range: 7c680
 	Report: obelray1.aud
 	Projectile: LaserZap
-		Width: 35
+		Width: 40
 		ZOffset: 2559
 		BeamDuration: 10
-		Color: FF0000
+		Color: FF6600
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 34
@@ -283,10 +283,10 @@ ObeliskLaserFire4:
 	Range: 7c680
 	Report: obelray1.aud
 	Projectile: LaserZap
-		Width: 15
+		Width: 20
 		ZOffset: 2815
 		BeamDuration: 10
-		Color: FFFF00
+		Color: FFAA00
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 34

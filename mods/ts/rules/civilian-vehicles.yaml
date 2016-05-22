@@ -109,7 +109,7 @@ PICK:
 		Name: Pickup
 	Mobile:
 		ROT: 6
-		Speed: 170
+		Speed: 118
 	Health:
 		HP: 200
 	ExternalCapturable:
@@ -142,7 +142,7 @@ CAR:
 		Name: Automobile
 	Mobile:
 		ROT: 6
-		Speed: 170
+		Speed: 118
 	Health:
 		HP: 200
 	ExternalCapturable:
@@ -175,7 +175,7 @@ WINI:
 		Name: Recreational Vehicle
 	Mobile:
 		ROT: 6
-		Speed: 170
+		Speed: 118
 	Health:
 		HP: 200
 	ExternalCapturable:
