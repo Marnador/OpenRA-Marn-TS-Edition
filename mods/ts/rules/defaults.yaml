@@ -157,6 +157,8 @@
 	Inherits@2: ^EmpDisable
 	GivesBuildableArea:
 	Capturable:
+	GivesBounty:
+		Percentage: 20
 	RepairableBuilding:
 		IndicatorPalette: mouse
 	WithDeathAnimation:
@@ -294,6 +296,8 @@
 	Inherits@3: ^SpriteActor
 	Inherits@4: ^Cloakable
 	DrawLineToTarget:
+	GivesBounty:
+		Percentage: 20
 	Health:
 		HP: 50
 		Shape: Circle
@@ -451,6 +455,8 @@
 	Inherits@3: ^EmpDisableMobile
 	Inherits@4: ^Cloakable
 	DrawLineToTarget:
+	GivesBounty:
+		Percentage: 20
 	Mobile:
 		Crushes: crate
 		TerrainSpeeds:
@@ -556,6 +562,8 @@
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^Cloakable
 	DrawLineToTarget:
+	GivesBounty:
+		Percentage: 20
 	AppearsOnRadar:
 		UseLocation: yes
 	Targetable@GROUND:
@@ -806,6 +814,8 @@
 	Inherits@3: ^SpriteActor
 	Inherits@4: ^Cloakable
 	Inherits@5: ^EmpDisable
+	GivesBounty:
+		Percentage: 20
 	Voiced:
 		VoiceSet: Vehicle
 	AttackTurreted:
