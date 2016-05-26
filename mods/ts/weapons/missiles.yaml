@@ -63,15 +63,16 @@ BazookaEliteGarrisoned:
 	Range: 6c912
 
 HoverMissile:
-	ReloadDelay: 100
+	ReloadDelay: 40
 	Burst: 4
-	Range: 6c144
-	BurstDelay: 6
+	Range: 6c912
+	BurstDelay: 4
 	Report: hovrmis1.aud
 	ValidTargets: Ground, Air
 	Projectile: Missile
 		MaximumLaunchSpeed: 150
-		Arm: 4
+		MinimumLaunchSpeed: 75
+		Arm: 0
 		Blockable: false
 		Shadow: true
 		Image: DRAGON
@@ -83,11 +84,10 @@ HoverMissile:
 		HorizontalRateOfTurn: 10
 		RangeLimit: 40
 		Palette: ra
-		MinimumLaunchSpeed: 75
 		Speed: 426
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 30
+		Damage: 20
 		ValidTargets: Ground, Air
 		Versus:
 			None: 25
@@ -175,6 +175,8 @@ BikeMissile:
 	Report: misl1.aud
 	ValidTargets: Ground, Air
 	Projectile: Missile
+		MaximumLaunchSpeed: 150
+		MinimumLaunchSpeed: 75
 		Arm: 0
 		Blockable: false
 		Shadow: true

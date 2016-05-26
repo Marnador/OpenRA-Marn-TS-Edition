@@ -128,7 +128,7 @@ JUMPJET:
 		CruiseAltitude: 3250
 		LandWhenIdle: False
 		InitialFacing: 20
-		TurnSpeed: 4
+		TurnSpeed: 10
 		Speed: 90
 		AltitudeVelocity: 200
 		Voice: Move
@@ -202,9 +202,9 @@ GHOST:
 		Speed: 42
 		TerrainSpeeds:
 			Tiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 			BlueTiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 	Health:
 		HP: 200
 	PoisonedByTiberium:

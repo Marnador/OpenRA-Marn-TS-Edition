@@ -18,330 +18,333 @@ using OpenRA.Widgets;
 
 namespace OpenRA.Mods.Common.Widgets
 {
-	public enum WorldTooltipType { None, Unexplored, Actor, FrozenActor }
+    public enum WorldTooltipType { None, Unexplored, Actor, FrozenActor }
 
-	public class ViewportControllerWidget : Widget
-	{
-		public readonly string TooltipTemplate = "WORLD_TOOLTIP";
-		public readonly string TooltipContainer;
-		Lazy<TooltipContainerWidget> tooltipContainer;
+    public class ViewportControllerWidget : Widget
+    {
+        public readonly string TooltipTemplate = "WORLD_TOOLTIP";
+        public readonly string TooltipContainer;
+        Lazy<TooltipContainerWidget> tooltipContainer;
 
-		public WorldTooltipType TooltipType { get; private set; }
-		public ITooltip ActorTooltip { get; private set; }
-		public IProvideTooltipInfo[] ActorTooltipExtra { get; private set; }
-		public FrozenActor FrozenActorTooltip { get; private set; }
+        public WorldTooltipType TooltipType { get; private set; }
+        public ITooltip ActorTooltip { get; private set; }
+        public IProvideTooltipInfo[] ActorTooltipExtra { get; private set; }
+        public FrozenActor FrozenActorTooltip { get; private set; }
 
-		public int EdgeScrollThreshold = 15;
-		public int EdgeCornerScrollThreshold = 35;
+        public int EdgeScrollThreshold = 15;
+        public int EdgeCornerScrollThreshold = 35;
 
-		int2? joystickScrollStart, joystickScrollEnd;
+        int2? joystickScrollStart, joystickScrollEnd;
 
-		static readonly Dictionary<ScrollDirection, string> ScrollCursors = new Dictionary<ScrollDirection, string>
-		{
-			{ ScrollDirection.Up | ScrollDirection.Left, "scroll-tl" },
-			{ ScrollDirection.Up | ScrollDirection.Right, "scroll-tr" },
-			{ ScrollDirection.Down | ScrollDirection.Left, "scroll-bl" },
-			{ ScrollDirection.Down | ScrollDirection.Right, "scroll-br" },
-			{ ScrollDirection.Up, "scroll-t" },
-			{ ScrollDirection.Down, "scroll-b" },
-			{ ScrollDirection.Left, "scroll-l" },
-			{ ScrollDirection.Right, "scroll-r" },
-		};
+        static readonly Dictionary<ScrollDirection, string> ScrollCursors = new Dictionary<ScrollDirection, string>
+        {
+            { ScrollDirection.Up | ScrollDirection.Left, "scroll-tl" },
+            { ScrollDirection.Up | ScrollDirection.Right, "scroll-tr" },
+            { ScrollDirection.Down | ScrollDirection.Left, "scroll-bl" },
+            { ScrollDirection.Down | ScrollDirection.Right, "scroll-br" },
+            { ScrollDirection.Up, "scroll-t" },
+            { ScrollDirection.Down, "scroll-b" },
+            { ScrollDirection.Left, "scroll-l" },
+            { ScrollDirection.Right, "scroll-r" },
+        };
 
-		static readonly Dictionary<ScrollDirection, string> JoystickCursors = new Dictionary<ScrollDirection, string>
-		{
-			{ ScrollDirection.Up | ScrollDirection.Left, "joystick-tl-blocked" },
-			{ ScrollDirection.Up | ScrollDirection.Right, "joystick-tr-blocked" },
-			{ ScrollDirection.Down | ScrollDirection.Left, "joystick-bl-blocked" },
-			{ ScrollDirection.Down | ScrollDirection.Right, "joystick-br-blocked" },
-			{ ScrollDirection.Up, "joystick-t-blocked" },
-			{ ScrollDirection.Down, "joystick-b-blocked" },
-			{ ScrollDirection.Left, "joystick-l-blocked" },
-			{ ScrollDirection.Right, "joystick-r-blocked" },
-		};
+        static readonly Dictionary<ScrollDirection, string> JoystickCursors = new Dictionary<ScrollDirection, string>
+        {
+            { ScrollDirection.Up | ScrollDirection.Left, "joystick-tl-blocked" },
+            { ScrollDirection.Up | ScrollDirection.Right, "joystick-tr-blocked" },
+            { ScrollDirection.Down | ScrollDirection.Left, "joystick-bl-blocked" },
+            { ScrollDirection.Down | ScrollDirection.Right, "joystick-br-blocked" },
+            { ScrollDirection.Up, "joystick-t-blocked" },
+            { ScrollDirection.Down, "joystick-b-blocked" },
+            { ScrollDirection.Left, "joystick-l-blocked" },
+            { ScrollDirection.Right, "joystick-r-blocked" },
+        };
 
-		static readonly Dictionary<ScrollDirection, float2> ScrollOffsets = new Dictionary<ScrollDirection, float2>
-		{
-			{ ScrollDirection.Up, new float2(0, -1) },
-			{ ScrollDirection.Down, new float2(0, 1) },
-			{ ScrollDirection.Left, new float2(-1, 0) },
-			{ ScrollDirection.Right, new float2(1, 0) },
-		};
+        static readonly Dictionary<ScrollDirection, float2> ScrollOffsets = new Dictionary<ScrollDirection, float2>
+        {
+            { ScrollDirection.Up, new float2(0, -1) },
+            { ScrollDirection.Down, new float2(0, 1) },
+            { ScrollDirection.Left, new float2(-1, 0) },
+            { ScrollDirection.Right, new float2(1, 0) },
+        };
 
-		ScrollDirection keyboardDirections;
-		ScrollDirection edgeDirections;
-		World world;
-		WorldRenderer worldRenderer;
+        ScrollDirection keyboardDirections;
+        ScrollDirection edgeDirections;
+        World world;
+        WorldRenderer worldRenderer;
 
-		[ObjectCreator.UseCtor]
-		public ViewportControllerWidget(World world, WorldRenderer worldRenderer)
-		{
-			this.world = world;
-			this.worldRenderer = worldRenderer;
-			tooltipContainer = Exts.Lazy(() =>
-				Ui.Root.Get<TooltipContainerWidget>(TooltipContainer));
-		}
+        [ObjectCreator.UseCtor]
+        public ViewportControllerWidget(World world, WorldRenderer worldRenderer)
+        {
+            this.world = world;
+            this.worldRenderer = worldRenderer;
+            tooltipContainer = Exts.Lazy(() =>
+                Ui.Root.Get<TooltipContainerWidget>(TooltipContainer));
+        }
 
-		public override void MouseEntered()
-		{
-			if (TooltipContainer == null)
-				return;
+        public override void MouseEntered()
+        {
+            if (TooltipContainer == null)
+                return;
 
-			tooltipContainer.Value.SetTooltip(TooltipTemplate,
-				new WidgetArgs() { { "world", world }, { "viewport", this } });
-		}
+            tooltipContainer.Value.SetTooltip(TooltipTemplate,
+                new WidgetArgs() { { "world", world }, { "viewport", this } });
+        }
 
-		public override void MouseExited()
-		{
-			if (TooltipContainer == null)
-				return;
+        public override void MouseExited()
+        {
+            if (TooltipContainer == null)
+                return;
 
-			tooltipContainer.Value.RemoveTooltip();
-		}
+            tooltipContainer.Value.RemoveTooltip();
+        }
 
-		public override void Draw()
-		{
-			if (IsJoystickScrolling)
-			{
-				// Base the JoystickScrolling speed on the Scroll Speed slider
-				var rate = 0.01f * Game.Settings.Game.ViewportEdgeScrollStep;
+        public override void Draw()
+        {
+            if (IsJoystickScrolling)
+            {
+                // Base the JoystickScrolling speed on the Scroll Speed slider
+                var rate = 0.01f * Game.Settings.Game.ViewportEdgeScrollStep;
 
-				var scroll = (joystickScrollEnd.Value - joystickScrollStart.Value).ToFloat2() * rate;
-				worldRenderer.Viewport.Scroll(scroll, false);
-			}
+                var scroll = (joystickScrollEnd.Value - joystickScrollStart.Value).ToFloat2() * rate;
+                worldRenderer.Viewport.Scroll(scroll, false);
+            }
 
-			UpdateMouseover();
-			base.Draw();
-		}
+            UpdateMouseover();
+            base.Draw();
+        }
 
-		public void UpdateMouseover()
-		{
-			TooltipType = WorldTooltipType.None;
-			ActorTooltipExtra = null;
-			var cell = worldRenderer.Viewport.ViewToWorld(Viewport.LastMousePos);
-			if (!world.Map.Contains(cell))
-				return;
+        public void UpdateMouseover()
+        {
+            TooltipType = WorldTooltipType.None;
+            ActorTooltipExtra = null;
+            var cell = worldRenderer.Viewport.ViewToWorld(Viewport.LastMousePos);
+            if (!world.Map.Contains(cell))
+                return;
 
-			if (world.ShroudObscures(cell))
-			{
-				TooltipType = WorldTooltipType.Unexplored;
-				return;
-			}
+            if (world.ShroudObscures(cell))
+            {
+                TooltipType = WorldTooltipType.Unexplored;
+                return;
+            }
 
-			var worldPixel = worldRenderer.Viewport.ViewToWorldPx(Viewport.LastMousePos);
-			var underCursor = world.ScreenMap.ActorsAt(worldPixel)
-				.Where(a => !world.FogObscures(a) && a.Info.HasTraitInfo<ITooltipInfo>())
-				.WithHighestSelectionPriority(worldPixel);
+            var worldPixel = worldRenderer.Viewport.ViewToWorldPx(Viewport.LastMousePos);
+            var underCursor = world.ScreenMap.ActorsAt(worldPixel)
+                .Where(a => !world.FogObscures(a) && a.Info.HasTraitInfo<ITooltipInfo>())
+                .WithHighestSelectionPriority(worldPixel);
 
-			if (underCursor != null)
-			{
-				ActorTooltip = underCursor.TraitsImplementing<ITooltip>().First();
-				ActorTooltipExtra = underCursor.TraitsImplementing<IProvideTooltipInfo>().ToArray();
-				TooltipType = WorldTooltipType.Actor;
-				return;
-			}
+            if (underCursor != null)
+            {
+                ActorTooltip = underCursor.TraitsImplementing<ITooltip>().First();
+                ActorTooltipExtra = underCursor.TraitsImplementing<IProvideTooltipInfo>().ToArray();
+                TooltipType = WorldTooltipType.Actor;
+                return;
+            }
 
-			var frozen = world.ScreenMap.FrozenActorsAt(world.RenderPlayer, worldPixel)
-				.Where(a => a.TooltipInfo != null && a.IsValid)
-				.WithHighestSelectionPriority(worldPixel);
+            var frozen = world.ScreenMap.FrozenActorsAt(world.RenderPlayer, worldPixel)
+                .Where(a => a.TooltipInfo != null && a.IsValid)
+                .WithHighestSelectionPriority(worldPixel);
 
-			if (frozen != null)
-			{
-				var actor = frozen.Actor;
-				if (actor != null && actor.TraitsImplementing<IVisibilityModifier>().Any(t => !t.IsVisible(actor, world.RenderPlayer)))
-					return;
+            if (frozen != null)
+            {
+                var actor = frozen.Actor;
+                if (actor != null && actor.TraitsImplementing<IVisibilityModifier>().Any(t => !t.IsVisible(actor, world.RenderPlayer)))
+                    return;
 
-				FrozenActorTooltip = frozen;
-				if (frozen.Actor != null)
-					ActorTooltipExtra = frozen.Actor.TraitsImplementing<IProvideTooltipInfo>().ToArray();
-				TooltipType = WorldTooltipType.FrozenActor;
-			}
-		}
+                FrozenActorTooltip = frozen;
+                if (frozen.Actor != null)
+                    ActorTooltipExtra = frozen.Actor.TraitsImplementing<IProvideTooltipInfo>().ToArray();
+                TooltipType = WorldTooltipType.FrozenActor;
+            }
+        }
 
-		public override string GetCursor(int2 pos)
-		{
-			if (!IsJoystickScrolling &&
-			    (!Game.Settings.Game.ViewportEdgeScroll || Ui.MouseOverWidget != this))
-				return null;
+        public override string GetCursor(int2 pos)
+        {
+            if (!IsJoystickScrolling &&
+                (!Game.Settings.Game.ViewportEdgeScroll || Ui.MouseOverWidget != this))
+                return null;
 
-			var blockedDirections = worldRenderer.Viewport.GetBlockedDirections();
+            var blockedDirections = worldRenderer.Viewport.GetBlockedDirections();
 
-			if (IsJoystickScrolling)
-			{
-				foreach (var dir in JoystickCursors)
-					if (blockedDirections.Includes(dir.Key))
-						return dir.Value;
-				return "joystick-all";
-			}
+            if (IsJoystickScrolling)
+            {
+                foreach (var dir in JoystickCursors)
+                    if (blockedDirections.Includes(dir.Key))
+                        return dir.Value;
+                return "joystick-all";
+            }
 
-			foreach (var dir in ScrollCursors)
-				if (edgeDirections.Includes(dir.Key))
-					return dir.Value + (blockedDirections.Includes(dir.Key) ? "-blocked" : "");
+            foreach (var dir in ScrollCursors)
+                if (edgeDirections.Includes(dir.Key))
+                    return dir.Value + (blockedDirections.Includes(dir.Key) ? "-blocked" : "");
 
-			return null;
-		}
+            return null;
+        }
 
-		bool IsJoystickScrolling
-		{
-			get
-			{
-				return joystickScrollStart.HasValue && joystickScrollEnd.HasValue &&
-					(joystickScrollStart.Value - joystickScrollEnd.Value).Length > Game.Settings.Game.JoystickScrollDeadzone;
-			}
-		}
+        bool IsJoystickScrolling
+        {
+            get
+            {
+                return joystickScrollStart.HasValue && joystickScrollEnd.HasValue &&
+                    (joystickScrollStart.Value - joystickScrollEnd.Value).Length > Game.Settings.Game.JoystickScrollDeadzone;
+            }
+        }
 
-		bool IsZoomAllowed(float zoom)
-		{
-			return world.IsGameOver || zoom >= 1.0f || world.IsReplay || world.LocalPlayer == null || world.LocalPlayer.Spectating;
-		}
+        bool IsZoomAllowed(float zoom)
+        {
+            return world.IsGameOver || zoom >= 1.0f || world.IsReplay || world.LocalPlayer == null || world.LocalPlayer.Spectating;
+        }
 
-		void Zoom(int direction)
-		{
-			var zoomSteps = worldRenderer.Viewport.AvailableZoomSteps;
-			var currentZoom = worldRenderer.Viewport.Zoom;
-			var nextIndex = zoomSteps.IndexOf(currentZoom);
+        void Zoom(int direction)
+        {
+            var zoomSteps = worldRenderer.Viewport.AvailableZoomSteps;
+            var currentZoom = worldRenderer.Viewport.Zoom;
+            var nextIndex = zoomSteps.IndexOf(currentZoom);
 
-			if (direction < 0)
-				nextIndex++;
-			else
-				nextIndex--;
+            if (direction < 0)
+                nextIndex++;
+            else
+                nextIndex--;
 
-			if (nextIndex < 0 || nextIndex >= zoomSteps.Count())
-				return;
+            if (nextIndex < 0 || nextIndex >= zoomSteps.Count())
+                return;
 
-			var zoom = zoomSteps.ElementAt(nextIndex);
-			if (!IsZoomAllowed(zoom))
-				return;
+            var zoom = zoomSteps.ElementAt(nextIndex);
+            if (!IsZoomAllowed(zoom))
+                return;
 
-			worldRenderer.Viewport.Zoom = zoom;
-		}
+            worldRenderer.Viewport.Zoom = zoom;
+        }
 
-		public override bool HandleMouseInput(MouseInput mi)
-		{
-			if (mi.Event == MouseInputEvent.Scroll &&
-				Game.Settings.Game.AllowZoom && mi.Modifiers.HasModifier(Game.Settings.Game.ZoomModifier))
-			{
-				Zoom(mi.ScrollDelta);
-				return true;
-			}
+        public override bool HandleMouseInput(MouseInput mi)
+        {
+            if (mi.Event == MouseInputEvent.Scroll &&
+                Game.Settings.Game.AllowZoom && mi.Modifiers.HasModifier(Game.Settings.Game.ZoomModifier))
+            {
+                Zoom(mi.ScrollDelta);
+                return true;
+            }
 
-			var scrolltype = Game.Settings.Game.MouseScroll;
-			if (scrolltype == MouseScrollType.Disabled)
-				return false;
+            var scrollType = MouseScrollType.Disabled;
 
-			if (scrolltype == MouseScrollType.Standard || scrolltype == MouseScrollType.Inverted)
-			{
-				if (mi.Event == MouseInputEvent.Move &&
-					(mi.Button == MouseButton.Middle || mi.Button == (MouseButton.Left | MouseButton.Right)))
-				{
-					var d = scrolltype == MouseScrollType.Inverted ? -1 : 1;
-					worldRenderer.Viewport.Scroll((Viewport.LastMousePos - mi.Location) * d, false);
-					return true;
-				}
-			}
+            if (mi.Button == MouseButton.Middle || mi.Button == (MouseButton.Left | MouseButton.Right))
+                scrollType = Game.Settings.Game.MiddleMouseScroll;
+            else if (mi.Button == MouseButton.Right)
+                scrollType = Game.Settings.Game.RightMouseScroll;
 
-			// Tiberian Sun style right-click-and-drag scrolling
-			if (scrolltype == MouseScrollType.Joystick)
-			{
-				if (mi.Button == MouseButton.Right && mi.Event == MouseInputEvent.Down)
-				{
-					if (!TakeMouseFocus(mi))
-						return false;
-					joystickScrollStart = mi.Location;
-				}
+            if (scrollType == MouseScrollType.Disabled)
+                return false;
 
-				if (mi.Button == MouseButton.Right && mi.Event == MouseInputEvent.Up)
-				{
-					var wasJoystickScrolling = IsJoystickScrolling;
+            if (scrollType == MouseScrollType.Standard || scrollType == MouseScrollType.Inverted)
+            {
+                if (mi.Event == MouseInputEvent.Move)
+                {
+                    var d = scrollType == MouseScrollType.Inverted ? -1 : 1;
+                    worldRenderer.Viewport.Scroll((Viewport.LastMousePos - mi.Location) * d, false);
+                    return true;
+                }
+            }
 
-					joystickScrollStart = joystickScrollEnd = null;
-					YieldMouseFocus(mi);
+            // Tiberian Sun style click-and-drag scrolling
+            if (scrollType == MouseScrollType.Joystick)
+            {
+                if (mi.Event == MouseInputEvent.Down)
+                {
+                    if (!TakeMouseFocus(mi))
+                        return false;
+                    joystickScrollStart = mi.Location;
+                }
 
-					if (wasJoystickScrolling)
-						return true;
-				}
+                if (mi.Event == MouseInputEvent.Up)
+                {
+                    var wasJoystickScrolling = IsJoystickScrolling;
 
-				if (mi.Event == MouseInputEvent.Move && mi.Button == MouseButton.Right && joystickScrollStart.HasValue)
-				{
-					joystickScrollEnd = mi.Location;
-				}
-			}
+                    joystickScrollStart = joystickScrollEnd = null;
+                    YieldMouseFocus(mi);
 
-			return false;
-		}
+                    if (wasJoystickScrolling)
+                        return true;
+                }
 
-		public override bool YieldKeyboardFocus()
-		{
-			keyboardDirections = ScrollDirection.None;
-			return base.YieldKeyboardFocus();
-		}
+                if (mi.Event == MouseInputEvent.Move && joystickScrollStart.HasValue)
+                    joystickScrollEnd = mi.Location;
+            }
 
-		public override bool HandleKeyPress(KeyInput e)
-		{
-			var key = Hotkey.FromKeyInput(e);
-			var ks = Game.Settings.Keys;
+            return false;
+        }
 
-			if (key == ks.MapScrollUp)
-			{
-				keyboardDirections = keyboardDirections.Set(ScrollDirection.Up, e.Event == KeyInputEvent.Down);
-				return true;
-			}
+        public override bool YieldKeyboardFocus()
+        {
+            keyboardDirections = ScrollDirection.None;
+            return base.YieldKeyboardFocus();
+        }
 
-			if (key == ks.MapScrollDown)
-			{
-				keyboardDirections = keyboardDirections.Set(ScrollDirection.Down, e.Event == KeyInputEvent.Down);
-				return true;
-			}
+        public override bool HandleKeyPress(KeyInput e)
+        {
+            var key = Hotkey.FromKeyInput(e);
+            var ks = Game.Settings.Keys;
 
-			if (key == ks.MapScrollLeft)
-			{
-				keyboardDirections = keyboardDirections.Set(ScrollDirection.Left, e.Event == KeyInputEvent.Down);
-				return true;
-			}
+            if (key == ks.MapScrollUp)
+            {
+                keyboardDirections = keyboardDirections.Set(ScrollDirection.Up, e.Event == KeyInputEvent.Down);
+                return true;
+            }
 
-			if (key == ks.MapScrollRight)
-			{
-				keyboardDirections = keyboardDirections.Set(ScrollDirection.Right, e.Event == KeyInputEvent.Down);
-				return true;
-			}
+            if (key == ks.MapScrollDown)
+            {
+                keyboardDirections = keyboardDirections.Set(ScrollDirection.Down, e.Event == KeyInputEvent.Down);
+                return true;
+            }
 
-			return false;
-		}
+            if (key == ks.MapScrollLeft)
+            {
+                keyboardDirections = keyboardDirections.Set(ScrollDirection.Left, e.Event == KeyInputEvent.Down);
+                return true;
+            }
 
-		public override void Tick()
-		{
-			edgeDirections = ScrollDirection.None;
-			if (Game.Settings.Game.ViewportEdgeScroll && Game.HasInputFocus)
-				edgeDirections = CheckForDirections();
+            if (key == ks.MapScrollRight)
+            {
+                keyboardDirections = keyboardDirections.Set(ScrollDirection.Right, e.Event == KeyInputEvent.Down);
+                return true;
+            }
 
-			if (keyboardDirections != ScrollDirection.None || edgeDirections != ScrollDirection.None)
-			{
-				var scroll = float2.Zero;
+            return false;
+        }
 
-				foreach (var kv in ScrollOffsets)
-					if (keyboardDirections.Includes(kv.Key) || edgeDirections.Includes(kv.Key))
-						scroll += kv.Value;
+        public override void Tick()
+        {
+            edgeDirections = ScrollDirection.None;
+            if (Game.Settings.Game.ViewportEdgeScroll && Game.HasInputFocus)
+                edgeDirections = CheckForDirections();
 
-				var length = Math.Max(1, scroll.Length);
-				scroll *= (1f / length) * Game.Settings.Game.ViewportEdgeScrollStep;
+            if (keyboardDirections != ScrollDirection.None || edgeDirections != ScrollDirection.None)
+            {
+                var scroll = float2.Zero;
 
-				worldRenderer.Viewport.Scroll(scroll, false);
-			}
-		}
+                foreach (var kv in ScrollOffsets)
+                    if (keyboardDirections.Includes(kv.Key) || edgeDirections.Includes(kv.Key))
+                        scroll += kv.Value;
 
-		ScrollDirection CheckForDirections()
-		{
-			var directions = ScrollDirection.None;
-			if (Viewport.LastMousePos.X < EdgeScrollThreshold)
-				directions |= ScrollDirection.Left;
-			if (Viewport.LastMousePos.Y < EdgeScrollThreshold)
-				directions |= ScrollDirection.Up;
-			if (Viewport.LastMousePos.X >= Game.Renderer.Resolution.Width - EdgeScrollThreshold)
-				directions |= ScrollDirection.Right;
-			if (Viewport.LastMousePos.Y >= Game.Renderer.Resolution.Height - EdgeScrollThreshold)
-				directions |= ScrollDirection.Down;
+                var length = Math.Max(1, scroll.Length);
+                scroll *= (1f / length) * Game.Settings.Game.ViewportEdgeScrollStep;
 
-			return directions;
-		}
-	}
+                worldRenderer.Viewport.Scroll(scroll, false);
+            }
+        }
+
+        ScrollDirection CheckForDirections()
+        {
+            var directions = ScrollDirection.None;
+            if (Viewport.LastMousePos.X < EdgeScrollThreshold)
+                directions |= ScrollDirection.Left;
+            if (Viewport.LastMousePos.Y < EdgeScrollThreshold)
+                directions |= ScrollDirection.Up;
+            if (Viewport.LastMousePos.X >= Game.Renderer.Resolution.Width - EdgeScrollThreshold)
+                directions |= ScrollDirection.Right;
+            if (Viewport.LastMousePos.Y >= Game.Renderer.Resolution.Height - EdgeScrollThreshold)
+                directions |= ScrollDirection.Down;
+
+            return directions;
+        }
+    }
 }

@@ -8,3 +8,8 @@ C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game\obj\x86\Debug\OpenRA.Game.exe
 C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game\obj\x86\Debug\OpenRA.Game.pdb
 C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game.exe
 C:\Users\Marn\Desktop\MarnTS20\OpenRA.Game.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Game\obj\x86\Debug\OpenRA.Game.csprojResolveAssemblyReference.cache
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Game\obj\x86\Debug\OpenRA.Game.exe
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Game\obj\x86\Debug\OpenRA.Game.pdb
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Game.exe
+C:\Users\Marn\Desktop\MarnTS28 - Copy\OpenRA.Game.pdb

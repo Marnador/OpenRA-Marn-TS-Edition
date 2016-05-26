@@ -1,3 +1,16 @@
+flameguy:
+	Defaults: e1
+		Tick: 80
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		ShadowStart: 149
+	die1:
+		Start: 48
+		Length: 100
+		ShadowStart: 196
+
 e1.gdi:
 	Defaults: e1
 		Tick: 80

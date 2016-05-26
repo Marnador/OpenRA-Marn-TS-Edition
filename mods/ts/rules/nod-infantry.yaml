@@ -70,9 +70,9 @@ CYBORG:
 		Speed: 42
 		TerrainSpeeds:
 			Tiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 			BlueTiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 	Health:
 		HP: 225
 	Passenger:
@@ -127,9 +127,9 @@ CYC2:
 		Speed: 42
 		TerrainSpeeds:
 			Tiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 			BlueTiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 	Health:
 		HP: 500
 	Passenger:
@@ -187,9 +187,9 @@ MHIJACK:
 		Speed: 75
 		TerrainSpeeds:
 			Tiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 			BlueTiberium: 110
-				PathingCost: -200
+				PathingCost: 0
 	Captures:
 		CaptureTypes: Vehicle
 	RevealsShroud:

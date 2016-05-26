@@ -3,7 +3,7 @@ NForce = { "e1", "e1", "e3", "cyborg", "cyborg" }
 NForcePath = { NodW.Location, GDIBase.Location }
 NForceInterval = 5
 
-VNForce = { "ttnk", "bggy", "bggy", "e1", "e1", "e3" }
+VNForce = { "bike", "bike", "bggy", "bggy", "e1", "e1", "e3" }
 VNForcePath = { South.Location, GDIBase.Location }
 VNForceInterval = 15
 

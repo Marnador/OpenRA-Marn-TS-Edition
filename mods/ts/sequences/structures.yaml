@@ -517,7 +517,7 @@ natech:
 
 natmpl:
 	Defaults:
-		Offset: 0, -24
+		Offset: -15, -39
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -801,29 +801,6 @@ gaicbm:
 	make: gaicbmmk
 		Length: 30
 		ShadowStart: 30
-
-gttnk:
-	Defaults:
-		Offset: 0, -14
-		UseTilesetCode: true
-	idle: gatick
-		ShadowStart: 3
-	damaged-idle: gatick
-		Start: 1
-		ShadowStart: 4
-	make: gatickmk
-		Length: 24
-		ShadowStart: 25
-		Tick: 15
-	muzzle: gunfire
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	emp-overlay: emp_fx01
-		Length: *
-		BlendMode: Additive
-		UseTilesetCode: false
-	icon: nodttank
 
 gaarty:
 	Defaults:

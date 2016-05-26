@@ -149,8 +149,7 @@ BIKE:
 	-PoisonedByTiberium:
 
 TTNK:
-	Inherits@1: ^VoxelTank
-	-GainsExperience:
+	Inherits: ^VoxelTank
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -158,7 +157,7 @@ TTNK:
 		Description: Nod's main battle tank.\nCan deploy to gain extra protection and fire range.\n  Strong vs Vehicles\n  Weak vs Infantry\n  Useless vs Aircraft
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 60
 		Prerequisites: ~naweap
 	Mobile:
 		TurnSpeed: 7
@@ -168,23 +167,83 @@ TTNK:
 		HP: 350
 	Armor:
 		Type: Heavy
-	Armament:
+	Armament@PRIMARY:
 		Weapon: 90mm
-		LocalOffset: 256,0,456
+		LocalOffset: 256,0,256
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
 		MuzzleSequence: muzzle
+	Armament@ELITE:
+		Weapon: 90mmElite
+		LocalOffset: 256,0,256
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	RevealsShroud:
 		Range: 7c0
+	RenderSprites:
+		Image: ttnk
 	RenderVoxels:
 		Scale: 12
+	DeployToUpgrade:
+		DeployedUpgrades: deployed, notmobile
+		UndeployedUpgrades: undeployed
+		DeployAnimation: make
+		Facing: 160
+		AllowedTerrainTypes: Clear, Road, DirtRoad, Rough
+		DeploySound: place2.aud
+		UndeploySound: clicky1.aud
+	WithVoxelBody:
+		UpgradeTypes: undeployed
+		UpgradeMinEnabledLevel: 1
+	WithSpriteBody@deployed:
+		UpgradeTypes: undeployed
+		UpgradeMaxEnabledLevel: 0
 	AttackFrontal:
 		Voice: Attack
-	Transforms:
-		IntoActor: gttnk
-		Facing: 160
-		TransformSounds:
-		NoTransformSounds:
-		Voice: Move
+		UpgradeTypes: undeployed
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 1
+	Turreted:
+		TurnSpeed: 8
+		Turret: deployed
+		InitialFacing: 160
+		Offset: -20, -130, 60
+	WithVoxelBarrel:
+		Armament: deployed
+		LocalOffset: 70, -100, 256
+		UpgradeTypes: deployed
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@deployed:
+		Turret: deployed
+		UpgradeTypes: deployed
+		UpgradeMinEnabledLevel: 1
+	AttackTurreted@deployed:
+		Voice: Attack
+		Armaments: deployed
+		UpgradeTypes: deployed
+		UpgradeMinEnabledLevel: 1
+	Armament@deployed:
+		Name: deployed
+		Turret: deployed
+		Weapon: 90mmD
+		LocalOffset: 400,-100,256
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+		MuzzleSequence: muzzle
+	Armament@deployedElite:
+		Name: deployed
+		Turret: deployed
+		Weapon: 90mmDElite
+		LocalOffset: 400,-100,256
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+		MuzzleSequence: muzzle
 	AutoTarget:
+	-Carryable:
 
 ART2:
 	Inherits@1: ^VoxelTank

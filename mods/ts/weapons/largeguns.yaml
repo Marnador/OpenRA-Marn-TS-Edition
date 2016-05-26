@@ -30,9 +30,20 @@
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
+90mmElite:
+	Inherits: 90mm
+	Burst: 2
+	BurstDelay: 5
+
 90mmD:
 	Inherits: 90mm
+	ReloadDelay: 30
 	Range: 6c144
+
+90mmDElite:
+	Inherits: 90mmD
+	Burst: 2
+	BurstDelay: 5
 
 120mm:
 	ReloadDelay: 80
@@ -63,6 +74,11 @@
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+
+120mmElite:
+	Inherits: 120mm
+	Burst: 2
+	BurstDelay: 5
 
 120mmx:
 	ReloadDelay: 80

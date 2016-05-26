@@ -246,45 +246,6 @@ GAARTY:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
 
-GTTNK:
-	Inherits@1: ^DeployedVehicle
-	-GainsExperience:
-	Valued:
-		Cost: 800
-	Tooltip:
-		Name: Deployed Tick Tank
-	Health:
-		HP: 550
-	Armor:
-		Type: Heavy
-	RevealsShroud:
-		Range: 7c0
-	Turreted:
-		TurnSpeed: 8
-		InitialFacing: 160
-		Offset: -20, 100, 180
-	Armament:
-		Weapon: 90mmD
-		LocalOffset: 400,-100,256
-		MuzzleSequence: muzzle
-		Recoil: 127
-		RecoilRecovery: 12
-	BodyOrientation:
-		QuantizedFacings: 32
-	RenderVoxels:
-	WithVoxelBarrel:
-		LocalOffset: 70, -100, 256
-	WithVoxelTurret:
-	AttackTurreted:
-	Transforms:
-		IntoActor: ttnk
-		Facing: 160
-		TransformSounds: place2.aud
-		NoTransformSounds:
-		Voice: Move
-	WithMuzzleOverlay:
-	AutoTarget:
-
 NAMISL:
 	Inherits: ^Building
 	Buildable:

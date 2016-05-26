@@ -429,8 +429,8 @@ NATMPL:
 		Description: Provides access to advanced Nod technologies.
 	Building:
 		Adjacent: 3
-		Footprint: _xxxx _xxxx _xxxx
-		Dimensions: 5,3
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4,3
 	Selectable:
 		Bounds: 134, 120, 12, -12
 	Health:

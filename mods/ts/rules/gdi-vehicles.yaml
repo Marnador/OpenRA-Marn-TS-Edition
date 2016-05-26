@@ -152,7 +152,7 @@ SMECH:
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
 	Mobile:
-		TurnSpeed: 8
+		TurnSpeed: 10
 		Speed: 64
 		TerrainSpeeds:
 			Clear: 100
@@ -201,7 +201,6 @@ SMECH:
 
 MMCH:
 	Inherits@1: ^Tank
-	-GainsExperience:
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -239,11 +238,21 @@ MMCH:
 		Voice: Attack
 	WithSpriteTurret:
 		Recoils: no
-	Armament:
+	Armament@PRIMARY:
 		Weapon: 120mm
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+		LocalOffset: 600, 200, 600
 		Recoil: 127
 		RecoilRecovery: 26
+	Armament@ELITE:
+		Weapon: 120mmElite
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
 		LocalOffset: 600, 200, 600
+		Recoil: 127
+		RecoilRecovery: 26
 	RenderVoxels:
 	WithVoxelBarrel:
 	AutoTarget:
