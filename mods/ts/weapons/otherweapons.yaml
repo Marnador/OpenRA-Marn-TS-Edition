@@ -21,6 +21,9 @@ FireballLauncher:
 		DamageTypes: Prone100Percent, TriggerProne, FireDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: SmallScorch
+	Warhead@3EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 FireballLauncherElite:
 	Inherits: FireballLauncher

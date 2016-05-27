@@ -20,6 +20,9 @@ Minigun:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 MinigunElite:
 	Inherits: Minigun
@@ -59,6 +62,9 @@ M1Carbine:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 M1CarbineElite:
 	Inherits: M1Carbine
@@ -88,6 +94,9 @@ Vulcan:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 VulcanElite:
 	Inherits: Vulcan
@@ -118,6 +127,9 @@ Vulcan2:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 Vulcan2Elite:
 	Inherits: Vulcan2
@@ -147,6 +159,9 @@ Vulcan3:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 Vulcan3Elite:
 	Inherits: Vulcan3
@@ -186,6 +201,9 @@ VulcanTower:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 JumpCannon:
 	ReloadDelay: 35
@@ -212,6 +230,9 @@ JumpCannon:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 JumpCannonElite:
 	Inherits: JumpCannon
@@ -240,6 +261,9 @@ AssaultCannon:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 AssaultCannonElite:
 	Inherits: AssaultCannon
@@ -270,6 +294,9 @@ RaiderCannon:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 RaiderCannonElite:
 	Inherits: RaiderCannon
@@ -301,6 +328,9 @@ HarpyClaw:
 		Explosions: water_piffs
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 HarpyClawElite:
 	Inherits: HarpyClaw

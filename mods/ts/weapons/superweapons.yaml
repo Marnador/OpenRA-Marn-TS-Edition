@@ -54,6 +54,9 @@ SuicideBomb:
 		Falloff: 10000, 3680, 1350, 500, 180, 70, 0
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@2Res: DestroyResource
+	Warhead@5EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 IonCannon:
 	ValidTargets: Ground, Air
@@ -77,6 +80,9 @@ IonCannon:
 		SmudgeType: SmallScorch
 		Size: 2,1
 		Delay: 3
+	Warhead@5EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
 
 EMPulseCannon:
 	ValidTargets: Ground, Water, Air
@@ -101,6 +107,9 @@ EMPulseCannon:
 		Damage: 400
 		Falloff: 100, 70, 40, 10
 		ValidTargets: Air
+	Warhead@5EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
 
 ClusterMissile:
 	ValidTargets: Ground, Water, Air
@@ -175,3 +184,24 @@ ClusterMissile:
 		SmudgeType: SmallScorch
 		Size: 5
 		Delay: 20
+	Warhead@5EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
+	Warhead@6EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
+		Delay: 5
+	Warhead@7EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
+		Delay: 10
+	Warhead@8EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
+		Delay: 15
+	Warhead@9EffFlash: CreateEffect
+		Explosions: large_weapon_flash
+		ExplosionPalette: alpha
+		Delay: 20
+
+

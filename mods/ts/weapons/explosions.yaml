@@ -12,6 +12,9 @@ UnitExplode:
 	Warhead@2Eff: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: expnew09.aud
+	Warhead@3EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 UnitExplodeSmall:
 	Warhead@1Dam: SpreadDamage
@@ -27,6 +30,9 @@ UnitExplodeSmall:
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_brnl
 		ImpactSounds: expnew13.aud
+	Warhead@3EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 UnitExplodeTiny:
 	Warhead@1Dam: SpreadDamage
@@ -42,6 +48,9 @@ UnitExplodeTiny:
 	Warhead@2Eff: CreateEffect
 		Explosions: large_grey_explosion
 		ImpactSounds: expnew13.aud
+	Warhead@3EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 TiberiumExplosion:
 	Warhead@1Dam: SpreadDamage
@@ -59,6 +68,9 @@ TiberiumExplosion:
 	Warhead@3Eff: CreateEffect
 		Explosions: large_explosion
 		ImpactSounds: expnew09.aud
+	Warhead@4EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 BlueTiberiumExplosion:
 	Warhead@1Dam: SpreadDamage
@@ -76,25 +88,40 @@ BlueTiberiumExplosion:
 	Warhead@5Eff: CreateEffect
 		Explosions: large_explosion
 		ImpactSounds: expnew09.aud
+	Warhead@6EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 SmallDebris:
 	ReloadDelay: 60
 	Range: 4c0
 	Report:
 	Projectile: Bullet
-		Speed: 50, 125
+		Speed: 100, 200
 		Angle: 45, 135
 		Image: dbrissm
 		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 		Shadow: true
+	Warhead@2Eff: CreateEffect
+		Explosions: tiny_brnl
+		ImpactSounds: expnew13.aud
+	Warhead@3EffFlash: CreateEffect
+		Explosions: tiny_weapon_flash
+		ExplosionPalette: alpha
 
 LargeDebris:
 	ReloadDelay: 60
 	Range: 4c0
 	Report:
 	Projectile: Bullet
-		Speed: 50, 125
+		Speed: 100, 200
 		Angle: 45, 135
 		Image: dbrislg
 		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 		Shadow: true
+	Warhead@2Eff: CreateEffect
+		Explosions: small_brnl
+		ImpactSounds: expnew13.aud
+	Warhead@3EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha

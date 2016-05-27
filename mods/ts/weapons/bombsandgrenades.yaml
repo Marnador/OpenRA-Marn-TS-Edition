@@ -29,6 +29,9 @@ Grenade:
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 GrenadeElite:
 	Inherits: Grenade
@@ -78,6 +81,9 @@ Bomb:
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 BombElite:
 	Inherits: Bomb
@@ -97,7 +103,7 @@ RPGTower:
 		Image: canister
 		Palette: player
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
+		Spread: 256
 		Damage: 140
 		Versus:
 			None: 55
@@ -117,3 +123,6 @@ RPGTower:
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@4EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha

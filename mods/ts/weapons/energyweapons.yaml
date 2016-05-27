@@ -38,6 +38,9 @@ LtRail:
 			Heavy: 110
 			Concrete: 5
 		DamageTypes: Prone100Percent, TriggerProne, SmallExplosionDeath
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 LtRailElite:
 	Inherits: LtRail
@@ -81,6 +84,9 @@ MechRailgun:
 			Heavy: 150
 			Concrete: 145
 		DamageTypes: Prone100Percent, TriggerProne, FireDeath
+	Warhead@2EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 MechRailgunElite:
 	Inherits: MechRailgun
@@ -176,6 +182,9 @@ CyCannon:
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallScorch
+	Warhead@5EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 CyCannonElite:
 	Inherits: CyCannon
@@ -225,6 +234,9 @@ Proton:
 		ExplosionPalette: player
 		ImpactSounds: ssplash3.aud
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 ProtonElite:
 	Inherits: Proton
@@ -249,6 +261,9 @@ ObeliskLaserFire:
 		Spread: 64
 		Damage: 34
 		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
+	Warhead@2EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 ObeliskLaserFire2:
 	ReloadDelay: 1
@@ -309,3 +324,6 @@ TurretLaserFire:
 			Concrete: 30
 		Damage: 54
 		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
+	Warhead@2EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha

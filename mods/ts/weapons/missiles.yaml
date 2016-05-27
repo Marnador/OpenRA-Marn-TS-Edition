@@ -45,6 +45,9 @@ Bazooka:
 		ImpactSounds: expnew05.aud
 	Warhead@5Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@6EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 BazookaElite:
 	Inherits: Bazooka
@@ -112,6 +115,9 @@ HoverMissile:
 		ImpactSounds: expnew06.aud
 	Warhead@5: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@6EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 HoverMissileElite:
 	Inherits: HoverMissile
@@ -160,6 +166,9 @@ MammothTusk:
 		ExplosionPalette: player
 		ImpactSounds: ssplash3.aud
 		ValidImpactTypes: Water
+	Warhead@4EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 MammothTuskElite:
 	Inherits: MammothTusk
@@ -214,6 +223,9 @@ BikeMissile:
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 BikeMissileElite:
 	Inherits: BikeMissile
@@ -268,6 +280,9 @@ Dragon:
 		ImpactSounds: expnew06.aud
 	Warhead@5Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@6EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 DragonElite:
 	Inherits: Dragon
@@ -324,6 +339,9 @@ Hellfire:
 		ImpactSounds: expnew06.aud
 	Warhead@5Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@6EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 HellfireElite:
 	Inherits: Hellfire
@@ -371,3 +389,6 @@ RedEye2:
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_twlt
 		ImpactSounds: expnew05.aud
+	Warhead@3EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha

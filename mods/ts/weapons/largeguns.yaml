@@ -29,6 +29,9 @@
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 90mmElite:
 	Inherits: 90mm
@@ -74,6 +77,9 @@
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 120mmElite:
 	Inherits: 120mm
@@ -113,6 +119,9 @@
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: small_weapon_flash
+		ExplosionPalette: alpha
 
 120mmxElite:
 	Inherits: 120mmx
@@ -154,6 +163,9 @@
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@5EffFlash: CreateEffect
+		Explosions: weapon_flash
+		ExplosionPalette: alpha
 
 155mmJ:
 	Inherits: 155mm

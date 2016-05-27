@@ -148,6 +148,18 @@ explosion:
 	medium_explosion: explomed
 	large_explosion: explolrg
 	mini_nuke: mininuke
+	large_weapon_flash: flash4
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
+	weapon_flash: flash1
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
+	small_weapon_flash: flash2
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
+	tiny_weapon_flash: flash3
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
 	tiny_bang: s_bang16
 	small_bang: s_bang24
 	medium_bang: s_bang34
