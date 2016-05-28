@@ -266,21 +266,37 @@ small_smoke_trail:
 		Length: *
 		ZOffset: 1023
 
+fire:
+	1: fire4
+		Length: *
+
 largefire:
 	idle: fire1
 		Length: *
+	idle-overlay: firelight
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
 
 mediumfire:
 	idle: fire2
 		Length: *
+	idle-overlay: firelight
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
 
 smallfire:
 	idle: fire3
 		Length: *
+	idle-overlay: firelight2
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
 
 tinyfire:
 	idle: fire4
 		Length: *
+	idle-overlay: firelight2
+		BlendMode: DoubleMultiplicative
+		ZOffset: 2048
 
 moveflsh:
 	idle: ring

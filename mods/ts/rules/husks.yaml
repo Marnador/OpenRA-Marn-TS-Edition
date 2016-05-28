@@ -150,3 +150,30 @@ JUMPJET.Husk:
 		Type: CenterPosition
 	RenderSprites:
 		Image: jumpjet
+
+Infantry.Husk:
+	Inherits@1: ^SpriteActor
+	RenderSprites:
+		Image: mediumfire
+		Palette: effect
+	WithSpriteBody:
+	WithIdleOverlay:
+		Palette: alpha
+	Building:
+		Footprint: _
+		Dimensions: 1,1
+	Burns:
+		Damage: 100
+		Interval: 200
+	Health:
+		HP: 500
+	HiddenUnderFog:
+		Type: CenterPosition
+	AutoTargetIgnore:
+
+SmallInfantry.Husk:
+	Inherits: Infantry.Husk
+	RenderSprites:
+		Image: smallfire
+	Health:
+		HP: 800

@@ -353,6 +353,11 @@
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
 			EnergyDeath: 6
+	WithDeathAnimation@tiberium:
+		DeathSequencePalette: effect
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			TiberiumDeath: 7
 	AutoTarget:
 	AttackMove:
 		Voice: Move
@@ -369,8 +374,24 @@
 		Probability: 10
 		OwnerType: InternalName
 		InternalOwner: Creeps
-		DeathType: EnergyDeath # TODO: FIX ME! (Tiberium currently uses the wrong damage type!)
+		DeathType: TiberiumDeath
 		RequiresLobbyCreeps: true
+	SpawnActorOnDeath@Fire:
+		Actor: Infantry.Husk
+		Probability: 15
+		DeathType: FireDeath
+	SpawnActorOnDeath@SmallFire:
+		Actor: SmallInfantry.Husk
+		Probability: 15
+		DeathType: FireDeath
+	SpawnActorOnDeath@Energy:
+		Actor: Infantry.Husk
+		Probability: 15
+		DeathType: EnergyDeath
+	SpawnActorOnDeath@SmallEnergy:
+		Actor: SmallInfantry.Husk
+		Probability: 15
+		DeathType: EnergyDeath
 	Guard:
 		Voice: Move
 	Guardable:
@@ -382,6 +403,9 @@
 	DeathSounds@ZAPPED:
 		Voice: Zapped
 		DeathTypes: EnergyDeath
+	DeathSounds@MELTED:
+		Voice: Burned
+		DeathTypes: TiberiumDeath
 	SelfHealing@HOSPITAL:
 		Step: 5
 		Delay: 100

@@ -79,6 +79,8 @@ e1.gdi:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: gdiinf
 
 e1.nod:
@@ -148,6 +150,8 @@ e1.nod:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	icon: nodinf
 
@@ -219,6 +223,8 @@ e2:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	icon: gdidisc
 
@@ -292,6 +298,8 @@ e3:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: nodrocket
 
 weedguy:
@@ -357,6 +365,8 @@ weedguy:
 		Length: 20
 		ShadowStart: 379
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	die-crushed:
 		Start: 174
@@ -428,6 +438,8 @@ medic:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: gdimedic
 
 engineer.gdi:
@@ -490,6 +502,8 @@ engineer.gdi:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: gdiengi
 
 engineer.nod:
@@ -551,6 +565,8 @@ engineer.nod:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	icon: nodengi
 
@@ -624,6 +640,8 @@ umagon:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: umagicon
 
 ghost:
@@ -696,6 +714,8 @@ ghost:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: gdigs
 
 jumpjet:
@@ -756,6 +776,8 @@ jumpjet:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	icon: gdijj
 
@@ -829,6 +851,8 @@ mhijack:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: nodcham
 
 chamspy:
@@ -901,6 +925,8 @@ chamspy:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: chamicon
 
 cyc2:
@@ -957,6 +983,8 @@ cyc2:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	emp-overlay: emp_fx01
 		Length: *
@@ -1022,6 +1050,8 @@ cyborg:
 		Length: 14
 		ShadowStart: 662
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	emp-overlay: emp_fx01
 		Length: *
@@ -1099,6 +1129,8 @@ mutant:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: mutcicon
 
 mwmn:
@@ -1171,6 +1203,8 @@ mwmn:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	icon: mutcicon
 
@@ -1245,6 +1279,8 @@ mutant3:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 	icon: mutcicon
 
 tratos:
@@ -1317,6 +1353,8 @@ tratos:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 	icon: mutcicon
 
@@ -1391,6 +1429,8 @@ oxanna:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 
 slav:
 	Defaults:
@@ -1463,6 +1503,8 @@ slav:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 
 doggie:
 	Defaults:
@@ -1519,6 +1561,8 @@ doggie:
 		Start: 109
 		Length: 10
 		ShadowStart: 228
+	die7: tibdeath
+		Length: *
 
 vissml:
 	idle:
@@ -1598,6 +1642,8 @@ civ1:
 		ShadowStart: 190
 	die6: electro
 		Length: *
+	die7: tibdeath
+		Length: *
 
 civ2:
 	Defaults:
@@ -1654,6 +1700,8 @@ civ2:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *
 
 civ3:
@@ -1716,4 +1764,6 @@ civ3:
 		Length: 104
 		ShadowStart: 190
 	die6: electro
+		Length: *
+	die7: tibdeath
 		Length: *

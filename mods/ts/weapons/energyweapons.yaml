@@ -258,6 +258,8 @@ ObeliskLaserFire:
 	Warhead@2EffFlash: CreateEffect
 		Explosions: weapon_flash
 		ExplosionPalette: alpha
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumScorch
 
 ObeliskLaserFire2:
 	ReloadDelay: 1
@@ -321,3 +323,5 @@ TurretLaserFire:
 	Warhead@2EffFlash: CreateEffect
 		Explosions: small_weapon_flash
 		ExplosionPalette: alpha
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: SmallScorch
