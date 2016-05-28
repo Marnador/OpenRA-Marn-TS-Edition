@@ -13,7 +13,7 @@
 		Damage: 40
 		Versus:
 			None: 45
-			Wood: 60
+			Wood: 70
 			Light: 75
 			Heavy: 90
 			Concrete: 80
@@ -61,7 +61,7 @@
 		Damage: 70
 		Versus:
 			None: 45
-			Wood: 60
+			Wood: 70
 			Light: 75
 			Heavy: 90
 			Concrete: 80
@@ -103,7 +103,7 @@
 		Damage: 50
 		Versus:
 			None: 45
-			Wood: 60
+			Wood: 70
 			Light: 75
 			Heavy: 90
 			Concrete: 80

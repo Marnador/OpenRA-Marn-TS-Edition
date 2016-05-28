@@ -265,7 +265,7 @@ DJUGG:
 	Inherits@1: ^Tank
 	-GainsExperience:
 	Valued:
-		Cost: 1100
+		Cost: 950
 	Tooltip:
 		Name: Juggernaut
 		Description: Juggernaut Artillery.\nNeeds to deploy in order to shoot.\n  Strong vs Ground units\n  Useless vs Aircraft

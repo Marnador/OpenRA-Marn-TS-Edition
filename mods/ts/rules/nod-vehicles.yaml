@@ -249,7 +249,7 @@ ART2:
 	Inherits@1: ^VoxelTank
 	-GainsExperience:
 	Valued:
-		Cost: 1100
+		Cost: 950
 	Tooltip:
 		Name: Artillery
 		Description: Mobile Artillery.\nNeeds to deploy in order to shoot.\n  Strong vs Ground units\n  Useless vs Aircraft

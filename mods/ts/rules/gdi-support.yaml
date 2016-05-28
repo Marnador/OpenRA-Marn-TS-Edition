@@ -295,7 +295,7 @@ GACTRPG:
 	Health:
 		HP: 400
 	RevealsShroud:
-		Range: 8c448
+		Range: 6c912
 	Armor:
 		Type: Heavy
 	BlocksProjectiles:
@@ -319,7 +319,7 @@ GACTRPG:
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8	
 	WithRangeCircle:
-		Range: 6c144
+		Range: 6c912
 		UsePlayerColor: True	
 	WithIdleOverlay@LIGHTS:
 		Sequence: idle-lights
@@ -350,7 +350,7 @@ GACTSAM:
 	Health:
 		HP: 400
 	RevealsShroud:
-		Range: 8c448
+		Range: 7c680
 	Armor:
 		Type: Heavy
 	BlocksProjectiles:

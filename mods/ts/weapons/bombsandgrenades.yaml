@@ -93,7 +93,7 @@ BombElite:
 
 RPGTower:
 	ReloadDelay: 72
-	Range: 7c680
+	Range: 6c912
 	Report: glnch4.aud
 	Projectile: Bullet
 		Speed: 384

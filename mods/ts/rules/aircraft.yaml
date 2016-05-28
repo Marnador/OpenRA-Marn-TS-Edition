@@ -90,7 +90,7 @@ ORCA:
 	Armor:
 		Type: Aircraft
 	RevealsShroud:
-		Range: 10c0
+		Range: 7c680
 		Type: CenterPosition
 	Armament@PRIMARY:
 		Weapon: Hellfire
@@ -140,7 +140,7 @@ ORCAB:
 	Armor:
 		Type: Aircraft
 	RevealsShroud:
-		Range: 6c0
+		Range: 7c680
 		Type: CenterPosition
 	Armament@PRIMARY:
 		Weapon: Bomb
@@ -198,7 +198,7 @@ ORCATRAN:
 	Armor:
 		Type: Aircraft
 	RevealsShroud:
-		Range: 6c0
+		Range: 7c680
 		Type: CenterPosition
 	Cargo:
 		Types: Infantry
@@ -236,7 +236,7 @@ TRNSPORT:
 	Armor:
 		Type: Aircraft
 	RevealsShroud:
-		Range: 6c0
+		Range: 7c680
 		Type: CenterPosition
 	RenderSprites:
 	Selectable:
@@ -274,7 +274,7 @@ SCRIN:
 	Armor:
 		Type: Aircraft
 	RevealsShroud:
-		Range: 6c0
+		Range: 7c680
 		Type: CenterPosition
 	Armament@PRIMARY:
 		Weapon: Proton
@@ -337,7 +337,7 @@ APACHE:
 	Armor:
 		Type: Aircraft
 	RevealsShroud:
-		Range: 10c0
+		Range: 7c680
 		Type: CenterPosition
 	Armament@PRIMARY:
 		Weapon: HarpyClaw

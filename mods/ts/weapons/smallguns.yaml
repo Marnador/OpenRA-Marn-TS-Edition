@@ -21,7 +21,7 @@ Minigun:
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
 	Warhead@4EffFlash: CreateEffect
-		Explosions: tiny_weapon_flash
+		Explosions: faded_weapon_flash
 		ExplosionPalette: alpha
 
 MinigunElite:
@@ -95,7 +95,7 @@ Vulcan:
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
 	Warhead@4EffFlash: CreateEffect
-		Explosions: tiny_weapon_flash
+		Explosions: faded_weapon_flash
 		ExplosionPalette: alpha
 
 VulcanElite:
@@ -128,7 +128,7 @@ Vulcan2:
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
 	Warhead@4EffFlash: CreateEffect
-		Explosions: tiny_weapon_flash
+		Explosions: faded_weapon_flash
 		ExplosionPalette: alpha
 
 Vulcan2Elite:
@@ -160,7 +160,7 @@ Vulcan3:
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
 	Warhead@4EffFlash: CreateEffect
-		Explosions: tiny_weapon_flash
+		Explosions: faded_weapon_flash
 		ExplosionPalette: alpha
 
 Vulcan3Elite:
@@ -231,7 +231,7 @@ JumpCannon:
 		ExplosionPalette: ra
 		ValidImpactTypes: Water
 	Warhead@4EffFlash: CreateEffect
-		Explosions: tiny_weapon_flash
+		Explosions: faded_weapon_flash
 		ExplosionPalette: alpha
 
 JumpCannonElite:

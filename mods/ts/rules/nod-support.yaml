@@ -115,7 +115,7 @@ NAOBEL:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 8c448
+		Range: 7c680
 	Armament:
 		Weapon: ObeliskLaserFire
 		LocalOffset: 1400,210,750
@@ -174,7 +174,7 @@ NASAM:
 	Health:
 		HP: 500
 	RevealsShroud:
-		Range: 8c448
+		Range: 7c680
 	Armor:
 		Type: Heavy
 	BodyOrientation:
