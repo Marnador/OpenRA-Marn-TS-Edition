@@ -1,11 +1,20 @@
 TIBTRE01:
 	Inherits: ^BlossomTree
+	WithIdleOverlay@LIGHTINGGREEN:
+		Sequence: lightg
+		Palette: tibglowfaded
 
 TIBTRE02:
 	Inherits: ^BlossomTree
+	WithIdleOverlay@LIGHTINGGREEN:
+		Sequence: lightg
+		Palette: tibglowfaded
 
 TIBTRE03:
 	Inherits: ^BlossomTree
+	WithIdleOverlay@LIGHTINGGREEN:
+		Sequence: lightg
+		Palette: tibglowfaded
 
 BIGBLUE:
 	Inherits: ^BlossomTree
@@ -18,6 +27,9 @@ BIGBLUE:
 	SeedsResource:
 		ResourceType: BlueTiberium
 		Interval: 100
+	WithIdleOverlay@LIGHTINGBLUE:
+		Sequence: lightb
+		Palette: tibglowbluefaded
 
 TREE01:
 	Inherits: ^Tree

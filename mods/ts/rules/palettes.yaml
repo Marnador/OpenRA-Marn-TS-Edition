@@ -57,6 +57,26 @@
 	PaletteFromFile@alpha:
 		Name: alpha
 		Filename: alpha.pal
+	PaletteFromFile@tibglow:
+		Name: tibglow
+		Filename: mgreen.pal
+		ShadowIndex: 0
+	PaletteFromPaletteWithAlpha@tibglow:
+		Name: tibglowfaded
+		BasePalette: tibglow
+		Alpha: 0.3
+	PaletteFromFile@tibglowblue:
+		Name: tibglowblue
+		Filename: mblue.pal
+		ShadowIndex: 0
+	PaletteFromPaletteWithAlpha@tibglowblue:
+		Name: tibglowbluefaded
+		BasePalette: tibglowblue
+		Alpha: 0.3
+	PaletteFromFile@redflash:
+		Name: redflash
+		Filename: mred.pal
+		ShadowIndex: 0
 	PaletteFromRGBA@shadow:
 		Name: shadow
 		R: 0
@@ -84,7 +104,7 @@
 	PaletteFromPaletteWithAlpha@placebuilding:
 		Name: placebuilding
 		BasePalette: ra
-		Alpha: 0.75
+		Alpha: 0.50
 	TSShroudPalette@shroud:
 		Name: shroud
 		Type: Shroud

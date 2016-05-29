@@ -2627,36 +2627,23 @@ GASPOT:
 
 GALITE:
 	Inherits: ^Building
-	-Selectable:
 	-Targetable:
 	-UpgradeOverlay@EMPDISABLE:
 	Valued:
 		Cost: 200
 	FrozenUnderFog:
 		StartsRevealed: true
-	Tooltip:
-		Name: Light Post
 	RenderSprites:
 		Palette: terraindecoration
 	-WithMakeAnimation:
 	-WithDeathAnimation:
-	Health:
-		HP: 1200
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 2c0
+	-RepairableBuilding:
 	Power:
 		Amount: 0
 # TODO: should use terrain lighting instead, depends on https://github.com/OpenRA/OpenRA/issues/3605
 	WithIdleOverlay@LIGHTING:
 		Sequence: lighting
 		Palette: alpha
-	Buildable:
-		Queue: Defense
-		Prerequisites: ~disabled
-	SelectionDecorations:
-		VisualBounds: 25, 35, 0, -12
 	-Cloak@CLOAKGENERATOR:
 
 TSTLAMP:

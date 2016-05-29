@@ -171,7 +171,6 @@ World:
 		ValidGround: Clear, Rough, Road, DirtRoad, Tiberium, BlueTiberium
 		InitialSpawnDelay: 1500
 	PathFinder:
-	ValidateOrder:
 	DebugPauseState:
 	ScreenShaker:
 	RadarPings:

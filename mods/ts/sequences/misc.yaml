@@ -163,6 +163,12 @@ explosion:
 	faded_weapon_flash: flash5
 		BlendMode: DoubleMultiplicative
 		ZOffset: 2048
+	red_weapon_flash: flashred
+		ZOffset: 2048
+		BlendMode: Additive
+	small_red_weapon_flash: flashred2
+		ZOffset: 2048
+		BlendMode: Additive
 	tiny_bang: s_bang16
 	small_bang: s_bang24
 	medium_bang: s_bang34

@@ -9,7 +9,12 @@ tibtre01:
 		Length: 10
 		ShadowStart: 12
 		Tick: 160
+	lightg: gatib
+		ZOffset: 2048
+		BlendMode: Additive
+		UseTilesetExtension: false
 	light: ga
+		ZOffset: 1536
 		BlendMode: DoubleMultiplicative
 		UseTilesetExtension: false
 
@@ -24,7 +29,12 @@ tibtre02:
 		Length: 10
 		ShadowStart: 12
 		Tick: 160
+	lightg: gatib
+		ZOffset: 2048
+		BlendMode: Additive
+		UseTilesetExtension: false
 	light: ga
+		ZOffset: 1536
 		BlendMode: DoubleMultiplicative
 		UseTilesetExtension: false
 
@@ -39,7 +49,12 @@ tibtre03:
 		Length: 10
 		ShadowStart: 12
 		Tick: 160
+	lightg: gatib
+		ZOffset: 2048
+		BlendMode: Additive
+		UseTilesetExtension: false
 	light: ga
+		ZOffset: 1536
 		BlendMode: DoubleMultiplicative
 		UseTilesetExtension: false
 
@@ -53,6 +68,10 @@ bigblue:
 		Length: 9
 		ShadowStart: 11
 		Tick: 160
+	lightb: gatibblue
+		ZOffset: 2048
+		BlendMode: Additive
+		UseTilesetExtension: false
 	light: ga
 		BlendMode: DoubleMultiplicative
 		UseTilesetExtension: false

@@ -256,9 +256,12 @@ ObeliskLaserFire:
 		Damage: 34
 		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
 	Warhead@2EffFlash: CreateEffect
-		Explosions: weapon_flash
+		Explosions: tiny_weapon_flash
 		ExplosionPalette: alpha
-	Warhead@3Smu: LeaveSmudge
+	Warhead@3EffFlash: CreateEffect
+		Explosions: red_weapon_flash
+		ExplosionPalette: redflash
+	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumScorch
 
 ObeliskLaserFire2:
@@ -321,7 +324,10 @@ TurretLaserFire:
 		Damage: 54
 		DamageTypes: Prone60Percent, TriggerProne, EnergyDeath
 	Warhead@2EffFlash: CreateEffect
-		Explosions: small_weapon_flash
+		Explosions: faded_weapon_flash
 		ExplosionPalette: alpha
-	Warhead@3Smu: LeaveSmudge
+	Warhead@3EffFlash: CreateEffect
+		Explosions: small_red_weapon_flash
+		ExplosionPalette: redflash
+	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallScorch
