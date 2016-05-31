@@ -133,7 +133,7 @@ JUMPJET:
 		AltitudeVelocity: 200
 		Voice: Move
 		AirborneUpgrades: airborne
-		RepairBuildings:
+		RepairBuildings: gadept
 		RearmBuildings:
 		CanHover: True
 		IdealSeparation: 512

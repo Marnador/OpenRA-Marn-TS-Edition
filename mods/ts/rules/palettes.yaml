@@ -72,7 +72,7 @@
 	PaletteFromPaletteWithAlpha@tibglowblue:
 		Name: tibglowbluefaded
 		BasePalette: tibglowblue
-		Alpha: 0.3
+		Alpha: 0.4
 	PaletteFromFile@redflash:
 		Name: redflash
 		Filename: mred.pal

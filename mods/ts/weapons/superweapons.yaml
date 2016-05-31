@@ -39,6 +39,7 @@ MultiCluster:
 		SmudgeType: MediumCrater
 
 SuicideBomb:
+	ValidTargets: Ground, Water, Air
 	ReloadDelay: 1
 	Range: 0c512
 	Report: hunter2.aud
@@ -98,15 +99,18 @@ EMPulseCannon:
 	Warhead@1Eff: CreateEffect
 		Explosions: pulse_explosion
 	Warhead@emp: GrantUpgrade
-		Range: 5c0
+		Range: 4c0
 		Duration: 500
 		Upgrades: empdisable, notmobile
 		ValidTargets: Ground
 	Warhead@AntiAir: SpreadDamage
-		Spread: 2000
+		Spread: 2c0
 		Damage: 400
-		Falloff: 100, 70, 40, 10
+		Falloff: 200, 100, 50, 25
 		ValidTargets: Air
+		Versus:
+			Light: 18
+			Aircraft: 100
 	Warhead@5EffFlash: CreateEffect
 		Explosions: large_weapon_flash
 		ExplosionPalette: alpha

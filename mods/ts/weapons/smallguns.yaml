@@ -208,6 +208,7 @@ VulcanTower:
 JumpCannon:
 	ReloadDelay: 35
 	Range: 3c840
+	MinRange: 768
 	Report: jumpjet1.aud
 	Projectile: Bullet
 		Speed: 1c682

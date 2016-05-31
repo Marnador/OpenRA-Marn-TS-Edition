@@ -32,11 +32,11 @@ LtRail:
 		AffectsParent: false
 		ValidStances: Ally
 		Versus:
-			None: 100
-			Wood: 130
-			Light: 150
-			Heavy: 110
-			Concrete: 5
+			None: 10
+			Wood: 13
+			Light: 15
+			Heavy: 11
+			Concrete: 10
 		DamageTypes: Prone100Percent, TriggerProne, SmallExplosionDeath
 
 LtRailElite:
@@ -110,8 +110,8 @@ SonicZap:
 		AffectsParent: false
 		ValidStances: Neutral, Enemy
 		Versus:
-			None: 20
-			Wood: 40
+			None: 40
+			Wood: 50
 			Light: 60
 			Heavy: 80
 			Concrete: 100
@@ -124,8 +124,8 @@ SonicZap:
 		AffectsParent: false
 		ValidStances: Ally
 		Versus:
-			None: 4
-			Wood: 8
+			None: 8
+			Wood: 10
 			Light: 12
 			Heavy: 16
 			Concrete: 20

@@ -73,6 +73,7 @@ bigblue:
 		BlendMode: Additive
 		UseTilesetExtension: false
 	light: ga
+		ZOffset: 1536
 		BlendMode: DoubleMultiplicative
 		UseTilesetExtension: false
 

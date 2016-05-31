@@ -1,5 +1,6 @@
 NODMCV:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Buildable:
 		Queue: Vehicle
@@ -39,6 +40,7 @@ NODMCV:
 
 BGGY:
 	Inherits@1: ^VoxelVehicle
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 550
 	Tooltip:
@@ -105,9 +107,13 @@ BGGY:
 		LoadingUpgrades: notmobile
 		EjectOnDeath: true
 	-PoisonedByTiberium:
+	Explodes:
+		Weapon: UnitExplodeTiny
+		EmptyWeapon: UnitExplodeTiny
 
 BIKE:
 	Inherits@1: ^VoxelVehicle
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -147,9 +153,13 @@ BIKE:
 		Voice: Attack
 	AutoTarget:
 	-PoisonedByTiberium:
+	Explodes:
+		Weapon: UnitExplodeTiny
+		EmptyWeapon: UnitExplodeTiny
 
 TTNK:
 	Inherits: ^VoxelTank
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -247,6 +257,7 @@ TTNK:
 
 ART2:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Valued:
 		Cost: 950
@@ -275,12 +286,10 @@ ART2:
 		TransformSounds:
 		NoTransformSounds:
 		Voice: Move
-	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
 
 REPAIR:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Buildable:
 		Queue: Vehicle
@@ -467,6 +476,7 @@ REPAIR:
 
 WEED:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Valued:
 		Cost: 1400
@@ -546,6 +556,7 @@ SAPC:
 
 SUBTANK:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -625,3 +636,6 @@ STNK:
 		InitialStance: HoldFire
 		InitialStanceAI: ReturnFire
 	-MustBeDestroyed:
+	Explodes:
+		Weapon: UnitExplodeTiny
+		EmptyWeapon: UnitExplodeTiny

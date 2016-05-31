@@ -895,6 +895,12 @@ naobel:
 	idle-lights: ntobel_a
 		Length: 12
 		Tick: 80
+	muzzle: redshot
+		ZOffset: 2048
+		Length: *
+		Offset: 0, 0
+		BlendMode: Additive
+		UseTilesetCode: false
 	make: ntobelmk
 		Length: 19
 		ShadowStart: 19

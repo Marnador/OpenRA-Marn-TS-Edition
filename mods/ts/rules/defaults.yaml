@@ -477,7 +477,6 @@
 	Inherits@1: ^GainsExperience
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^EmpDisableMobile
-	Inherits@4: ^Cloakable
 	DrawLineToTarget:
 	GivesBounty:
 		Percentage: 20

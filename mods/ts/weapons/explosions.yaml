@@ -20,7 +20,7 @@ UnitExplodeSmall:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 40
-		Falloff: 200, 102, 50, 24, 12, 6, 0
+		Falloff: 200, 102, 50, 24
 		Versus:
 			None: 90
 			Wood: 75

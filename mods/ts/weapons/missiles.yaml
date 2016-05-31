@@ -7,7 +7,6 @@ Bazooka:
 	Projectile: Missile
 		Blockable: false
 		Shadow: true
-		Inaccuracy: 128
 		Image: DRAGON
 		TrailImage: small_smoke_trail
 		ContrailLength: 10
@@ -189,7 +188,6 @@ BikeMissile:
 		Arm: 0
 		Blockable: false
 		Shadow: true
-		Inaccuracy: 128
 		Image: DRAGON
 		TrailImage: small_smoke_trail
 		ContrailLength: 10

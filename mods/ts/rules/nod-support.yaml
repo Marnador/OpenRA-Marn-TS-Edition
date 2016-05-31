@@ -116,21 +116,26 @@ NAOBEL:
 		Type: Heavy
 	RevealsShroud:
 		Range: 7c680
-	Armament:
+	Armament@1:
 		Weapon: ObeliskLaserFire
 		LocalOffset: 1400,210,750
+		MuzzlePalette: redflash
 	Armament@2:
 		Name: secondary
 		Weapon: ObeliskLaserFire2
 		LocalOffset: 1400,210,750
+		MuzzlePalette: redflash
 	Armament@3:
 		Name: tertiary
 		Weapon: ObeliskLaserFire3
 		LocalOffset: 1400,210,750
+		MuzzlePalette: redflash
 	Armament@4:
 		Name: quaternary
 		Weapon: ObeliskLaserFire4
 		LocalOffset: 1400,210,750
+		MuzzleSequence: muzzle
+		MuzzlePalette: redflash
 	WithRangeCircle:
 		Range: 7c680
 		UsePlayerColor: True	
@@ -154,6 +159,7 @@ NAOBEL:
 		IndicatorPalette: mouse
 	SelectionDecorations:
 		VisualBounds: 88, 72, 0, -12
+	WithMuzzleOverlay:
 
 NASAM:
 	Inherits: ^Defense

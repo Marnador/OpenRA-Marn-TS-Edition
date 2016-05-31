@@ -1,5 +1,6 @@
 MCV:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Buildable:
 		Queue: Vehicle
@@ -39,6 +40,7 @@ MCV:
 
 APC:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Valued:
 		Cost: 600
@@ -80,6 +82,7 @@ APC:
 
 HVR:
 	Inherits@1: ^VoxelVehicle
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -139,9 +142,13 @@ HVR:
 		StationaryInterval: 18
 		MovingInterval: 6
 	-PoisonedByTiberium:
+	Explodes:
+		Weapon: UnitExplodeTiny
+		EmptyWeapon: UnitExplodeTiny
 
 SMECH:
 	Inherits@1: ^Vehicle
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -198,9 +205,13 @@ SMECH:
 	Selectable:
 		Bounds: 20, 32, 0, -8
 	-PoisonedByTiberium:
+	Explodes:
+		Weapon: UnitExplodeTiny
+		EmptyWeapon: UnitExplodeTiny
 
 MMCH:
 	Inherits@1: ^Tank
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -263,6 +274,7 @@ MMCH:
 
 DJUGG:
 	Inherits@1: ^Tank
+	Inherits@2: ^Cloakable
 	-GainsExperience:
 	Valued:
 		Cost: 950
@@ -305,12 +317,10 @@ DJUGG:
 		Voice: Move
 	Carryable:
 		CarryableHeight: 400
-	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
 
 HMEC:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -380,6 +390,7 @@ HMEC:
 
 SONIC:
 	Inherits@1: ^VoxelTank
+	Inherits@2: ^Cloakable
 	Valued:
 		Cost: 1300
 	Tooltip:
