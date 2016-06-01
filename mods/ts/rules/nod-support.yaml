@@ -47,6 +47,8 @@ NALASR:
 	Inherits: ^Defense
 	Valued:
 		Cost: 500
+	CustomBuildTimeValue:
+		Value: 937
 	CanPowerDown:
 		IndicatorPalette: mouse
 		PowerupSpeech: EnablePower
@@ -96,6 +98,8 @@ NAOBEL:
 	Inherits: ^Defense
 	Valued:
 		Cost: 1500
+	CustomBuildTimeValue:
+		Value: 2812
 	Tooltip:
 		Name: Obelisk of Light
 		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Ground units\n  Useless vs Aircraft
@@ -165,6 +169,8 @@ NASAM:
 	Inherits: ^Defense
 	Valued:
 		Cost: 1000
+	CustomBuildTimeValue:
+		Value: 1875
 	Tooltip:
 		Name: S.A.M. Site
 		Description: Nod Anti-Air base defense.\nRequires power to operate.\n  Strong vs Aircraft
@@ -211,7 +217,7 @@ GAARTY:
 	Inherits@1: ^DeployedVehicle
 	-GainsExperience:
 	Valued:
-		Cost: 1100
+		Cost: 950
 	Tooltip:
 		Name: Deployed Artillery
 	Health:

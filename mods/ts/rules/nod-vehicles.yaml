@@ -5,7 +5,7 @@ NODMCV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 200
-		Prerequisites: ~naweap, naradr
+		Prerequisites: ~naweap, natech
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -167,8 +167,8 @@ TTNK:
 		Description: Nod's main battle tank.\nCan deploy to gain extra protection and fire range.\n  Strong vs Vehicles\n  Weak vs Infantry\n  Useless vs Aircraft
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 60
-		Prerequisites: ~naweap
+		BuildPaletteOrder: 40
+		Prerequisites: ~naweap, naradr
 	Mobile:
 		TurnSpeed: 7
 		Speed: 83
@@ -294,7 +294,7 @@ REPAIR:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
-		Prerequisites: ~naweap
+		Prerequisites: ~naweap, naradr
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -527,7 +527,7 @@ SAPC:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: ~naweap, natech
+		Prerequisites: ~naweap, naradr
 	Mobile:
 		TurnSpeed: 5
 		Speed: 96

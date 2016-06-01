@@ -29,7 +29,7 @@ GADJUGG:
 	Inherits@1: ^DeployedVehicle
 	-GainsExperience:
 	Valued:
-		Cost: 1100
+		Cost: 950
 		Tooltip:
 		Name: Deployed Juggernaut
 	Health:
@@ -220,6 +220,8 @@ GACTVULC:
 	Inherits: ^Defense
 	Valued:
 		Cost: 600
+	CustomBuildTimeValue:
+		Value: 1125
 	Tooltip:
 		Name: Vulcan Component Tower
 		Description: Vulcan tower for base defense.\n  Strong vs Infantry\n  Useless vs Aircarft
@@ -281,6 +283,8 @@ GACTRPG:
 	Inherits: ^Defense
 	Valued:
 		Cost: 1100
+	CustomBuildTimeValue:
+		Value: 2060
 	Tooltip:
 		Name: RPG Component Tower
 		Description: RPG tower for base defense.\nRequires power to operate.\n  Strong vs Vehicles\n  Useless vs Aircraft
@@ -335,6 +339,8 @@ GACTSAM:
 	Inherits: ^Defense
 	Valued:
 		Cost: 1000
+	CustomBuildTimeValue:
+		Value: 1875
 	Tooltip:
 		Name: S.A.M. Component Tower
 		Description: SAM tower for base defense.\nRequires power to operate.\n  Strong vs Aircraft\n  Useless vs Ground units

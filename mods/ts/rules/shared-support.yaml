@@ -1,7 +1,7 @@
 NAPULS:
 	Inherits: ^Defense
 	Valued:
-		Cost: 850
+		Cost: 1000
 	Tooltip:
 		Name: E.M. Pulse Cannon
 		Description: Temporarily disables vehicles in the struck area.\nRequires power to operate.

@@ -16,7 +16,7 @@ HARV:
 		Bounds: 36,36
 	Harvester:
 		DeliveryBuildings: proc
-		PipCount: 8
+		PipCount: 5
 		Capacity: 20
 		BaleLoadDelay: 12
 		Resources: Tiberium, BlueTiberium

@@ -26,8 +26,8 @@ PROC:
 		DiscardExcessResources: false
 	StoresResources:
 		PipColor: Green
-		PipCount: 20
-		Capacity: 3000
+		PipCount: 5
+		Capacity: 500
 	CustomSellValue:
 		Value: 500
 	FreeActor:
@@ -60,10 +60,12 @@ GASILO:
 		BuildPaletteOrder: 70
 		Prerequisites: proc
 	Valued:
-		Cost: 300
+		Cost: 500
+	CustomBuildTimeValue:
+		Value: 2000
 	Tooltip:
 		Name: Silo
-		Description: As tough as refinery, and\n stores excess Tiberium.
+		Description: Stores Tiberium in large quantities.
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -71,7 +73,7 @@ GASILO:
 		Bounds: 80, 48, -5, 0
 	-GivesBuildableArea:
 	Health:
-		HP: 900
+		HP: 600
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -88,8 +90,8 @@ GASILO:
 	WithIdleOverlay@LIGHTS:
 		Sequence: idle-lights
 	StoresResources:
-		PipCount: 15
-		Capacity: 1500
+		PipCount: 10
+		Capacity: 5000
 	Power:
 		Amount: -10
 	SelectionDecorations:
